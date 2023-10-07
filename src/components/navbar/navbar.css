@@ -1,0 +1,140 @@
+/* Navbar.css */
+
+@keyframes slideLeft {
+    from {
+      margin-right: -30%;
+    }
+    to {
+      margin-right: 0px;
+    }
+  }
+
+  @keyframes slideOut {
+  from {
+    margin-right: 0;
+  }
+  to {
+    margin-right: -100%; /* Slide out to the right */
+  }
+}
+
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    padding: 10px 4%;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+  }
+
+  .nav .estility-logo {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Rosario';
+    font-size: 20px;
+  }
+  
+  .nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-grow: 1;
+  }
+
+  nav a:hover {
+    border-bottom: 2px solid #1D242D;
+  }
+  
+  .nav a {
+    text-decoration: none;
+    color: #1D242D;
+    font-size: 16px;
+    font-family: 'Sora';
+    line-height: 24px;
+  }
+  
+  /* Style the button */
+  .nav .show-demo {
+    color: #F8F8FC;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 8px;
+    padding: 16px 40px;
+    white-space: nowrap;
+  }
+  
+  .nav .menu-toggle {
+    display: none;
+  }
+
+  .nav .mobile-toggle {
+    display: none;
+  }
+  
+  @media (max-width: 768px) {
+    .nav ul {
+      display: none; 
+      flex-direction: column; 
+      position: absolute;
+      top: 0;
+      right: 0;
+      background: #34204D;
+      width: 50%;
+      align-items: center;
+      padding-bottom: calc(100vh - 20rem);
+      animation: slideLeft 1s;
+    }
+
+    .nav ul a {
+        color: #fff;
+    }
+
+    .nav .small-menu-demo {
+        background: #fff;
+        border-radius: 8px;
+        padding: 8px 16px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        font-weight: 600;
+        font-size: 14px;
+    }
+
+    .nav .mobile-toggle {
+      display: flex;
+      background: #EBE9ED;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    }
+
+    .nav .small-header {
+        font-size: 16px;
+    }
+  
+    .nav ul.show {
+      display: flex;
+    }
+  
+    /* Style the hamburger icon */
+    .nav .menu-toggle {
+      display: block!important;
+      cursor: pointer;
+      font-size: 24px;
+    }
+
+    .nav .show-demo {
+      display: none;
+    }
+  }
+  

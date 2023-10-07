@@ -1,26 +1,61 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { lazy, Suspense } from "react";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import Footer from "./pages/footer/Footer";
+import Navbar from "./components/navbar/Navbar";
+import ErrorBoundary from "./components/error-boundary/error-boundary";
 
-function App() {
+const Home = lazy(() => import("./pages/Home/Home"));
+const Contact = lazy(() => import("./pages/Contact/Contact"));
+const AboutUs = lazy(() => import("./pages/About/AboutUs"));
+const Products = lazy(() => import("./pages/Products/Products"));
+const Vendors = lazy(() => import("./pages/Vendors/Vendors"));
+
+const routes = [
+  {
+    path: "/",
+    element: <Home />,
+  },
+  {
+    path: "/contact",
+    element: <Contact />,
+  },
+  {
+    path: "/about-us",
+    element: <AboutUs />,
+  },
+  {
+    path: "/products",
+    element: <Products />,
+  },
+  {
+    path: "/vendors",
+    element: <Vendors />,
+  },
+];
+
+const NotFound = () => (
+  <div>
+    <h1>404 - Page Not Found</h1>
+  </div>
+);
+
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <ErrorBoundary fallback={<div>Something went wrong</div>}>
+      <Suspense fallback={<div>Loading...</div>}>
+        <Router>
+        <Navbar />
+          <Routes>
+            {routes.map((route) => (
+              <Route key={route.path} path={route.path} element={route.element} />
+            ))}
+            <Route path="*" element={<NotFound />} />
+          </Routes>
+        </Router>
+      </Suspense>
+      <Footer />
+    </ErrorBoundary>
   );
-}
+};
 
 export default App;
