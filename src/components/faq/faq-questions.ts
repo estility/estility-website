@@ -150,4 +150,10 @@ export const faqTopics = [
 ]
 
 // concat all the arrays into one array
-export const allQuestions = estateMgt.concat(estateSecurity, residentApp, partners);
+export const allQuestions = [
+    ...estateMgt.map((item) => ({ ...item, id: `estateMgt_${item.id}` })),
+    ...estateSecurity.map((item) => ({ ...item, id: `estateSecurity_${item.id}` })),
+    ...residentApp.map((item) => ({ ...item, id: `residentApp_${item.id}` })),
+    ...partners.map((item) => ({ ...item, id: `partners_${item.id}` })),
+  ];
+// export const allQuestions = estateMgt.concat(estateSecurity, residentApp, partners);

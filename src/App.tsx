@@ -9,6 +9,7 @@ const Contact = lazy(() => import("./pages/Contact/Contact"));
 const AboutUs = lazy(() => import("./pages/About/AboutUs"));
 const Products = lazy(() => import("./pages/Products/Products"));
 const Vendors = lazy(() => import("./pages/Vendors/Vendors"));
+const Faq = lazy(() => import("./pages/faq/faq"));
 
 const routes = [
   {
@@ -31,6 +32,11 @@ const routes = [
     path: "/vendors",
     element: <Vendors />,
   },
+
+  {
+    path: '/faq',
+    element: <Faq />
+  }
 ];
 
 const NotFound = () => (

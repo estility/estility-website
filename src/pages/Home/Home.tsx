@@ -1,10 +1,6 @@
 import React from 'react'
 import './home.css';
 import { AiOutlineArrowRight } from 'react-icons/ai';
-import briefcase from '../../assets/ph_suitcase-light.png';
-import idea from '../../assets/offer-item-2.svg';
-import grocery from '../../assets/offer-item-1.svg';
-import electricity from '../../assets/Group.png';
 import Offers from '../../components/offers/offers';
 import { BiBriefcaseAlt, BiCartAlt } from 'react-icons/bi';
 import { MdAccessibilityNew } from 'react-icons/md';
@@ -13,7 +9,7 @@ import frame0ne from '../../assets/frame-1.png';
 import frameTwo from '../../assets/frame-2.png';
 import frameThree from '../../assets/frame-3.png';
 import amico from '../../assets/amico.png';
-import Faq from '../../components/faq/faq';
+import Faq from '../../components/faq/questions';
 import Contact from '../../components/contact/contact';
 import Future from '../../components/future/future';
 
@@ -73,6 +69,7 @@ const Home = () => {
       image: frameThree,
     }
   ]
+  
   return (
     <div className='homepage-container'>
       <div className='banner'>
