@@ -102,8 +102,16 @@ select:focus, input:focus {
   flex-grow: 1;
 }
 
+.no-wrap {
+  white-space: nowrap;
+}
+
 .text-center {
   text-align: center;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
 }
 
 .fw-bold {

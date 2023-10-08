@@ -15,6 +15,7 @@ import frameThree from '../../assets/frame-3.png';
 import amico from '../../assets/amico.png';
 import Faq from '../../components/faq/faq';
 import Contact from '../../components/contact/contact';
+import Future from '../../components/future/future';
 
 const Home = () => {
   const offers = [
@@ -99,7 +100,7 @@ const Home = () => {
             <div className='product-title sora-font'>{product?.title}</div>
             <div className='product-subtitle violet-color'>{product?.subtitle}</div>
             <div className='product-text'>{product.text}</div>
-            <div className='d-flex align-center violet-color'><a className='sora-font' href='/'>Learn More</a>&nbsp;<AiOutlineArrowRight /></div>
+            <div className='d-flex align-center violet-color learn-more'><a className='sora-font' href='/'>Learn More</a>&nbsp;<AiOutlineArrowRight /></div>
           </div>
           <div className='flexgrow-1 product-images'>
             <img src={product.image} alt='product' />
@@ -112,7 +113,7 @@ const Home = () => {
          <div className='vendors-header sora-font text-white'>Vendors</div>
          <div className='vendor-text sora-font text-white'>Grow your business significantly by connecting with an extensive network of residents spanning multiple estates in Nigeria. Manage your products and your orders directly from your 
           computer   or mobile phone! More customers, less traffic! </div>
-          <button className='text-white'>Become A Vendor</button>
+          <button className='text-white no-wrap'>Become A Vendor</button>
         </div>
         <div className='flexgrow-1 vendor-group-img'>
           <img src={amico} alt='amico' />
@@ -120,6 +121,7 @@ const Home = () => {
       </div>
       <Faq />
       <Contact />
+      <Future />
     </div>
   )
 }

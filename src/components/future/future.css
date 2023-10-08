@@ -1,0 +1,18 @@
+.future-container {
+  margin-bottom: 2rem;
+  padding: 2rem 0;
+  gap: 20px;
+}
+
+.future-container .future-title {
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 30px;
+}
+
+.future-container .future-subtitle {
+  font-size: 16px;
+  line-height: 30px;
+  font-weight: 400;
+
+}

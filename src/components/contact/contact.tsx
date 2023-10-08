@@ -60,12 +60,32 @@ const Contact = () => {
         }
     ]
 
-    const [ selectedTopic, setSelectedTopic ] = useState('General');
+    const [ selectedTopic, setSelectedTopic ] = useState('');
+
+    const [ formValues, setFormValues ] = useState({
+        name: '',
+        email: '',
+        address: '',
+        city: '',
+        state: '',
+        message: '',
+        topic: selectedTopic
+    })
+
+    const handleChange = (e: any) => {
+        const { name, value } = e.target;
+        setFormValues({ ...formValues, [name]: value })
+    }
+
+    const handleSubmit = (e: any) => {
+        e.preventDefault();
+        console.log(formValues)
+    }
 
     const FormInput = ({ placeholder, label, type }: Props) => (
         <div className='d-flex flex-column sora-font input-div'>
             <div className='form-label sora-font'>{label}</div>
-            <input className='flexgrow-1' placeholder={placeholder} type={type} />
+            <input onChange={handleChange} className='flexgrow-1' placeholder={placeholder} type={type} />
         </div>
     )
 
@@ -90,6 +110,7 @@ const Contact = () => {
             title: 'Partnership'
         }
     ]
+
     return (
         <div className='d-flex justify-content-between contact-container'>
             <div className='d-flex flex-column sora-font flexgrow-1 social-contact'>
@@ -112,28 +133,28 @@ const Contact = () => {
                     </div>
                 </div>
             </div>
-            <form className='gap-10 flexgrow-1 d-flex flex-column form-container'>
+            <form onSubmit={handleSubmit} className='gap-10 flexgrow-1 d-flex flex-column form-container'>
                 <FormInput label='Full Name' type='text' placeholder='Enter your name' />
                 <FormInput label='Email' type='email' placeholder='Enter your email' />
                 <FormInput label='Address' type='text' placeholder='Your current address' />
                 <div className='d-flex gap-10 justify-content-between city-state'>
                     <div className='d-flex flex-column flexgrow-1 sora-font input-div'>
                         <div className='form-label sora-font'>City</div>
-                        <input className='flexgrow-1' placeholder='Enter ur city' type='text' />
+                        <input onChange={handleChange} className='flexgrow-1' placeholder='Enter ur city' type='text' />
                     </div>
                     <div className='d-flex flex-column flexgrow-1 sora-font input-div'>
                         <div className='form-label sora-font'>State</div>
-                        <input className='flexgrow-1' placeholder='State' type='text' />
+                        <input onChange={handleChange} className='flexgrow-1' placeholder='State' type='text' />
                     </div>
                 </div>
                 <div className='purpose-heading sora-font'>What are you reaching about</div>
-                <div className='d-flex justify-content-between purpose-button'>
+                <div className='d-flex flex-wrap justify-content-between purpose-button'>
                     {purposeForm?.map((purpose) => (
-                        <button type='button' onClick={() => setSelectedTopic(purpose?.title)} className={`sora-font ${selectedTopic === purpose?.title ? 'selected' : ''}`} key={purpose?.id}>{purpose?.title}</button>
+                        <button type='button' onClick={() => setSelectedTopic(purpose?.title)} className={`sora-font flexgrow-1 ${selectedTopic === purpose?.title ? 'selected' : ''}`} key={purpose?.id}>{purpose?.title}</button>
                     ))}
                 </div>
                 
-                <div>Message</div>
+                <div className='sora-font'>Message</div>
                 <textarea placeholder='Start typing'></textarea>
                 <div className='char-count sora-font'>0/500 Characters</div>
                 <div className='d-flex justify-content-center contact-button'>
