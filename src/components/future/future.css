@@ -28,3 +28,20 @@ justify-content: center;
 align-items: center;
 width: fit-content;
 }
+
+@media (max-width: 768px) {
+  .future-container .future-title {
+    color: #FFF;
+text-align: center;
+font-size: 24px;
+font-weight: 600;
+line-height: 24px; 
+  }
+
+  .future-container .future-subtitle {
+text-align: center;
+font-size: 14px;
+font-weight: 400;
+line-height: 20px;
+  }
+}

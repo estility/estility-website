@@ -153,7 +153,6 @@ const Contact = () => {
                         <button type='button' onClick={() => setSelectedTopic(purpose?.title)} className={`sora-font flexgrow-1 ${selectedTopic === purpose?.title ? 'selected' : ''}`} key={purpose?.id}>{purpose?.title}</button>
                     ))}
                 </div>
-                
                 <div className='sora-font'>Message</div>
                 <textarea placeholder='Start typing'></textarea>
                 <div className='char-count sora-font'>0/500 Characters</div>
