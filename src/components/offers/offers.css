@@ -58,7 +58,7 @@
     line-height: 30px;
   }
 
-.offer-item:hover {
+.offer-item:hover, .offer-item-text:hover {
     background: #fff;
     color: #34204D;
     border: 1px solid #fff;

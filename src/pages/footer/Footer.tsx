@@ -68,8 +68,41 @@ const Footer = () => {
     }
   ]
 
+  const supportFooterLinks = [
+    {
+      id: 1,
+      title: 'FAQs',
+      link: '/faq',
+    },
+
+    {
+      id: 2,
+      title: 'Contact Us',
+      link: '/contact-us',
+    },
+
+    {
+      id: 3,
+      title: 'Blogs',
+      link: '/blogs',
+    },
+
+    {
+      id: 4,
+      title: 'Terms and Conditions',
+      link: '/Terms-and-conditions',
+    },
+
+    {
+      id: 5,
+      title: 'Privacy Policy',
+      link: '/privacy policy',
+    }
+  ]
+  
+
   return (
-    <div className='footer violet-background'>
+    <div className='footer violet-background sora-font'>
       <div className='estility-copy-right'>
        <div className='estility-logo-footer'>
         <img src={logo} alt='logo'/>
@@ -99,14 +132,15 @@ const Footer = () => {
       <div className='footer-links'>
         <div className='header'>Support</div>
         <div className='footer-links-container'>
-        {footerLinks.map((footerLink) => (
+        {supportFooterLinks.map((footerLink) => (
           <div className='footer-link-item'>
             <a href={footerLink.link}>{footerLink.title}</a>
           </div>
         ))}
         </div>
       </div>
-      <div className='footer-links'>
+      <div className='copyright-text-small sora-font'>Copyright © 2023 Estility. All rights reserved</div>
+      <div className='footer-links stay-upto-date'>
         <div className='header'>Stay up to date</div>
         <input className='footer-input' type='text' placeholder='Enter your email address'/>
       </div>

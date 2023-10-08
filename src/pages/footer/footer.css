@@ -68,6 +68,7 @@
     color: #fff;
     text-decoration: none;
     display: flex;
+    font-weight: 400;
     justify-content: center;
   }
 
@@ -102,7 +103,20 @@ text-align: center;
 background: transparent;
   }
 
+  .copyright-text-small {
+    display: none;
+  }
+
   @media (max-width: 768px){
+    .copyright-text-small {
+      display: block;
+      margin-top: 10px;
+    }
+
+    .stay-upto-date {
+      display: none;
+    }
+
     .footer {
         flex-direction: column;
         padding: 2rem 0;
