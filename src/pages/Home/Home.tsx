@@ -120,7 +120,6 @@ const Home = () => {
       </div>
       <Faq />
       <Contact />
-      <div>9</div>
     </div>
   )
 }

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './contact.css';
 import { BiLogoFacebookCircle, BiLogoInstagram } from 'react-icons/bi';
 import { AiFillTwitterCircle } from 'react-icons/ai';
@@ -60,6 +60,8 @@ const Contact = () => {
         }
     ]
 
+    const [ selectedTopic, setSelectedTopic ] = useState('General');
+
     const FormInput = ({ placeholder, label, type }: Props) => (
         <div className='d-flex flex-column sora-font input-div'>
             <div className='form-label sora-font'>{label}</div>
@@ -90,7 +92,7 @@ const Contact = () => {
     ]
     return (
         <div className='d-flex justify-content-between contact-container'>
-            <div className='d-flex flex-column sora-font flex-grow-1 social-contact'>
+            <div className='d-flex flex-column sora-font flexgrow-1 social-contact'>
                 {socialContacts?.map((contact) => (
                     <div className='d-flex flex-column social-talks'>
                         <div className='fw-bold social-title sora-font'>{contact?.title}</div>
@@ -99,22 +101,22 @@ const Contact = () => {
                 ))}
                 <div className='d-flex flex-column social-talks'>
                     <div className='fw-bold violet-color social-title'>Socials</div>
-                    <div className='d-flex'>
+                    <div className='d-flex social-contact-icons'>
                         {socialIcons.map((socialIcon) => (
                             <div className=''>
                                 <a className='violet-color social-link-icons' key={socialIcon.id} href={socialIcon.link} target='_blank' rel="noreferrer">
-                                    {socialIcon.icon}
+                                    {socialIcon?.icon}
                                 </a>
                             </div>
                         ))}
                     </div>
                 </div>
             </div>
-            <form style={{ border: '1px solid red' }} className='gap-10 flexgrow-1 d-flex flex-column form-container'>
+            <form className='gap-10 flexgrow-1 d-flex flex-column form-container'>
                 <FormInput label='Full Name' type='text' placeholder='Enter your name' />
                 <FormInput label='Email' type='email' placeholder='Enter your email' />
                 <FormInput label='Address' type='text' placeholder='Your current address' />
-                <div className='d-flex gap-10 justify-content-between'>
+                <div className='d-flex gap-10 justify-content-between city-state'>
                     <div className='d-flex flex-column flexgrow-1 sora-font input-div'>
                         <div className='form-label sora-font'>City</div>
                         <input className='flexgrow-1' placeholder='Enter ur city' type='text' />
@@ -124,20 +126,17 @@ const Contact = () => {
                         <input className='flexgrow-1' placeholder='State' type='text' />
                     </div>
                 </div>
-               
                 <div className='purpose-heading sora-font'>What are you reaching about</div>
                 <div className='d-flex justify-content-between purpose-button'>
                     {purposeForm?.map((purpose) => (
-                        <button key={purpose?.id}>{purpose?.title}</button>
+                        <button type='button' onClick={() => setSelectedTopic(purpose?.title)} className={`sora-font ${selectedTopic === purpose?.title ? 'selected' : ''}`} key={purpose?.id}>{purpose?.title}</button>
                     ))}
                 </div>
                 
                 <div>Message</div>
-                <textarea></textarea>
-
-                {/* the characters should be not more than 500 */}
-                0/500 characters
-                <div className='d-flex justify-content-center'>
+                <textarea placeholder='Start typing'></textarea>
+                <div className='char-count sora-font'>0/500 Characters</div>
+                <div className='d-flex justify-content-center contact-button'>
                     <button className='text-white violet-background'>Submit</button>
                 </div>
             </form>
