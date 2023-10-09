@@ -2,6 +2,8 @@ import React, { useState, useEffect } from 'react'
 import { estateMgt, estateSecurity, residentApp, partners, faqTopics, allQuestions } from './faq-questions';
 import { FaMinus, FaPlus } from 'react-icons/fa';
 import './questions.css';
+import { CiSearch } from 'react-icons/ci';
+import { BottomBanner } from '../future/future';
 
 interface FAQItemProps {
   id?: number;
@@ -96,18 +98,19 @@ const Questions = () => {
   console.log(selectedTopic)
 
   return (
-    <div className='d-flex flex-column faq-container'>
+    <div className='d-flex flex-column faq-container sora-font'>
       {window.location.pathname === '/faq' ? 
-      <div className='faq-banner'>
-      <div className='faq-banner-text sora-font'>Frequently asked Questions(FAQs)</div>
+      <div className='faq-banner violet-background text-white text-center d-flex flex-column '>
+      <div className='faq-banner-text sora-font fw-bold'>FAQs: Get Your Answers Here</div>
       <div className='faq-banner-subtext sora-font'>Here are the answers to the most commonly asked questions about our services and offerings.</div>
-      <div className="">
-        <div className="search-icon">
+      <div className="faq-search d-flex justify-center align-items-center bg-white fw-bold">
+        <div className="search-icon d-flex align-center fw-bold">
           {/* <img src={search} alt="" /> */}
+          <CiSearch color='#1D1D24' size={20} className='fw-bold' />
         </div>
         <input
           onChange={handleSearch}
-          className=""
+          className="flexgrow-1"
           type="text"
           name='search'
           placeholder="Search frequently asked questions"
@@ -128,6 +131,10 @@ const Questions = () => {
       ))}
      </div>
      <div className='view-all-button'><button onClick={() => setSelectedTopic('All')} disabled={selectedTopic===''} className='violet-background text-white sora-font view-all'>View all FAQs</button></div>
+    <BottomBanner 
+    title="Can't find what you're looking for?"
+    text='Can’t find answers you’re looking for/ Please reach out to our amazing support team'
+    buttonText='Get in Touch' />
     </div>
   )
 }

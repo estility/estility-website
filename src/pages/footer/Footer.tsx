@@ -139,7 +139,7 @@ const Footer = () => {
         ))}
         </div>
       </div>
-      <div className='copyright-text-small sora-font'>Copyright © 2023 Estility. All rights reserved</div>
+      <div className='copyright-text-small sora-font text-center'>Copyright © 2023 Estility. All rights reserved</div>
       <div className='footer-links stay-upto-date'>
         <div className='header'>Stay up to date</div>
         <input className='footer-input' type='text' placeholder='Enter your email address'/>
