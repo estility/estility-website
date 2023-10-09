@@ -96,6 +96,10 @@ line-height: 24px;
     border-bottom: 1px solid#3A354180;
     justify-content: space-between;
   }
+
+  .faq-content-items, .faq-topics {
+    padding: 0 2rem;
+  }
   
   .faq-question button {
     background: transparent;
@@ -206,6 +210,10 @@ line-height: 28px;
 
     .faq-search {
       min-width: 100%;
+    }
+
+    .faq-content-items, .faq-topics {
+      padding: 0;
     }
 
     .faq-topics button {
