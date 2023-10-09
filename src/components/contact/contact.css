@@ -1,7 +1,7 @@
 .contact-container {
   padding: 0 2rem;
   margin: 2rem 0;
-  gap: 20px;
+  gap: 2rem;
 }
 
 .social-contact {
@@ -48,7 +48,7 @@
 }
 
 .input-div {
-  gap: 5px;
+  gap: 8px;
 }
 
 .input-div input {
@@ -111,6 +111,12 @@
 .purpose-button .selected {
   background:#7975B6;
   color: #fff;
+}
+
+.contact-image {
+  background: url('../../assets/contact-image.png'), lightgray 50% / cover no-repeat;
+  height: 300px;
+  width: 100%;
 }
 
 @media (max-width: 768px) {

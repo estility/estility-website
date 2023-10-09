@@ -3,7 +3,7 @@ export const estateMgt = [
     {
         id: 1,
         question: 'What is the Estate Management Software used for?',
-        answer: 'i dont know',
+        answer: "Feels like a close, it's coming toFuck am I gonna do? It's too late to start overThis is the only thing I, thing I knowSometimes I feel like all I ever do is Find different ways to word the same, old song Ever since I came alongFrom the day the song called Hi! My Name Is droppedStarted thinking my name was fault'Cause anytime things went wrong I was the one who they would blame it onThemedia made me the equivalent of a modern-day Genghis Khan",
     },
 
     {

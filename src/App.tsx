@@ -3,6 +3,8 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Footer from "./pages/footer/Footer";
 import Navbar from "./components/navbar/Navbar";
 import ErrorBoundary from "./components/error-boundary/error-boundary";
+import TermsAndConditions from "./pages/terms-and-conditions/terms-and-conditions";
+import { termsArray } from "./components/terms";
 
 const Home = lazy(() => import("./pages/Home/Home"));
 const Contact = lazy(() => import("./pages/Contact/Contact"));
@@ -36,6 +38,11 @@ const routes = [
   {
     path: '/faq',
     element: <Faq />
+  },
+
+  {
+    path: '/terms-and-conditions',
+    element: <TermsAndConditions terms={termsArray} />
   }
 ];
 

@@ -19,7 +19,6 @@ const Faq = () => {
 
   return (
     <Questions />
-
   )
 }
 

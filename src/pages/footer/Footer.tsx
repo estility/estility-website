@@ -46,7 +46,7 @@ const Footer = () => {
     {
       id: 2,
       title: 'Careers',
-      link: '/contact-us',
+      link: '/contact',
     },
 
     {
@@ -90,7 +90,7 @@ const Footer = () => {
     {
       id: 4,
       title: 'Terms and Conditions',
-      link: '/Terms-and-conditions',
+      link: '/terms-and-conditions',
     },
 
     {

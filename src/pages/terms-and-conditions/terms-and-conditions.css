@@ -1,0 +1,52 @@
+
+.terms-and-condition-banner {
+  padding: 2rem;
+  font-size: 64px;
+}
+
+.terms-container :nth-child(1) .t-and-c-title {
+    font-size: 26px;
+}
+
+.terms-container .t-and-c-title {
+    font-size: 20px;
+}
+
+.terms-container {
+  width: 100%;
+  padding: 3rem 5%;
+  gap: 20px;
+}
+
+.t-and-c-text {
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.estility-text {
+  color: #7975B6;
+}
+
+@media screen and (max-width: 768px) {
+  .terms-container {
+    padding: 1rem 2%;
+  }
+
+  .terms-and-condition-banner {
+    font-size: 24px;
+    line-height: 28px;
+  }
+
+  .terms-container :nth-child(1) .t-and-c-title {
+    font-size: 20px;
+}
+
+.terms-container .t-and-c-title {
+    font-size: 18px;
+}
+
+.t-and-c-text {
+    font-size: 16px;
+    line-height: 24px;
+}
+}

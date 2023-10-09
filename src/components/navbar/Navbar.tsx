@@ -1,13 +1,11 @@
 import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
-import { FaBars, FaTimes } from "react-icons/fa"; // Import the icon
+import { FaBars, FaTimes } from "react-icons/fa";
 import "./navbar.css";
 import logo from '../../assets/logo.svg'
 const Navbar = () => {
-  // State to track menu visibility
   const [isMenuVisible, setIsMenuVisible] = useState(false);
 
-  // Function to toggle menu visibility
   const toggleMenu = () => {
     setIsMenuVisible(!isMenuVisible);
   };
@@ -18,9 +16,7 @@ const Navbar = () => {
         <img src={logo} alt='logo'/>
         <div className="dark-color">ESTILITY</div>
       </div>
-      {/* Toggle button for small screens */}
       
-      {/* Menu NavLinks */}
       <ul className={`menu ${isMenuVisible ? "show" : ""}`}>
         <div className="mobile-toggle">
       <div className="estility-logo small-header">

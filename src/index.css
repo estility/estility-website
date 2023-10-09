@@ -10,6 +10,10 @@
   box-sizing: border-box;
 }
 
+body {
+  scroll-behavior: smooth;
+}
+
 button {
   cursor: pointer;
   outline: none;
@@ -116,4 +120,20 @@ select:focus, input:focus {
 
 .fw-bold {
   font-weight: 700;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.bold-500 {
+  font-weight: 500;
+}
+
+.bold-600 {
+  font-weight: 600;
+}
+
+.dark-color {
+  color: #424246;
 }

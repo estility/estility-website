@@ -1,9 +1,14 @@
-import React from 'react'
+import React from 'react';
+import Contact from '../../components/contact/contact';
+import Future from '../../components/future/future';
 
-const Contact = () => {
+const ContactForm = () => {
   return (
-    <div>Contact</div>
+    <div>
+      <Contact />
+      <div className='d-flex justify-center'><Future /></div>
+    </div>
   )
 }
 
-export default Contact
+export default ContactForm

@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import { estateMgt, estateSecurity, residentApp, partners, faqTopics, allQuestions } from './faq-questions';
-import { FaMinus, FaPlus } from 'react-icons/fa';
+import { FaMinus, FaPlus, FaTimes } from 'react-icons/fa';
 import './questions.css';
 import { CiSearch } from 'react-icons/ci';
 import { BottomBanner } from '../future/future';
@@ -42,14 +42,22 @@ const Questions = () => {
 
     return (
       <div className={`faq-item ${isOpen ? "open" : ""}`}>
-        <div className="faq-question" onClick={toggleAnswer}>
-          <div className="question sora-font">{question}</div>
+        <div className={`faq-question ${isOpen ? "open" : ""}`} onClick={toggleAnswer}>
+          {isOpen === false ? <div className="question sora-font">{question} </div> : null }
           <button className="faq-toggle-icon">
-            {isOpen ? <FaMinus color="#3A354180" /> : <FaPlus color="#3A354180" />}
+            {isOpen===false ? <FaPlus color="#3A354180"  /> : null}
           </button>
         </div>
         <div className={`faq-answer ${isOpen ? "open" : ""}`}>
-          {isOpen && <div className="answer-content">{answer}</div>}
+          {isOpen ? 
+          <div className="answer-content d-flex sora-font violet-color flex-column">
+            <div className='d-flex justify-content-between'>
+              <div className='fw-bold'>{question}</div>
+              <FaTimes color="#3A354180" onClick={toggleAnswer} className='cursor-pointer' />
+            </div>
+            <div>{answer}</div>
+          </div>
+           : null}
         </div>
       </div>
     );
@@ -116,7 +124,7 @@ const Questions = () => {
           placeholder="Search frequently asked questions"
         />
       </div>
-    </div> 
+      </div> 
       : null}
       <div className='faq-heading text-center sora-font violet-color'>Frequently asked Questions(FAQs)</div>
       <div className='text-center faq-subtitle sora-font'>Here are the answers to the most commonly asked questions about our services and offerings.</div>
