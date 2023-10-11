@@ -1,0 +1,9 @@
+.product-display > :nth-child(2) {
+  flex-direction: row-reverse;
+  padding: 1rem 2% 1rem 0;
+}
+
+.product-display > :nth-child(1) {
+    padding: 1rem 0rem 1rem 2%;
+  }
+

@@ -17,9 +17,9 @@ interface HeaderBannerProps {
 
 export const HeaderBanner:React.FC<HeaderBannerProps> = ({title, hasSubText, subText, hasButton, buttonText}) => (
   <div className='d-flex flex-column violet-background terms-and'>
-  <div className='terms-and-condition-banner d-flex flex-column text-center sora-font text-white fw-bold'>{title}</div>
+  <div className='terms-and-condition-banner d-flex flex-column text-center sora-font text-white bold-600'>{title}</div>
   { hasSubText ? <div className='sora-font text-center text-white'>{subText}</div> : null }
-  { hasButton===true ? <button className='sora-font'>{buttonText}</button> : null }
+  { hasButton===true ? <button className='sora-font banner-button'>{buttonText}</button> : null }
   </div>
 )
 const TermsAndConditions = ({terms}: Props) => {

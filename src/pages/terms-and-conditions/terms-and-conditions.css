@@ -2,15 +2,29 @@
 .terms-and {
   background: url('../../assets/header-gradient.png') no-repeat;
   background-size: cover;
-  background-color: #34204D!important;
-  padding: 2rem 0;
+  /* background-color: #34204D!important; */
+  background-color: #1D0B32;
+  padding: 3rem 0;
 }
 .terms-and-condition-banner {
   font-size: 64px;
+  line-height: 88px;
 }
 
 .terms-container :nth-child(1) .t-and-c-title {
     font-size: 26px;
+}
+
+.terms-and .banner-button {
+  display: flex;
+padding: 16px 40px;
+justify-content: center;
+align-items: center;
+border-radius: 8px;
+background: #FFF;
+margin-top: 2rem;
+width: 200px;
+align-self: center;
 }
 
 .terms-container .t-and-c-title {
