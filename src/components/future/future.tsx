@@ -1,7 +1,7 @@
 import React from 'react';
 import './future.css';
 
-interface Props {
+export interface Props {
   title: string;
   text: string;
   buttonText: string

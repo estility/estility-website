@@ -7,6 +7,21 @@ interface Props {
     terms: typeof termsArray
 }
 
+interface HeaderBannerProps {
+    title: string;
+    hasSubText: boolean;
+    subText?: string;
+    hasButton?: boolean
+    buttonText?: string;
+}
+
+export const HeaderBanner:React.FC<HeaderBannerProps> = ({title, hasSubText, subText, hasButton, buttonText}) => (
+  <div className='d-flex flex-column violet-background terms-and'>
+  <div className='terms-and-condition-banner d-flex flex-column text-center sora-font text-white fw-bold'>{title}</div>
+  { hasSubText ? <div className='sora-font text-center text-white'>{subText}</div> : null }
+  { hasButton===true ? <button className='sora-font'>{buttonText}</button> : null }
+  </div>
+)
 const TermsAndConditions = ({terms}: Props) => {
 
     const highlightEstility = (text: string) => {
@@ -16,7 +31,7 @@ const TermsAndConditions = ({terms}: Props) => {
 
   return (
     <div className='d-flex flex-column sora-font T-and-C'>
-      <div className='terms-and-condition-banner text-center sora-font violet-background text-white fw-bold'>Terms and Conditions of Usage</div>
+      <HeaderBanner title='Terms and Conditions' hasSubText={false} hasButton={false} />
       <div className='terms-container d-flex flex-column'>
         {terms.map((term: any) => (
             term?.id !== 4 ?
@@ -42,7 +57,7 @@ const TermsAndConditions = ({terms}: Props) => {
             </div> 
         ))}
       </div>
-      <Future />
+      <Future /><br /><br />
     </div>
   )
 }

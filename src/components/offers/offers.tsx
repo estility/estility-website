@@ -2,12 +2,14 @@ import React from 'react'
 import './offers.css';
 interface Props {
   items: any
+  heading?: string;
+  text?: string
 }
-const Offers:React.FC<Props> = ({items}) => {
+const Offers:React.FC<Props> = ({items, heading, text}) => {
   return (
     <div className='violet-background offers sora-font'>
-    <div className='text'>What we offer</div>
-    <div className='text-white suite-service'>Our Suite of Services enhances our daily living experience</div>
+    <div className='text bold-600'>{heading}</div>
+    <div className='text-white suite-service'>{text}</div>
   <div className='offers-container'>
   {items.map((offer:any) => (
     <div key={offer?.id} className='offer-item text-white'>

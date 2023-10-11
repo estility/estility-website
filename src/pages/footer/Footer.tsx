@@ -78,7 +78,7 @@ const Footer = () => {
     {
       id: 2,
       title: 'Contact Us',
-      link: '/contact-us',
+      link: '/contact',
     },
 
     {

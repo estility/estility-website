@@ -6,7 +6,7 @@ const ContactForm = () => {
   return (
     <div>
       <Contact />
-      <div className='d-flex justify-center'><Future /></div>
+      <div className='d-flex justify-center'><Future /></div><br /><br />
     </div>
   )
 }

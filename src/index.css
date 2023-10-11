@@ -51,7 +51,7 @@ select:focus, input:focus {
 }
 
 .violet-background {
-  background: #34204D;
+  background-color: #34204D;
 }
 
 .rosario-font {
@@ -136,4 +136,91 @@ select:focus, input:focus {
 
 .dark-color {
   color: #424246;
+}
+
+.font-size-24 {
+  font-size: 24px;
+  line-height: 28px;
+}
+
+.bg-transparent {
+  background: transparent;
+}
+
+.full-width {
+  width: 100%;
+}
+
+/* Define a custom row class */
+.custom-row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Define a custom column class for medium-sized screens (col-md-6) */
+.custom-col-md-6 {
+  flex: 0 0 50%;
+  max-width: 46%;
+}
+
+a {
+  text-decoration: none;
+}
+
+.secondary-text {
+  color: #3D4C5E;
+}
+
+.font-size-12 {
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.font-size-14 {
+  font-size: 14px;
+}
+/* Define a custom column class for medium-sized screens (col-md-4) */
+.custom-col-md-4 {
+  flex: 0 0 33.33333%;
+  max-width: 30.33333%;
+}
+
+/* Define a custom column class for all screen sizes (col-3) */
+.custom-col-3 {
+  flex: 0 0 25%;
+  max-width: 25%;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.border-danger {
+  border: 1px solid #FF0000;
+}
+
+.font-size-20 {
+  font-size: 20px;
+  line-height: 32px;
+}
+
+.mt-2 {
+  margin-top: 2rem;
+}
+
+.mt-3 {
+  margin-top: 3rem;
+}
+
+.mt-1 {
+  margin-top: 1rem;
+}
+
+@media (max-width: 768px) {
+  .custom-col-md-6 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+  .custom-col-md-4 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
 }

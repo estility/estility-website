@@ -1,6 +1,11 @@
 
+.terms-and {
+  background: url('../../assets/header-gradient.png') no-repeat;
+  background-size: cover;
+  background-color: #34204D!important;
+  padding: 2rem 0;
+}
 .terms-and-condition-banner {
-  padding: 2rem;
   font-size: 64px;
 }
 

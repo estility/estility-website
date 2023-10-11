@@ -89,7 +89,7 @@ const Home = () => {
       <div className='table-banner'>
       </div>
       </div>
-     <Offers items={offers} />
+     <Offers items={offers} heading='What we offer' text='Our Suite of Services enhances our daily living experience' />
       <div className='d-flex flex-column products'>
         {ourProducts.map((product) => (
         <div className='d-flex justify-content-between product'>
@@ -118,7 +118,7 @@ const Home = () => {
       </div>
       <Faq />
       <Contact />
-      <Future />
+      <Future /><br /><br />
     </div>
   )
 }

@@ -1,0 +1,20 @@
+.blog-content-container {
+  padding: 0 3% 3rem 3%;
+  gap: 20px;
+}
+
+.blogs-future {
+  margin-top: 2rem;
+}
+
+.blog-content-heading {
+  color: #3D4C5E;
+}
+
+.blog-content-heading a {
+  text-decoration: none;
+  background: lightgray;
+  text-align: center;
+  border-radius: 50px;
+  padding: 5px;
+}
