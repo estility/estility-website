@@ -51,6 +51,12 @@ align-self: center;
     padding: 1rem 2%;
   }
 
+  .t-andc-subtext {
+    font-size: 14px;
+    line-height: 30px;
+    margin-top: 1rem;
+  }
+
   .terms-and-condition-banner {
     font-size: 24px;
     line-height: 28px;

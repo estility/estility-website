@@ -7,3 +7,59 @@
     padding: 1rem 0rem 1rem 2%;
   }
 
+  .product-container {
+    padding: 0 0 2rem 0;
+  }
+
+  .estate-software-title {
+    line-height: 28px;
+  }
+
+  .estate-software-text {
+    line-height: 32px;
+  }
+
+  .estate-mgt-product {
+font-size: 16px;
+line-height: 20px; /* 125% */
+text-transform: uppercase;
+  }
+
+  .estate-mg-product-desc {
+    line-height: 25px;
+  }
+
+  @media (max-width: 768px) {
+
+    .product-display {
+      padding: 0 2%;
+    }
+    .product-display > :nth-child(2) {
+      flex-direction: column;
+      padding: 1rem 0 0 0;
+    }
+
+    .product-display > :nth-child(1) {
+      padding: 1rem 0 0 0;
+    }
+
+    .estate-software-title {
+      font-size: 20px;
+      line-height: 24px;
+    }
+
+    .estate-software-text {
+      font-size: 14px;
+      line-height: 20px;
+    }
+
+    .estate-mgt-product {
+      font-size: 14px;
+      line-height: 20px;
+    }
+
+    .estate-mg-product-desc {
+      font-size: 14px;
+      line-height: 20px;
+    }
+  }

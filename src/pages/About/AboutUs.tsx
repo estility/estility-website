@@ -7,10 +7,11 @@ import { BiBriefcaseAlt, BiCartAlt } from 'react-icons/bi';
 import { IoBulbOutline } from 'react-icons/io5';
 import { MdAccessibilityNew } from 'react-icons/md';
 import Contact from '../../components/contact/contact';
+import imageBanner from '../../assets/bg-3.png';
 
 export const BottomBanner:React.FC<Props> = ({title, text, buttonText}) => {
   return (
-    <div className='about-container full-width text-center violet-background d-flex flex-column text-white sora-font align-items-center justify-center'>
+    <div className='about-container full-width text-center d-flex flex-column text-white sora-font align-items-center justify-center'>
         <div className='about-title'>{title}</div>
         <div className='about-subtitle'>{text}</div>
          <button className='violet-color about-button'>{buttonText}</button>
@@ -52,7 +53,7 @@ const AboutUs = () => {
   
   return (
     <div className='d-flex flex-column about-page-container'>
-      <BottomBanner title='Empowering Estates, Enriching Communities' buttonText='Request A Demo!' text='Where Innovation Meets Community, and Excellence Elevates Living.' />
+      <div className='about-banner-bg'><BottomBanner title='Empowering Estates, Enriching Communities' buttonText='Request A Demo!' text='Where Innovation Meets Community, and Excellence Elevates Living.' /></div>
       <div className='d-flex flex-column about-content'>
        <div className=' mt-2 custom-row justify-content-between align-center'>
         <div className=' story-image custom-col-md-6'><img src={image} alt=''  /></div>
