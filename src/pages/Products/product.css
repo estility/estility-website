@@ -7,6 +7,10 @@
     padding: 1rem 0rem 1rem 2%;
   }
 
+  .product-display > :last-child {
+    padding: 1rem 0rem 1rem 2%;
+  }
+
   .product-container {
     padding: 0 0 2rem 0;
   }

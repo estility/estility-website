@@ -14,14 +14,14 @@ const Navbar = () => {
     <nav className="nav plain-background">
       <div className="estility-logo">
         <img src={logo} alt='logo'/>
-        <div className="dark-color">ESTILITY</div>
+        <div className="dark-color rosario-font">ESTILITY</div>
       </div>
       
       <ul className={`menu ${isMenuVisible ? "show" : ""}`}>
         <div className="mobile-toggle">
       <div className="estility-logo small-header">
         <img src={logo} alt='logo'/>
-        <div className="dark-color">ESTILITY</div>
+        <div className="dark-color rosario-font">ESTILITY</div>
       </div>
       {isMenuVisible ? <FaTimes className="close-menu" onClick={toggleMenu} /> : null}
       </div>

@@ -46,6 +46,12 @@ align-self: center;
   color: #7975B6;
 }
 
+.t-andc-subtext {
+  font-size: 16px;
+  line-height: 30px;
+  margin-top: 1rem;
+}
+
 @media screen and (max-width: 768px) {
   .terms-container {
     padding: 1rem 2%;
