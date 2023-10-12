@@ -7,10 +7,9 @@ import { MdAccessibilityNew } from 'react-icons/md'
 import { VendorMgtSystem } from '../Products/product-items'
 import appChart from '../../assets/app-chart.png'
 import Future from '../../components/future/future'
-import './vendor.css';
-import VendorContent from './vendor-content'
+import VendorContent from '../Vendors/vendor-content';
 
-const Vendors = () => {
+const Riders = () => {
   const offers = [
     {
       id: 1,
@@ -60,4 +59,4 @@ const Vendors = () => {
   )
 }
 
-export default Vendors
+export default Riders

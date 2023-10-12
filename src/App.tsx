@@ -6,6 +6,7 @@ import ErrorBoundary from "./components/error-boundary/error-boundary";
 import TermsAndConditions from "./pages/terms-and-conditions/terms-and-conditions";
 import { termsArray } from "./components/terms";
 import BlogContent from "./pages/blog-content/blog-content";
+import Riders from "./pages/riders/riders";
 
 const Home = lazy(() => import("./pages/Home/Home"));
 const Contact = lazy(() => import("./pages/Contact/Contact"));
@@ -64,6 +65,12 @@ const routes = [
     id: 9,
     path: '/blog/:id',
     element: <BlogContent />
+  },
+
+  {
+    id: 10,
+    path: '/riders',
+    element: <Riders />
   }
 ];
 

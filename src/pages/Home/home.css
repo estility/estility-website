@@ -82,6 +82,10 @@ font-size: 16px;
   flex-direction: row-reverse;
 }
 
+.homepage-container .products > :nth-child(2) .product-subtitle {
+  color: #43746B!important;
+}
+
 .homepage-container .product-title {
   color: #424246;
 font-size: 24px;
