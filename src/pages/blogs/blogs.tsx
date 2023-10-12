@@ -10,9 +10,10 @@ interface ArticleProps {
     heading: string;
     text: string;
     readingTime: string;
+    id?: number;
 }
 
-export const OldArticle: React.FC<ArticleProps> = ({ heading, text, readingTime }) => (
+export const OldArticle: React.FC<ArticleProps> = ({ heading, text, readingTime, id }) => (
     <div className='d-flex flex-column custom-col-md-4 old-article-container'>
         <div className='full0-width'>
             <img className='full-width' src={blogImage} alt='blog' />
@@ -21,7 +22,7 @@ export const OldArticle: React.FC<ArticleProps> = ({ heading, text, readingTime 
             <div className='old-article-title bold-600'>{heading}</div>
             <div className='sora-font old-article-text'>{text}</div>
             <div className='old-article-reading-time'>{readingTime}</div>
-            <div><a className='violet-color bold-500' href='/'>Read More</a></div>
+            <div><Link to={`/blog/${id}`} className='violet-color bold-500'>Read More</Link></div>
         </div>
     </div>
 )
@@ -65,6 +66,7 @@ const Blogs = () => {
                             heading={blog?.title}
                             text={blog?.content?.slice(0, 100)} 
                             readingTime='5 min read'
+                            id={blog?.id}
                         />
                     ))}
                 </div>
