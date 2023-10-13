@@ -25,11 +25,11 @@ const Navbar = () => {
       </div>
       {isMenuVisible ? <FaTimes className="close-menu" onClick={toggleMenu} /> : null}
       </div>
-        <NavLink to="/">Home</NavLink>
-        <NavLink to="/contact">Contact</NavLink>
-        <NavLink to="/about-us">About Us</NavLink>
-        <NavLink to="/products">Products</NavLink>
-        <NavLink to="/vendors">Vendors</NavLink>
+        <NavLink className='rosario-font' to="/">Home</NavLink>
+        <NavLink className='rosario-font' to="/contact">Contact</NavLink>
+        <NavLink className='rosario-font' to="/about-us">About Us</NavLink>
+        <NavLink className='rosario-font' to="/products">Products</NavLink>
+        <NavLink className='rosario-font' to="/vendors">Vendors</NavLink>
         {isMenuVisible ? <button className="small-menu-demo violet-color">Request A Demo</button> : null}
       </ul>
       <button className="show-demo violet-background plain-color">Get a Demo</button>
