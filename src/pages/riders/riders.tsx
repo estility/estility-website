@@ -37,7 +37,6 @@ const Riders = () => {
        <HeaderBanner title='Become an Estility Vendor Let’s Flourish Together' 
         subText='We welcome vendors to be a part of our vibrant network and contribute to elevating community living.'
        hasSubText={true} hasButton={true} buttonText='Request A Demo'/>
-     
         <VendorContent 
       items={offers} 
       heading='Why choose us ?'
