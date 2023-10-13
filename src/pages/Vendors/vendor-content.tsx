@@ -15,7 +15,7 @@ const VendorContent:React.FC<Props> = ({items, heading, text}) => {
   <div className='vendors-container'>
   {items.map((vendor:any) => (
     <div key={vendor?.id} className='vendor-item sora-font dark-color'>
-      <div className='vendor-icon bg-white'>{vendor?.icon}</div>
+      <div className='vendor-icon violet-background text-white'>{vendor?.icon}</div>
       <div className='vendor-item-header'>{vendor.title}</div>
       <div className='vendor-item-text'>{vendor.text}</div>
     </div>

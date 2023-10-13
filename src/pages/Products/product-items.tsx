@@ -2,8 +2,8 @@ import { AiOutlineCheck } from "react-icons/ai";
 import './product.css';
 
 interface EstateMgtProps {
-    title: string;
-    description: string;
+    title?: string;
+    description?: string;
   }
   
   interface SolutionProps {
@@ -18,6 +18,15 @@ export const EstateMgtSoftware:React.FC<EstateMgtProps> = ({title, description})
      <div style={{float: 'left', borderRadius: '50px', padding: '3px', marginRight: '3px' }} className='d-flex align-items-center violet-background'><AiOutlineCheck color='#fff' /></div>
      <div className='d-flex flex-column'>
       <div className='dark-font sora-font bold-600 estate-mgt-product'>{title}</div>
+      <div className='font-size-14 dark-font estate-mg-product-desc'>{description}</div>
+     </div>
+    </div>
+  )
+
+  const EstilityRider = ({description}:EstateMgtProps) => (
+    <div className='gap-10 mt-1'>
+     <div style={{float: 'left', borderRadius: '50px', padding: '3px', marginRight: '3px' }} className='d-flex align-items-center violet-background'><AiOutlineCheck color='#fff' /></div>
+     <div className='d-flex justify-content-between'>
       <div className='font-size-14 dark-font estate-mg-product-desc'>{description}</div>
      </div>
     </div>
@@ -119,6 +128,31 @@ export const Solutions = ({title, description, image}: SolutionProps) => (
        description='Gain insights into your earnings, order history, and payment details through a transparent dashboard.' />
        <EstateMgtSoftware title='Simplified Payment MAnagement'
        description='Securely manage earnings and withdrawals, guaranteeing hassle-free financial processes.' />
+      </div>
+      <div>
+      </div>
+    </div>
+    <div className='custom-col-md-6 justify-center software-img'>
+     <img className='full-width' src={image} alt='software' />
+    </div>
+    </div>
+  )
+
+
+  export const RiderMgtSystem = ({title, description, image}: SolutionProps) => (
+    <div className='custom-row justify-content-between mt-3'>
+    <div className='custom-col-md-6'>
+      <div className='d-flex flex-column'>
+       <div className='violet-color sora-font bold-600 estate-software-title'>{title}</div>
+       <div className='dark-color sora-font estate-software-text'>{description}</div>
+      </div>
+      <div className='d-flex flex-column'>
+       <EstilityRider
+       description="A valid driver's license is your ticket to the road." />
+       <EstilityRider 
+       description="A smartphone to manage orders effectively through our delivery app." />
+       <EstilityRider
+       description='Gain insights into your earnings, order history, and payment details through a transparent dashboard.' />
       </div>
       <div>
       </div>

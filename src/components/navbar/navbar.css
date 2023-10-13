@@ -38,6 +38,10 @@
     font-family: 'Rosario';
     font-size: 20px;
   }
+
+  .estility-logo {
+    border: none!important;
+  }
   
   .nav ul {
     list-style: none;

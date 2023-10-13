@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { NavLink } from "react-router-dom";
+import { NavLink, Link } from "react-router-dom";
 import { FaBars, FaTimes } from "react-icons/fa";
 import "./navbar.css";
 import logo from '../../assets/logo.svg'
@@ -12,10 +12,10 @@ const Navbar = () => {
 
   return (
     <nav className="nav plain-background">
-      <div className="estility-logo">
+      <Link to='/' className="estility-logo">
         <img src={logo} alt='logo'/>
         <div className="dark-color rosario-font">ESTILITY</div>
-      </div>
+      </Link>
       
       <ul className={`menu ${isMenuVisible ? "show" : ""}`}>
         <div className="mobile-toggle">

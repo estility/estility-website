@@ -52,7 +52,7 @@ background:  #F8F8FC
       align-self: center;
       padding: 7px;
       border-radius: 50%;
-      color: #34204D;
+      /* color: #34204D; */
   }
 
   .vendor-item-header {
