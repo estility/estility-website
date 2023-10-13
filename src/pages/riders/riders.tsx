@@ -15,29 +15,29 @@ const Riders = () => {
   const offers = [
     {
       id: 1,
-      title: 'Collect Estate Levies and Dues ',
-      text: 'Receive prompt and automated payments of  community resident levies, eliminating the need for manual or coercive collection means.  ',
+      title: 'Earn with Flexibility ',
+      text:   "As an Estility rider, you'll have the flexibility to choose your working hours and manage your deliveries as per your convenience.",
       icon: <BiBriefcaseAlt size={20}/>
     },
 
     {
       id: 2,
-      title: 'Security and Access Control ',
-      text: 'Secure your residential and gated community with our visitor management solution. Monitor entries and exits, guarantee resident safety, and effortlessly maintain a secure environment. ',
+      title: 'Great Earning Potential ',
+      text: "Your earnings are a reflection of your efforts. With every successful delivery, you contribute to your income and get a clear overview of your earnings.",
       icon:  <MdAccessibilityNew size={20}/>
     },
 
     {
       id: 3,
-      title: 'Grocery Shopping and Cooking Gas Delivery ',
-      text: 'Buy your grocery items and cooking gas from trusted vendors in Nigeria, using our online store and gas delivery platform. Enjoy prompt deliveries of your purchases to your doorstep.',
+      title: 'Supportive Platform ',
+      text: "Our user-friendly delivery app ensures that you're guided through every order, making the entire process easy and efficient.",
       icon: <BiCartAlt size={20}/>
     },
 
     {
       id: 4,
-      title: 'Grocery Shopping and Cooking Gas Delivery ',
-      text: 'Buy your grocery items and cooking gas from trusted vendors in Nigeria, using our online store and gas delivery platform. Enjoy prompt deliveries of your purchases to your doorstep.',
+      title: 'Community Impact ',
+      text: "Being a delivery rider isn't just about delivering groceries – it's about bringing smiles to people's faces. Your timely deliveries contribute to the convenience of residents' lives.",
       icon: <BiCartAlt size={20}/>
     },
   ]
@@ -47,7 +47,7 @@ const Riders = () => {
        hasSubText={false} hasButton={true} buttonText='Request A Demo'/>
         <VendorContent items={offers} heading='Why Estility?'/>
        <div className='rider-div'>
-      <RiderMgtSystem title='Who can be an Estility rider?' 
+      <RiderMgtSystem title='WHO CAN BE AN ESTILITY RIDER ?' 
       description='An Ideal Estility rider must have the following:'
       image={riderimg}
        />
