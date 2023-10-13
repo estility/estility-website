@@ -46,7 +46,7 @@ const Footer = () => {
     {
       id: 2,
       title: 'Careers',
-      link: '/contact',
+      link: '/careers',
     },
 
     {
@@ -96,7 +96,7 @@ const Footer = () => {
     {
       id: 5,
       title: 'Privacy Policy',
-      link: '/privacy policy',
+      link: '/privacy-policy',
     }
   ]
   

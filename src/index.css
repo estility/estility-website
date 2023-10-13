@@ -179,6 +179,10 @@ a {
 .font-size-14 {
   font-size: 14px;
 }
+
+.border-8 {
+  border-radius: 8px;
+}
 /* Define a custom column class for medium-sized screens (col-md-4) */
 .custom-col-md-4 {
   flex: 0 0 33.33333%;

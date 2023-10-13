@@ -33,8 +33,28 @@ text-transform: uppercase;
     line-height: 25px;
   }
 
+  .career-items {
+    border: 1px solid #34204D;
+    padding: 1rem;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .career-img img {
+    max-width: 60%;
+    height: 400px;
+  }
+
+  .career-items-div > :nth-child(2),  .career-items-div > :nth-child(4){
+    margin-left: 1rem;
+  }
+
   @media (max-width: 768px) {
 
+    .career-items-div > :nth-child(2),  .career-items-div > :nth-child(4){
+      margin-left: 0;
+    }
+  
     .product-display {
       padding: 0 2%;
     }

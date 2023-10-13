@@ -1,0 +1,29 @@
+.careers-container {
+ padding: 0 2%;
+}
+
+.job-item {
+border: 1px solid #34204D;
+background:  #F8F8FC;
+padding: 1rem;
+}
+
+
+.job-item .apply-button{
+    border-radius: 8px;
+    background: var(--foundation-violet-normal, #34204D);
+    display: flex;
+padding: 16px 40px;
+justify-content: center;
+align-items: center;
+}
+
+
+.job-item .job-location {
+text-align: center;
+font-family: Sora;
+font-size: 16px;
+font-style: normal;
+font-weight: 300;
+line-height: 28px; 
+}

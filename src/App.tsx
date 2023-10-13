@@ -3,10 +3,8 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Footer from "./pages/footer/Footer";
 import Navbar from "./components/navbar/Navbar";
 import ErrorBoundary from "./components/error-boundary/error-boundary";
-import TermsAndConditions from "./pages/terms-and-conditions/terms-and-conditions";
 import { termsArray } from "./components/terms";
-import BlogContent from "./pages/blog-content/blog-content";
-import Riders from "./pages/riders/riders";
+import Careers from "./pages/careers/careers";
 
 const Home = lazy(() => import("./pages/Home/Home"));
 const Contact = lazy(() => import("./pages/Contact/Contact"));
@@ -15,6 +13,10 @@ const Products = lazy(() => import("./pages/Products/Products"));
 const Vendors = lazy(() => import("./pages/Vendors/Vendors"));
 const Faq = lazy(() => import("./pages/faq/faq"));
 const Blogs = lazy(() => import("./pages/blogs/blogs"));
+const Blog = lazy(() => import("./pages/blog-content/blog-content"));
+const Terms = lazy(() => import("./pages/terms-and-conditions/terms-and-conditions"));
+const Riders = lazy(() => import("./pages/riders/riders"));
+const PrivacyPolicy = lazy(() => import("./pages/privacy-policy/privacy-policy"));
 
 const routes = [
   {
@@ -52,7 +54,7 @@ const routes = [
   {
     id: 7,
     path: '/terms-and-conditions',
-    element: <TermsAndConditions terms={termsArray} />
+    element: <Terms terms={termsArray} />
   },
 
   {
@@ -64,13 +66,25 @@ const routes = [
   {
     id: 9,
     path: '/blog/:id',
-    element: <BlogContent />
+    element: <Blog />
   },
 
   {
     id: 10,
     path: '/riders',
     element: <Riders />
+  },
+
+  {
+    id: 11,
+    path: '/privacy-policy',
+    element: <PrivacyPolicy />
+  },
+
+  {
+    id: 12,
+    path: '/careers',
+    element: <Careers />
   }
 ];
 

@@ -162,3 +162,45 @@ export const Solutions = ({title, description, image}: SolutionProps) => (
     </div>
     </div>
   )
+
+
+  export const Career = ({title, description}:EstateMgtProps) => (
+    <div className='gap-10 career-items custom-col-md-6 d-flex flex-column mt-1 border-8'>
+     <div 
+     style={{float: 'left', borderRadius: '50px', padding: '3px', marginRight: '3px', width:'fit-content', alignSelf: 'center' }}
+      className='d-flex align-items-center violet-background'>
+      <AiOutlineCheck color='#fff' />
+      </div>
+     <div className='d-flex flex-column'>
+      <div className='dark-font sora-font bold-600 estate-mgt-product'>{title}</div>
+      <div className='font-size-14 dark-font estate-mg-product-desc'>{description}</div>
+     </div>
+    </div>
+  )
+
+
+  export const CareerMgtSystem = ({title, description, image}: SolutionProps) => (
+    <div className='custom-row justify-content-between mt-3'>
+    <div className='custom-col-md-6'>
+      <div className='d-flex flex-column'>
+       <div className='violet-color sora-font bold-600 estate-software-title'>{title}</div>
+       <div className='dark-color sora-font estate-software-text'>{description}</div>
+      </div>
+      <div className='custom-row career-items-div'>
+       <Career title='Efficient Order Processing' 
+       description='Seamlessly receive, manage, and process orders from residents through our user-friendly interface.' />
+       <Career title='Real-time Inventory Updates' 
+       description="Track of your inventory in real time, ensuring that you're always stocked up and ready to fulfill orders." />
+       <Career title='Transparent Earnings' 
+       description='Gain insights into your earnings, order history, and payment details through a transparent dashboard.' />
+       <Career title='Simplified Payment MAnagement'
+       description='Securely manage earnings and withdrawals, guaranteeing hassle-free financial processes.' />
+      </div>
+      <div>
+      </div>
+    </div>
+    <div style={{ justifyContent: 'end'}} className='custom-col-md-6 d-flex align-center career-img'>
+     <img className='full-width' src={image} alt='software' />
+    </div>
+    </div>
+  )
