@@ -2,10 +2,13 @@ import React from 'react'
 import { HeaderBanner } from '../terms-and-conditions/terms-and-conditions'
 import { BiBriefcaseAlt, BiCartAlt } from 'react-icons/bi'
 import { MdAccessibilityNew } from 'react-icons/md'
+import { GrLocation } from 'react-icons/gr';
+import { BsArrowUpRight } from 'react-icons/bs';
 import { CareerMgtSystem, RiderMgtSystem } from '../Products/product-items'
 import VendorContent from '../Vendors/vendor-content'
 import careersImg from '../../assets/careers-img.png';
 import './careers.css';
+import { CiClock2 } from 'react-icons/ci';
 
 const offers = [
   {
@@ -66,15 +69,15 @@ interface JobProps {
 const Careers = () => {
   const JobView :React.FC<JobProps>= ({jobTitle, description, location, type}) => (
     <div className='d-flex justify-content-between align-center border-8 job-item sora-font mt-1'>
-      <div className='d-flex flex-column gap-10'>
-        <div className='job-item-title font-size-24 violet-color bold-500'>{jobTitle}</div>
-        <div className='dark-color'>{description}</div>
-        <div className='d-flex gap-10 violet-color'>
-          <button className='job-location'>{location}</button>
-          <button className='job-type'>{type}</button>
+      <div className='d-flex flex-column gap-10 job-desc-buttons'>
+        <div className='job-item-title font-size-24 sora-font violet-color bold-500'>{jobTitle}</div>
+        <div className='dark-color sora-font'>{description}</div>
+        <div className='d-flex gap-10 violet-color sora-font'>
+          <button className='job-location sora-font violet-color d-flex align-center'><GrLocation size={20} />{location}</button>
+          <button className='job-type d-flex align-center violet-color sora-font'><CiClock2 size={20} />{type}</button>
         </div>
       </div>
-      <div style={{ justifyContent: 'end'}} className=' border-danger d-flex flex-column'><button className='violet-background text-white apply-button'>Apply </button></div>
+      <div style={{ justifyContent: 'end'}} className='d-flex flex-column apply-button-div'><button className='violet-background bold-500 sora-font text-white apply-button'>Apply <BsArrowUpRight /> </button></div>
     </div>
   )
 
@@ -94,7 +97,7 @@ const Careers = () => {
           description="At Estility, we're not just offering a job – we're providing a platform for growth and an opportunity to make a meaningful impact and we reward good work with oue amazing offerings."
           image={careersImg}
         />
-        <div className='dark-font bold-600 text-center mt-3'>Our CurrentOpenings</div>
+        <div className='sora-font bold-600 current-openings text-center mt-3'>Our Current Openings</div>
         <div className='d-flex flex-column gap-10'>
           {jobs.map(job => (
             <JobView

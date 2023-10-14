@@ -8,6 +8,7 @@ interface Props {
     placeholder: string;
     label: string;
     type: string;
+    name: string;
 }
 
 const Contact = () => {
@@ -63,7 +64,7 @@ const Contact = () => {
     const [ selectedTopic, setSelectedTopic ] = useState('');
 
     const [ formValues, setFormValues ] = useState({
-        name: '',
+        fullName: '',
         email: '',
         address: '',
         city: '',
@@ -82,10 +83,10 @@ const Contact = () => {
         console.log(formValues)
     }
 
-    const FormInput = ({ placeholder, label, type }: Props) => (
+    const FormInput = ({ placeholder, label, type, name }: Props) => (
         <div className='d-flex flex-column sora-font input-div'>
             <div className='form-label sora-font'>{label}</div>
-            <input onChange={handleChange} className='flexgrow-1' placeholder={placeholder} type={type} />
+            <input name={name} onChange={handleChange} className='flexgrow-1' placeholder={placeholder} type={type} />
         </div>
     )
 
@@ -135,9 +136,14 @@ const Contact = () => {
                 </div>
             </div>
             <form onSubmit={handleSubmit} className='gap-10 flexgrow-1 d-flex flex-column form-container'>
-                <FormInput label='Full Name' type='text' placeholder='Enter your name' />
-                <FormInput label='Email' type='email' placeholder='Enter your email' />
-                <FormInput label='Address' type='text' placeholder='Your current address' />
+             {/* the form input below works while the reusable ones dont work */}
+            {/* <div className='d-flex flex-column sora-font input-div'>
+            <div className='form-label sora-font'>first name</div>
+            <input name='first name' onChange={handleChange} className='flexgrow-1' placeholder='enter ur name' type='text' />
+            </div> */}
+                <FormInput label='Full Name' type='text' placeholder='Enter your name' name='fullName' />
+                <FormInput label='Email' type='email' placeholder='Enter your email' name='email'/>
+                <FormInput label='Address' type='text' placeholder='Your current address' name='address'/>
                 <div className='d-flex gap-10 justify-content-between city-state'>
                     <div className='d-flex flex-column flexgrow-1 sora-font input-div'>
                         <div className='form-label sora-font'>City</div>
