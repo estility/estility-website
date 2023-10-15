@@ -47,6 +47,10 @@ line-height: 48px;
     gap: 20px;
   }
 
+  .job-item .job-buttons {
+    justify-content: center;
+  }
+
   .job-desc-buttons {
     display: flex;
     flex-direction: column;
@@ -54,6 +58,20 @@ line-height: 48px;
     justify-content: center;
     text-align: center;
     gap: 20px;
+  }
+
+  .job-item .job-item-title {
+    font-size: 20px;
+  }
+
+  .job-item .job-item-description {
+    font-size: 14px;
+  }
+
+  .current-openings {
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 48px
   }
 
   .job-item .apply-button{

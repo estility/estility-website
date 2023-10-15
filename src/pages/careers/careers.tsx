@@ -4,6 +4,7 @@ import { BiBriefcaseAlt, BiCartAlt } from 'react-icons/bi'
 import { MdAccessibilityNew } from 'react-icons/md'
 import { GrLocation } from 'react-icons/gr';
 import { BsArrowUpRight } from 'react-icons/bs';
+import { Link } from 'react-router-dom';
 import { CareerMgtSystem, RiderMgtSystem } from '../Products/product-items'
 import VendorContent from '../Vendors/vendor-content'
 import careersImg from '../../assets/careers-img.png';
@@ -41,7 +42,7 @@ const offers = [
   },
 ]
 
-const jobs = [
+export const jobs = [
   {
     id: 1,
     title: 'Product Designer',
@@ -61,24 +62,25 @@ const jobs = [
 ]
 
 interface JobProps {
-  jobTitle: string,
-  description: string,
-  location: string,
-  type: string
+  jobTitle: string;
+  description: string;
+  location: string;
+  type: string;
+  id: number;
 }
 
 const Careers = () => {
-  const JobView :React.FC<JobProps>= ({jobTitle, description, location, type}) => (
+  const JobView :React.FC<JobProps>= ({jobTitle, description, location, type, id}) => (
     <div className='d-flex justify-content-between align-center border-8 job-item sora-font mt-1'>
       <div className='d-flex flex-column gap-10 job-desc-buttons'>
         <div className='job-item-title font-size-24 sora-font violet-color bold-500'>{jobTitle}</div>
-        <div className='dark-color sora-font'>{description}</div>
-        <div className='d-flex gap-10 violet-color sora-font'>
+        <div className='dark-color sora-font job-item-description'>{description}</div>
+        <div className='d-flex gap-10 violet-color sora-font job-buttons'>
           <button className='job-location sora-font violet-color d-flex align-center'><GrLocation size={20} />{location}</button>
           <button className='job-type d-flex align-center violet-color sora-font'><CiClock2 size={20} />{type}</button>
         </div>
       </div>
-      <div style={{ justifyContent: 'end'}} className='d-flex flex-column apply-button-div'><button className='violet-background bold-500 sora-font text-white apply-button'>Apply <BsArrowUpRight /> </button></div>
+      <Link to={`/job/${id}`} style={{ justifyContent: 'end'}} className='d-flex flex-column apply-button-div'><button className='violet-background bold-500 sora-font text-white apply-button'>Apply <BsArrowUpRight /> </button></Link>
     </div>
   )
 
@@ -104,6 +106,7 @@ const Careers = () => {
         <div className='d-flex flex-column gap-10'>
           {jobs.map(job => (
             <JobView
+              id={job.id}
               key={job.id}
               jobTitle={job.title}
               description={job.text}

@@ -17,6 +17,7 @@ const Blog = lazy(() => import("./pages/blog-content/blog-content"));
 const Terms = lazy(() => import("./pages/terms-and-conditions/terms-and-conditions"));
 const Riders = lazy(() => import("./pages/riders/riders"));
 const PrivacyPolicy = lazy(() => import("./pages/privacy-policy/privacy-policy"));
+const Job = lazy(() => import('./pages/job/job'))
 
 const routes = [
   {
@@ -85,6 +86,12 @@ const routes = [
     id: 12,
     path: '/careers',
     element: <Careers />
+  },
+
+  {
+    id: 13,
+    path: '/job/:id',
+    element: <Job />
   }
 ];
 

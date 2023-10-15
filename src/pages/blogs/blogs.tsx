@@ -28,8 +28,6 @@ export const OldArticle: React.FC<ArticleProps> = ({ heading, text, readingTime,
 )
 
 const Blogs = () => {
-    console.log({blogContent})
-
     const NewArticle: React.FC<ArticleProps> = ({ heading, text, readingTime }) => (
         <div className='d-flex flex-column sora-font article-container'>
             <div className='article-title bold-600'>{heading}</div>
