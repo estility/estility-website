@@ -182,8 +182,8 @@ export const Solutions = ({title, description, image}: SolutionProps) => (
   export const CareerMgtSystem = ({title, description, image}: SolutionProps) => (
     <div className='custom-row justify-content-between mt-3'>
     <div className='custom-col-md-6'>
-      <div className='d-flex flex-column'>
-       <div className='violet-color sora-font bold-600 estate-software-title'>{title}</div>
+      <div className='d-flex flex-column gap-10 career-header-description'>
+       <div className='violet-color font-size-24 sora-font bold-600 estate-software-title'>{title}</div>
        <div className='dark-color sora-font estate-software-text'>{description}</div>
       </div>
       <div className='custom-row career-items-div'>
@@ -199,7 +199,7 @@ export const Solutions = ({title, description, image}: SolutionProps) => (
       <div>
       </div>
     </div>
-    <div style={{ justifyContent: 'end'}} className='custom-col-md-6 d-flex align-center career-img'>
+    <div style={{ justifyContent: 'end'}} className='mt-3 custom-col-md-6 d-flex align-center career-img'>
      <img className='full-width' src={image} alt='software' />
     </div>
     </div>

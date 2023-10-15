@@ -9,6 +9,7 @@ import VendorContent from '../Vendors/vendor-content'
 import careersImg from '../../assets/careers-img.png';
 import './careers.css';
 import { CiClock2 } from 'react-icons/ci';
+import Future from '../../components/future/future';
 
 const offers = [
   {
@@ -82,10 +83,12 @@ const Careers = () => {
   )
 
   return (
-    <div className='d-flex flex-column'>
+    <div className='d-flex flex-column gap-10'>
       <HeaderBanner
-        title='Careers'
-        subText="At Estility, we believe that our team is our greatest asset, and we're always on the lookout for passionate individuals who share our vision. Join us in creating seamless living experiences for residents across Nigeria."
+        title='Join Our Team and Shape the Future of Estates Management!'
+        subText="At Estility, we believe that our team is our greatest asset, 
+        and we're always on the lookout for passionate individuals who share our vision. Join us in creating
+         seamless living experiences for residents across Nigeria."
         hasSubText={true}
         hasButton={true}
         buttonText='Apply Now'
@@ -93,7 +96,7 @@ const Careers = () => {
       <div className='careers-container'>
         <VendorContent items={offers} heading='Why Estility?' />
         <CareerMgtSystem
-          title='Software Engineer'
+          title='What we offer'
           description="At Estility, we're not just offering a job – we're providing a platform for growth and an opportunity to make a meaningful impact and we reward good work with oue amazing offerings."
           image={careersImg}
         />
@@ -109,8 +112,8 @@ const Careers = () => {
               />
           ))}
         </div>
+        <div className='violet-background mt-3 mb-3'><Future /></div>
       </div>
-
     </div>
   )
 }
