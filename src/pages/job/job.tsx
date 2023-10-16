@@ -7,6 +7,7 @@ import { BiBriefcaseAlt, BiCartAlt } from 'react-icons/bi'
 
 import { GoShareAndroid } from 'react-icons/go';
 import './job.css';
+import JobForm from './job-form';
 
 interface Props {
   icon: React.ReactNode;
@@ -110,6 +111,7 @@ Ultimately, you will help us build products that are easy to use and visually ap
             </ul>
           </div>
         </div>
+          <JobForm />
     </div>
   )
 }
