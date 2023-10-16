@@ -1,0 +1,60 @@
+.apply-now-button {
+    display: flex;
+padding: 16px 40px;
+justify-content: center;
+align-items: center;
+border-radius: 8px;
+border: 2px solid #34204D;
+}
+
+.job-share {
+  display: flex;
+  gap: 5px;
+padding: 16px 40px;
+justify-content: center;
+align-items: center;
+font-weight: 500;
+}
+
+.job-details {
+    font-size: 16px;
+font-style: normal;
+font-weight: 300;
+line-height: 28px;
+border-radius: 4px;
+border: 1px solid #34204D;
+padding: 5px;
+gap: 3px;
+}
+
+.job-details-title {
+  font-size: 40px;
+  line-height: 48px;
+  color: #000;
+}
+
+.job-description {
+  width: 75%;
+}
+
+.job-personnel {
+    color: #3D4C5E;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 36px;
+}
+
+.job-responsibilities {
+  margin-left: 15px;
+}
+
+.job-responsibilities li {
+    color: #3D4C5E;
+font-size: 16px;
+font-weight: 400;
+line-height: 32px;
+}
+
+.job-details-container {
+  padding: 2rem 3%;
+}
