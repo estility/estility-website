@@ -58,3 +58,57 @@ line-height: 32px;
 .job-details-container {
   padding: 2rem 3%;
 }
+
+.job-details-title {
+  font-size: 24px;
+}
+
+@media (max-width: 768px) {
+  .job-title-details {
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    /* justify-content: center; */
+  }
+
+  .share-job-details {
+   display: flex;
+   flex-direction: row-reverse;
+   justify-content: start;
+    align-items: center;
+    gap: 3px;
+    font-weight: 500;
+  }
+
+  .share-job-details .apply-now-button {
+    border-radius: 8px;
+background:  #34204D;
+display: flex;
+padding: 8px 16px;
+justify-content: center;
+align-items: center;
+color: #fff;
+  }
+
+  .share-job-details .job-share {
+    border-radius: 8px;
+display: flex;
+
+padding: 8px 16px;
+justify-content: center;
+align-items: center;
+color: #34204D;
+  }
+
+  .job-description {
+    width: 100%;
+  }
+
+  .job-description .job-personnel {
+    font-size: 18px;
+  }
+
+  .job-description .job-responsibilities li {
+    font-size: 18px;
+  }
+}

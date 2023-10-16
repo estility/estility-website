@@ -75,14 +75,14 @@ const Job = () => {
 
   return (
     <div className='d-flex flex-column job-details-container'>
-        <div className='full-width d-flex justify-content-between'>
+        <div className='full-width d-flex justify-content-between job-title-details'>
           <div className='sora-font bold-600 job-details-title sora-font'>{filteredJob?.title}</div>
-          <div className='d-flex align-center gap-10'>
+          <div className='d-flex align-center gap-10 share-job-details'>
             <button className='d-flex align-center job-share violet-color bold-500 bg-white'><GoShareAndroid size={20} />Share job</button>
             <button className='apply-now-button bg-white sora-font bold-500 violet-color'>Apply now</button>
           </div>
         </div>
-        <div className='d-flex gap-10 mt-1'>
+        <div className='d-flex gap-10 mt-1 job-details-data'>
          {jobdetails.map((job, index) =>(
             <JobDetails key={index} title={job.title} icon={job.icon} />
          ))}
