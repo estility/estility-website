@@ -6,6 +6,7 @@ import ErrorBoundary from "./components/error-boundary/error-boundary";
 import { termsArray } from "./components/terms";
 import Careers from "./pages/careers/careers";
 import Loading from "./components/not-found/loading";
+import Requestdemo from "./modals/request-demo/request-demo";
 
 const Home = lazy(() => import("./pages/Home/Home"));
 const Contact = lazy(() => import("./pages/Contact/Contact"));
@@ -103,9 +104,11 @@ const NotFound = () => (
 );
 
 const App = () => {
+  const [isOpen, setIsOpen] = React.useState(false);
   return (
     <ErrorBoundary fallback={<div>Something went wrong</div>}>
       <Suspense fallback={<Loading />}>
+      <Requestdemo />
         <Router>
         <Navbar />
           <Routes>

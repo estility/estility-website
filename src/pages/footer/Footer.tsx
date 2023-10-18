@@ -11,27 +11,27 @@ const Footer = () => {
     {
       id: 1,
       name: 'facebook',
-      link: 'https://www.facebook.com/estility',
+      link: 'https://www.facebook.com/Estility.co',
       icon: <BiLogoFacebookCircle />
     },
 
     {
       id: 2,
       name: 'twitter',
-      link: 'https://twitter.com/estility',
+      link: 'https://www.twitter.com/estilityng',
       icon: <AiFillTwitterCircle />
     },
     {
       id: 3,
       name: 'linkedin',
-      link: 'https://www.linkedin.com/company/estility',
+      link: 'https://www.linkedin.com/in/estility',
       icon: <IoLogoLinkedin />
     },
     
     {
       id: 4,
       name: 'instagram',
-      link: 'https://www.instagram.com/estility/',
+      link: 'https://www.instagram.com/estilityng',
       icon: <BiLogoInstagram />
     }
   ]
