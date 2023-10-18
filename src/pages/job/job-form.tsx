@@ -44,7 +44,7 @@ const JobForm = () => {
     };
     const [profilePicture, setProfilePicture] = useState<string>();
     const [selectedFile, setSelectedFile] = useState<any>(null);
-    const [buttonText, setButtonText] = useState<string>("Drag and drop your files here or drag");
+    const [buttonText, setButtonText] = useState<string>("Drag and drop your files here or browse");
     const [loading, setLoading] = useState<boolean>(false);
 
     const handleFileChange = (e: any) => {
@@ -64,10 +64,10 @@ const JobForm = () => {
     };
 
     return (
-        <div className='d-flex flex-column gap-10 align-center full-width application-form'>
-            <div>Apply for this job</div>
-            <div>Please fill the details below</div>
-            <form className='gap-10 d-flex flex-column form-container'>
+        <div className='d-flex flex-column gap-10 align-center full-width application-form sora-font'>
+            <div className="violet-color bold-600 apply-text">Apply for this job</div>
+            <div className="dark-color fill-in-form">Please fill the details below</div>
+            <form className='gap-10 d-flex flex-column form-container font-size-14'>
 
                 <div className='custom-row gap-10 justify-center'>
                     <div className='d-flex flex-column custom-col-md-6 sora-font input-div'>
@@ -76,43 +76,44 @@ const JobForm = () => {
                     </div>
 
                     <div className='d-flex custom-col-md-6 flex-column sora-font input-div'>
-                        <div className='form-label sora-font'>First Name</div>
+                        <div className='form-label sora-font'>Last Name</div>
                         <input className='flexgrow-1' placeholder='first name' type='text' />
                     </div>
                 </div>
 
                 <div className='custom-row gap-10  justify-center'>
                     <div className='d-flex flex-column custom-col-md-6 sora-font input-div'>
-                        <div className='form-label sora-font'>First Name</div>
+                        <div className='form-label sora-font'>Email</div>
                         <input className='flexgrow-1' placeholder='first name' type='text' />
                     </div>
 
                     <div className='d-flex custom-col-md-6 flex-column sora-font input-div'>
-                        <div className='form-label sora-font'>First Name</div>
+                        <div className='form-label sora-font'>Phone number</div>
                         <input className='flexgrow-1' placeholder='first name' type='text' />
                     </div>
                 </div>
 
                 <div className='custom-row gap-10  justify-center'>
                     <div className='d-flex flex-column custom-col-md-6 sora-font input-div'>
-                        <div className='form-label sora-font'>First Name</div>
+                        <div className='form-label sora-font'>LinkedIn url (Optional)</div>
                         <input className='flexgrow-1' placeholder='first name' type='text' />
                     </div>
 
                     <div className='d-flex custom-col-md-6 flex-column sora-font input-div'>
-                        <div className='form-label sora-font'>First Name</div>
+                        <div className='form-label sora-font'>Portfolio url (Optional)</div>
                         <input className='flexgrow-1' placeholder='first name' type='text' />
                     </div>
                 </div>
 
                 <div className='textarea-input' style={{ width: '93%', alignSelf: 'center' }}>
                     <div className='d-flex flex-column sora-font'>
-                        <div className='form-label sora-font'>First Name</div>
+                        <div className='form-label sora-font'>Cover Letter</div>
                         <textarea className='full-width flexgrow-1' placeholder='first name'></textarea>
                     </div>
                     <div className='char-count sora-font'>0/500 Characters</div>
-
-                    <div className="">
+                    
+                    <div className="mt-1">Resume</div>
+                    <div className="mt-1">
                         <button style={{ height: '250px'}} type="button" className="btn btn-primary p-2 mb-3 full-width" onClick={handleSubmit}>
                             {loading ? 'sending...' : buttonText}
                         </button>
@@ -122,7 +123,7 @@ const JobForm = () => {
                         <input type='checkbox' />
                         <div>By submitting this form: You agree to the processing of the submitted personal data in accordance with Estility’s Privacy Policy.</div>
                     </div>
-                    <button className="full-width violet-background sora-font text-white mt-2">Submit Application</button>
+                    <button className="full-width submit-application violet-background sora-font text-white mt-2">Submit Application</button>
                 </div>
             </form>
         </div>

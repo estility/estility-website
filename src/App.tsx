@@ -5,6 +5,7 @@ import Navbar from "./components/navbar/Navbar";
 import ErrorBoundary from "./components/error-boundary/error-boundary";
 import { termsArray } from "./components/terms";
 import Careers from "./pages/careers/careers";
+import Loading from "./components/not-found/loading";
 
 const Home = lazy(() => import("./pages/Home/Home"));
 const Contact = lazy(() => import("./pages/Contact/Contact"));
@@ -104,7 +105,7 @@ const NotFound = () => (
 const App = () => {
   return (
     <ErrorBoundary fallback={<div>Something went wrong</div>}>
-      <Suspense fallback={<div>Loading...</div>}>
+      <Suspense fallback={<Loading />}>
         <Router>
         <Navbar />
           <Routes>

@@ -120,7 +120,25 @@
     height: 300px;
     width: 100%;
   }
+
+  .submit-application {
+    display: flex;
+    border-radius: 8px;
+    padding: 16px 104px;
+    justify-content: center;
+    align-items: center;
+  }
   
+  .apply-text {
+   font-size: 28px;
+   line-height: 28px;
+  }
+
+  .fill-in-form {
+    font-size: 18px;
+    line-height: 28px;
+  }
+
   @media (max-width: 768px) {
     .application-form {
         padding: 24px 16px;
