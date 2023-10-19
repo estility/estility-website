@@ -60,17 +60,17 @@ const routes = [
     element: <Terms terms={termsArray} />
   },
 
-  {
-    id: 8,
-    path: '/blogs',
-    element: <Blogs />
-  },
+  // {
+  //   id: 8,
+  //   path: '/blogs',
+  //   element: <Blogs />
+  // },
 
-  {
-    id: 9,
-    path: '/blog/:id',
-    element: <Blog />
-  },
+  // {
+  //   id: 9,
+  //   path: '/blog/:id',
+  //   element: <Blog />
+  // },
 
   {
     id: 10,

@@ -5,7 +5,7 @@ import Offers from '../../components/offers/offers';
 import { BiBriefcaseAlt, BiCartAlt } from 'react-icons/bi';
 import { MdAccessibilityNew } from 'react-icons/md';
 import { IoBulbOutline } from 'react-icons/io5';
-import frame0ne from '../../assets/frame-1.png';
+import frameOne from '../../assets/frame-1.png';
 import frameTwo from '../../assets/frame-2.png';
 import frameThree from '../../assets/frame-3.png';
 import amico from '../../assets/amico.png';
@@ -52,7 +52,7 @@ const Home = () => {
       title: 'Our Products',
       subtitle: 'Estate Management Software',
       text: 'You can now remotely oversee your estate community in Nigeria, with the ability to add property units, add or remove residents, track estate financial records, monitor visitor logs, attend to resident complaints, and manage estate personnel. ',
-      image: frame0ne
+      image: frameTwo
     },
 
     {
@@ -60,7 +60,7 @@ const Home = () => {
       title: '',
       subtitle: 'Estate Security System',
       text: 'Experience a new level of safety with our state-of-the-art Estate Security System. Gain real-time visitor access monitoring, identity verification, and an overall security enhancement. Stay in control and promote a secure environment within your community. ',
-      image: frameTwo,
+      image: frameOne,
     }, 
 
     {
@@ -91,9 +91,9 @@ const toggle = () => {
       </div>
       
       <div className='learn-more'>
-        <button className='violet-color sora-font learn-more'>
+        <a href='/products' className='violet-color sora-font learn-more'>
           Learn More about our products <AiOutlineArrowRight />
-        </button>
+        </a>
       </div>
       <div className='table-banner'>
       </div>
@@ -106,7 +106,7 @@ const toggle = () => {
             <div className='product-title sora-font'>{product?.title}</div>
             <div className='product-subtitle violet-color'>{product?.subtitle}</div>
             <div className='product-text'>{product.text}</div>
-            <div className='d-flex align-center violet-color learn-more'><a className='sora-font' href='/'>Learn More</a>&nbsp;<AiOutlineArrowRight /></div>
+            <div className='d-flex align-center violet-color learn-more'><a className='sora-font' href='/products'>Learn More</a>&nbsp;<AiOutlineArrowRight /></div>
           </div>
           <div className='flexgrow-1 product-images'>
             <img src={product.image} alt='product' />
@@ -119,7 +119,7 @@ const toggle = () => {
          <div className='vendors-header sora-font text-white'>Vendors</div>
          <div className='vendor-text sora-font text-white'>Grow your business significantly by connecting with an extensive network of residents spanning multiple estates in Nigeria. Manage your products and your orders directly from your 
           computer   or mobile phone! More customers, less traffic! </div>
-          <button className='text-white no-wrap'>Become A Vendor</button>
+          <a href='/contact' className='text-white no-wrap'>Become A Vendor</a>
         </div>
         <div className='flexgrow-1 vendor-group-img'>
           <img src={amico} alt='amico' />

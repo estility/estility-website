@@ -127,6 +127,7 @@ text-transform: uppercase;
 
 .vendor-item {
   gap: 2rem;
+  border: none!important;
 }
 
 .vendor-text {
@@ -135,12 +136,16 @@ font-weight: 400;
 line-height: 24px; 
 }
 
-.vendor-item button {
+
+
+.vendor-item a {
     border-radius: 8px;
     border: 2px solid #FFF;
     background: transparent;
     padding: 16px 40px;
-    width: 50%;
+    text-align: center;
+    cursor: pointer;
+    width: 300px;
 }
 
 .vendors-header {

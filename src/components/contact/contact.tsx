@@ -31,27 +31,27 @@ const Contact = () => {
         {
             id: 1,
             name: 'facebook',
-            link: 'https://www.facebook.com/estility',
+            link: 'https://www.facebook.com/Estility.co',
             icon: <BiLogoFacebookCircle size={20} color='#424246' />
         },
 
         {
             id: 2,
             name: 'twitter',
-            link: 'https://twitter.com/estility',
+            link: 'https://www.twitter.com/estilityng',
             icon: <AiFillTwitterCircle size={20} color='#424246' />
         },
         {
             id: 3,
             name: 'linkedin',
-            link: 'https://www.linkedin.com/company/estility',
+            link: 'https://www.linkedin.com/in/estility',
             icon: <IoLogoLinkedin size={20} color='#424246' />
         },
 
         {
             id: 4,
             name: 'instagram',
-            link: 'https://www.instagram.com/estility/',
+            link: 'https://www.instagram.com/estilityng',
             icon: <BiLogoInstagram size={20} color='#424246' />
         }
     ]
@@ -93,6 +93,11 @@ const Contact = () => {
         {
             id: 4,
             title: 'Partnership'
+        },
+
+        {
+            id: 5,
+            title: 'Become a Vendor'
         }
     ]
 

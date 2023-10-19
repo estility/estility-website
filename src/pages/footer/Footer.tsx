@@ -81,11 +81,11 @@ const Footer = () => {
       link: '/contact',
     },
 
-    {
-      id: 3,
-      title: 'Blogs',
-      link: '/blogs',
-    },
+    // {
+    //   id: 3,
+    //   title: 'Blogs',
+    //   link: '/blogs',
+    // },
 
     {
       id: 4,
