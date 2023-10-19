@@ -9,7 +9,7 @@ export const estateMgt = [
     {
         id: 2,
         question: 'How can I request a demo or get started with Estility?',
-        answer: 'You can click the "Schedule a Demo" link on our website or send us an email at support@estility.co to request a demonstration. (Email to be set up)',
+        answer: 'You can click the "Schedule a Demo" link on our website or send us an email at support@estility.co to request a demonstration. ',
     },
 
     {
@@ -71,7 +71,7 @@ export const estateSecurity = [
     {
         id: 2,
         question: 'How can I request a demo or get started with Estility?',
-        answer: 'You can click the "Schedule a Demo" link on our website or send us an email at support@estility.co to request a demonstration. (Email to be set up)',
+        answer: 'You can click the "Schedule a Demo" link on our website or send us an email at support@estility.co to request a demonstration. ',
     },
 
     {
@@ -145,7 +145,7 @@ export const residentApp = [
     {
         id: 5,
         question: 'How can I request a demo or get started with Estility?',
-        answer: 'You can click the "Schedule a Demo" link on our website or send us an email at support@estility.co to request a demonstration. (Email to be set up)'
+        answer: 'You can click the "Schedule a Demo" link on our website or send us an email at support@estility.co to request a demonstration. '
     },
 
     {
@@ -202,7 +202,7 @@ export const partners = [
     {
         id: 3,
         question: 'How can I request a demo or get started with Estility?',
-        answer: 'You can click the "Schedule a Demo" link on our website or send us an email at support@estility.co to request a demonstration. (Email to be set up)'
+        answer: 'You can click the "Schedule a Demo" link on our website or send us an email at support@estility.co to request a demonstration. '
     },
 
     {

@@ -21,8 +21,8 @@ interface HeaderBannerProps {
 
 export const HeaderBanner:React.FC<HeaderBannerProps> = ({title, onClick, hasLink, linkText, hasSubText, subText, hasButton, buttonText}) => (
   <div className='d-flex flex-column violet-background terms-and'>
-  <div className='terms-and-condition-banner d-flex flex-column text-center sora-font text-white bold-600'>{title}</div>
-  { hasSubText ? <div className='sora-font t-andc-subtext text-center text-white'>{subText}</div> : null }
+  <div style={{width: '70%', alignSelf:'center'}} className='terms-and-condition-banner d-flex flex-column text-center sora-font text-white bold-600'>{title}</div>
+  { hasSubText ? <div style={{width: '70%', alignSelf:'center'}} className='sora-font t-andc-subtext text-center text-white'>{subText}</div> : null }
   { hasButton===true ? <button onClick={onClick} className='violet-color bold-500 sora-font banner-button'>{buttonText}</button> : null }
   { hasLink===true && linkText ? <Link to={linkText} className='violet-color bold-500 sora-font banner-button'>{buttonText}</Link> : null }
 
@@ -31,7 +31,6 @@ export const HeaderBanner:React.FC<HeaderBannerProps> = ({title, onClick, hasLin
 const TermsAndConditions = ({terms}: Props) => {
 
     const highlightEstility = (text: string) => {
-        // Use a regular expression to find and replace "Estility" with the colored version
     return text.replace(/Estility/gi, '<span class="estility-text">Estility</span>');
       };
 

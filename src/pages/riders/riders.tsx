@@ -43,7 +43,7 @@ const Riders = () => {
   ]
   return (
     <div className='d-flex flex-column vendor-container'>
-       <HeaderBanner title='Deliver Convenience One Order at a Time!' 
+       <HeaderBanner title='Deliver Convenience, One Order at a Time!' 
        hasSubText={false} hasButton={false} hasLink={true} buttonText='Become A Rider' linkText='/contact' />
         <VendorContent items={offers} heading='Why Estility?'/>
        <div className='rider-div'>
