@@ -108,8 +108,8 @@ const validationSchema = Yup.object({
     if(display === false) return null;
     return (
     <div className='modal-overlay'>
-        <div className='modal-content-body'>
-    <div className='d-flex flex-column sora-font'>
+        <div className='modal-content-body' >
+    <div className='d-flex flex-column sora-font' >
       <div className='d-flex justify-content-between'>
          <div className='dark-font bold-600 font-size-24 sora-font'>Schedule Demo</div>
          <button className='bold-500 close-form bg-transparent' onClick={toggle}><FaTimes /></button>
@@ -253,13 +253,13 @@ const validationSchema = Yup.object({
                     <div className='char-count sora-font mt-1'>0/500 Characters</div>
                                        
                     <div className="d-flex align-center gap-10 mt-1">
-                        <input type='checkbox' />
-                        <div>By submitting this form: You agree to the processing of the submitted personal data in accordance with Estility’s Privacy Policy.</div>
+                        <input type='checkbox'/>
+                        <div className='agreement font-size-14 sora-font'>By submitting this form: You agree to the processing of the submitted personal data in accordance with Estility’s Privacy Policy.</div>
                     </div>
                     <button disabled={loading} 
                     onClick={() => handleSubmit(formikProps.values)} type="button" 
                     className="full-width submit-application violet-background sora-font text-white mt-2">
-                        {loading===true ? 'Sending...' : 'Submit Application' }</button>
+                        {loading===true ? 'Sending...' : 'Submit' }</button>
                 </div>
             </form>
         )}

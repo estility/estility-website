@@ -80,7 +80,8 @@ const Careers = () => {
           <button className='job-type d-flex align-center violet-color sora-font'><CiClock2 size={20} />{type}</button>
         </div>
       </div>
-      <Link to={`/job/${id}`} style={{ justifyContent: 'end'}} className='d-flex flex-column apply-button-div'><button className='violet-background bold-500 sora-font text-white apply-button'>Apply <BsArrowUpRight /> </button></Link>
+      <Link to='https://forms.gle/b644UDczfPSAyGhh9' target='_blank' rel="noreferrer" style={{ justifyContent: 'end'}} className='d-flex flex-column apply-button-div'><button className='violet-background bold-500 sora-font text-white apply-button'>Apply <BsArrowUpRight /> </button></Link>
+      {/* <Link to={`/job/${id}`} style={{ justifyContent: 'end'}} className='d-flex flex-column apply-button-div'><button className='violet-background bold-500 sora-font text-white apply-button'>Apply <BsArrowUpRight /> </button></Link> */}
     </div>
   )
 
@@ -92,7 +93,9 @@ const Careers = () => {
         and we're always on the lookout for passionate individuals who share our vision. Join us in creating
          seamless living experiences for residents across Nigeria."
         hasSubText={true}
-        hasButton={true}
+        hasLink={true}
+        hasButton={false}
+        linkText='https://forms.gle/b644UDczfPSAyGhh9'
         buttonText='Apply Now'
       />
       <div className='careers-container'>

@@ -2,6 +2,7 @@ import React from 'react'
 import { termsArray } from '../../components/terms'
 import './terms-and-conditions.css';
 import Future from '../../components/future/future';
+import { Link } from 'react-router-dom';
 
 interface Props {
     terms: typeof termsArray
@@ -13,13 +14,18 @@ interface HeaderBannerProps {
     subText?: string;
     hasButton?: boolean
     buttonText?: string;
+    hasLink?:boolean;
+    linkText?:string;
+    onClick?:() => void;
 }
 
-export const HeaderBanner:React.FC<HeaderBannerProps> = ({title, hasSubText, subText, hasButton, buttonText}) => (
+export const HeaderBanner:React.FC<HeaderBannerProps> = ({title, onClick, hasLink, linkText, hasSubText, subText, hasButton, buttonText}) => (
   <div className='d-flex flex-column violet-background terms-and'>
   <div className='terms-and-condition-banner d-flex flex-column text-center sora-font text-white bold-600'>{title}</div>
   { hasSubText ? <div className='sora-font t-andc-subtext text-center text-white'>{subText}</div> : null }
-  { hasButton===true ? <button className='sora-font banner-button'>{buttonText}</button> : null }
+  { hasButton===true ? <button onClick={onClick} className='violet-color bold-500 sora-font banner-button'>{buttonText}</button> : null }
+  { hasLink===true && linkText ? <Link to={linkText} className='violet-color bold-500 sora-font banner-button'>{buttonText}</Link> : null }
+
   </div>
 )
 const TermsAndConditions = ({terms}: Props) => {

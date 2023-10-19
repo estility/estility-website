@@ -1,20 +1,28 @@
 import React from 'react'
 import Future, { Props } from '../../components/future/future'
 import './about-us.css';
-import image from '../../assets/blog-banner.png';
+import image from '../../assets/about-banner.png';
 import Offers from '../../components/offers/offers';
 import { BiBriefcaseAlt, BiCartAlt } from 'react-icons/bi';
 import { IoBulbOutline } from 'react-icons/io5';
 import { MdAccessibilityNew } from 'react-icons/md';
 import Contact from '../../components/contact/contact';
-import imageBanner from '../../assets/bg-3.png';
+import imageBanner from '../../assets/bg-2.png';
+import { useDispatch, useSelector } from 'react-redux';
+import { showForm } from '../../redux/reducers/display-form-reducer';
 
 export const BottomBanner:React.FC<Props> = ({title, text, buttonText}) => {
+  const dispatch = useDispatch();
+  const display = useSelector((state: any) => state?.displayForm);
+ 
+const toggle = () => {
+  dispatch(showForm())
+}
   return (
     <div className='about-container full-width text-center d-flex flex-column text-white sora-font align-items-center justify-center'>
         <div className='about-title'>{title}</div>
         <div className='about-subtitle'>{text}</div>
-         <button className='violet-color about-button'>{buttonText}</button>
+         <button onClick={toggle} className='violet-color about-button'>{buttonText}</button>
     </div>
   )
 }
@@ -24,29 +32,29 @@ const AboutUs = () => {
   const offers = [
     {
       id: 1,
-      title: 'Collect Estate Levies and Dues ',
-      text: 'Receive prompt and automated payments of  community resident levies, eliminating the need for manual or coercive collection means.  ',
+      title: 'Customer-Centric Focus ',
+      text: "We are servants of your needs. Our solutions are crafted to simplify your tasks, amplify convenience, and heighten security. Our focus isn't just on technology; it's on your experience, your satisfaction, and your success.",
       icon: <BiBriefcaseAlt size={20}/>
     },
 
     {
       id: 2,
-      title: 'Security and Access Control ',
-      text: 'Secure your residential and gated community with our visitor management solution. Monitor entries and exits, guarantee resident safety, and effortlessly maintain a secure environment. ',
+      title: 'Thriving Partnership Network',
+      text: "Collaboration is at our core. We don't just offer products; we provide gateways to a network of valuable partnerships. Our ecosystem empowers you with connections to elevate your estate management journey.",
       icon:  <MdAccessibilityNew size={20}/>
     },
 
     {
       id: 3,
-      title: 'Grocery Shopping and Cooking Gas Delivery ',
-      text: 'Buy your grocery items and cooking gas from trusted vendors in Nigeria, using our online store and gas delivery platform. Enjoy prompt deliveries of your purchases to your doorstep.',
+      title: 'Innovative Approach',
+      text: "Innovation is woven into the fabric of our company. We are trailblazers, unafraid to challenge conventions, set trends, and create solutions. With us, you're not merely keeping pace; you're forging ahead in an ever-evolving landscape.",
       icon: <BiCartAlt size={20}/>
     },
 
     {
       id: 4,
-      title: 'Purchase Electricity  ',
-      text: 'Buy Prepaid/Postpaid electricity easily with our electricity purchase feature, 24 hours a day, anywhere in Nigeria. ',
+      title: 'Comprehensive Solutions ',
+      text: 'Our product suite is a reflection of our commitment. From the Estate Management Software, a comprehensive hub of estate oversight, to the Resident App, designed for seamless interaction, every solution stems from a deep understanding of the ecosystem.',
       icon: <IoBulbOutline size={20}/>
     }
   ]
@@ -80,7 +88,7 @@ const AboutUs = () => {
           </div>
           </div>
         </div>
-        <div className=' story-image custom-col-md-6'><img src={image} alt=''  /></div>
+        <div className=' story-image custom-col-md-6'><img src={imageBanner} alt=''  /></div>
        </div>
       </div>
       <Offers items={offers} heading='Centered on You, the customer'/>
