@@ -33,11 +33,12 @@ const Vendors = () => {
       icon: <BiCartAlt size={20}/>
     },
   ]
+
   return (
     <div className='d-flex flex-column vendor-container'>
        <HeaderBanner title='Become an Estility Vendor Let’s Flourish Together' 
         subText='We welcome vendors to be a part of our vibrant network and contribute to elevating community living.'
-       hasSubText={true} hasButton={true} buttonText='Request A Demo'/>
+       hasSubText={true} hasButton={false} hasLink={true} linkText='/contact' buttonText='Become A Partner' />
      
         <VendorContent 
       items={offers} 

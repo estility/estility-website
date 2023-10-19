@@ -7,6 +7,7 @@ import { termsArray } from "./components/terms";
 import Careers from "./pages/careers/careers";
 import Loading from "./components/not-found/loading";
 import Requestdemo from "./modals/request-demo/request-demo";
+import { Portal } from 'react-portal';
 
 const Home = lazy(() => import("./pages/Home/Home"));
 const Contact = lazy(() => import("./pages/Contact/Contact"));
@@ -104,7 +105,12 @@ const NotFound = () => (
 );
 
 const App = () => {
-  const [isOpen, setIsOpen] = React.useState(false);
+  const [isOpen, setIsOpen] = React.useState(true);
+
+  const handleToggleWidget = () => {
+    setIsOpen(!isOpen);
+  };
+
   return (
     <ErrorBoundary fallback={<div>Something went wrong</div>}>
       <Suspense fallback={<Loading />}>
@@ -120,7 +126,22 @@ const App = () => {
         </Router>
       </Suspense>
       <Footer />
+      
+        <Portal container={document.body}>
+          <div className="jsd-widget">
+            <JSDWidget />
+          </div>
+        </Portal>
+      
+
+      {/* <button onClick={handleToggleWidget}>Toggle Widget</button> */}
     </ErrorBoundary>
+  );
+};
+
+const JSDWidget = () => {
+  return (
+    <script data-jsd-embedded data-key="24f6f973-a447-4964-9819-92d7d8611e76" data-base-url="https://jsd-widget.atlassian.com" src="https://jsd-widget.atlassian.com/assets/embed.js"></script>
   );
 };
 

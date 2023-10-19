@@ -119,7 +119,7 @@ const Footer = () => {
         ))}
       </div>
       </div>
-      <div className='footer-links'>
+      <div className='footer-links sora-font'>
         <div className='header'>Company</div>
         <div className='footer-links-container'>
         {footerLinks.map((footerLink) => (
@@ -129,7 +129,7 @@ const Footer = () => {
         ))}
         </div>
       </div>
-      <div className='footer-links'>
+      <div className='footer-links sora-font'>
         <div className='header'>Support</div>
         <div className='footer-links-container'>
         {supportFooterLinks.map((footerLink) => (

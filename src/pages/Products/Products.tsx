@@ -8,14 +8,25 @@ import './product.css';
 import { BottomBanner } from '../About/AboutUs';
 import Future from '../../components/future/future';
 import { Solutions, ResidentApp, SecuritySystem } from './product-items';
+import { useDispatch, useSelector } from 'react-redux'
+import { showForm } from '../../redux/reducers/display-form-reducer'
 
 const Products = () => {
   
+  const dispatch = useDispatch();
+  const display = useSelector((state: any) => state?.displayForm);
+ 
+const toggle = () => {
+  dispatch(showForm())
+}
+
   return (
     <div className='d-flex flex-column product-container'>
       <HeaderBanner title='Smart Solutions for Easy Living' 
         subText='At ESTILITY, we believe in simplifying your life, enhancing security, and connecting communities.'
-       hasSubText={true} hasButton={true} buttonText='Request A Demo'/>
+       hasSubText={true} hasButton={true} buttonText='Request A Demo' linkText='/contact'
+       onClick={toggle}
+        />
        <div className='d-flex flex-column product-display'>
         <Solutions title='ESTATE MANAGEMENT SOFTWARE' 
         description='Estate Management Software: Make estate management easy with our 
