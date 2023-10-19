@@ -2,6 +2,7 @@ import React from 'react';
 import './future.css';
 import { useDispatch, useSelector } from 'react-redux';
 import { showForm } from '../../redux/reducers/display-form-reducer';
+import { Link } from 'react-router-dom';
 
 export interface Props {
   title: string;
@@ -15,7 +16,9 @@ export const BottomBanner:React.FC<Props> = ({title, text, buttonText, onClick})
     <div className='future-container text-center violet-background d-flex flex-column text-white sora-font align-items-center justify-center'>
         <div className='future-title'>{title}</div>
         <div className='future-subtitle'>{text}</div>
-         <button onClick={onClick} className='violet-color future-button'>{buttonText}</button>
+         {onClick ? <button onClick={onClick} className='violet-color future-button'>{buttonText}</button> : 
+        <Link className='violet-color future-link' to='/contact' >{buttonText}</Link>
+         }
     </div>
   )
 }
