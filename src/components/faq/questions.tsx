@@ -141,7 +141,7 @@ const Questions = () => {
      <div className='view-all-button'><button onClick={() => setSelectedTopic('All')} disabled={selectedTopic===''} className='violet-background text-white sora-font view-all'>View all FAQs</button></div>
     <BottomBanner 
     title="Can't find what you're looking for?"
-    text='Can’t find answers you’re looking for/ Please reach out to our amazing support team'
+    text='Can’t find answers you’re looking for, Please reach out to our amazing support team'
     buttonText='Get in Touch' />
     </div>
   )

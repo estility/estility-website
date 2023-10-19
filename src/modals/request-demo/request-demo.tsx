@@ -33,7 +33,8 @@ const validationSchema = Yup.object({
     const dispatch = useDispatch();
     const display = useSelector((state: any) => state?.displayForm);
     const [loading, setLoading] = useState(false);
-    const [isMenuVisible, setIsMenuVisible] = useState(false);
+    const [ agreed, setAgreed ] = useState(false);
+
     const [ data, setData ] = useState({
         name: '',
         email: '',
@@ -50,9 +51,7 @@ const validationSchema = Yup.object({
   }
 
   const handleSubmit = async(userdata:any) => {
-    setLoading(true);
     setData(userdata)
-
     const info = {
         type: selectedTopic,
         name: userdata.name,
@@ -64,7 +63,11 @@ const validationSchema = Yup.object({
         state: userdata.state,
         message: userdata.additionalComments,
     }
-
+    if(agreed === false ){
+        alert('Please accept the privacy policy')
+        return 
+    }
+    setLoading(true);
     try {
         const response = await axios.post(`${baseUrl}estility/v1/3231/website/demo`, info);
         // Handle the response data as needed
@@ -130,9 +133,7 @@ const validationSchema = Yup.object({
       }}
       validationSchema={validationSchema}
       onSubmit={(values, actions) => {
-        console.log('hi')
-        console.log(values)
-        actions.resetForm();
+        console.log('')
       }}
       >
         {(formikProps:any) => (
@@ -145,7 +146,7 @@ const validationSchema = Yup.object({
                          onChange={formikProps.handleChange("name")}
                          value={formikProps.values.name}
                          onBlur={formikProps.handleBlur('name')}
-                        placeholder='first name' 
+                        placeholder='First name' 
                         type='text' />
                 <p className='fw-bold text-danger'>{formikProps.touched.name  && formikProps.errors.name}</p>
                     </div>
@@ -198,7 +199,7 @@ const validationSchema = Yup.object({
                         value={formikProps.values.address}
                         onBlur={formikProps.handleBlur('address')}
                         className='flexgrow-1' 
-                        placeholder='address' type='text' />
+                        placeholder='Address' type='text' />
         <p className='fw-bold text-danger'>{formikProps.touched.address  && formikProps.errors.address}</p>
 
                     </div>
@@ -212,7 +213,7 @@ const validationSchema = Yup.object({
                         value={formikProps.values.city}
                         onBlur={formikProps.handleBlur('city')}
                         className='flexgrow-1' 
-                        placeholder='city' 
+                        placeholder='City' 
                         type='text' />
                 <p className='fw-bold text-danger'>{formikProps.touched.city  && formikProps.errors.city}</p>
                     </div>
@@ -224,7 +225,7 @@ const validationSchema = Yup.object({
                         value={formikProps.values.state}
                         onBlur={formikProps.handleBlur('state')}
                         className='flexgrow-1' 
-                        placeholder='state' 
+                        placeholder='State' 
                         type='text' />
                 <p className='fw-bold text-danger'>{formikProps.touched.state  && formikProps.errors.state}</p>
 
@@ -246,14 +247,14 @@ const validationSchema = Yup.object({
                         value={formikProps.values.additionalComments}
                         onBlur={formikProps.handleBlur('state')}
                         className='full-width flexgrow-1' 
-                        placeholder='first name'></textarea>
+                        placeholder='Type your comment'></textarea>
                 <p className='fw-bold text-danger'>{formikProps.touched.additionalComments  && formikProps.errors.additionalComments}</p>
                     </div>
                     
                     <div className='char-count sora-font mt-1'>0/500 Characters</div>
                                        
                     <div className="d-flex align-center gap-10 mt-1">
-                        <input type='checkbox'/>
+                        <input type='checkbox' checked={agreed} required onChange={() => setAgreed(true)}/>
                         <div className='agreement font-size-14 sora-font'>By submitting this form: You agree to the processing of the submitted personal data in accordance with Estility’s Privacy Policy.</div>
                     </div>
                     <button disabled={loading} 
