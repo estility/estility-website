@@ -11,7 +11,7 @@ const Footer = () => {
     {
       id: 1,
       name: 'facebook',
-      link: 'https://www.facebook.com/Estility.co',
+      link: 'https://www.facebook.com/estilityng',
       icon: <BiLogoFacebookCircle />
     },
 

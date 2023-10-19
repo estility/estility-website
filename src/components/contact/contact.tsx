@@ -31,7 +31,7 @@ const Contact = () => {
         {
             id: 1,
             name: 'facebook',
-            link: 'https://www.facebook.com/Estility.co',
+            link: 'https://www.facebook.com/estilityng',
             icon: <BiLogoFacebookCircle size={20} color='#424246' />
         },
 
@@ -211,7 +211,7 @@ const Contact = () => {
 
                 <div className='sora-font'>Message</div>
 
-                <textarea name='message' onChange={handleChange} placeholder='Start typing'></textarea>
+                <textarea name='message' onChange={handleChange} placeholder='Type your message'></textarea>
 
                 <div className='char-count sora-font'>0/500 Characters</div>
 

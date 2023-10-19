@@ -41,10 +41,10 @@ const toggle = () => {
       {isMenuVisible ? <FaTimes className="close-menu" onClick={toggleMenu} /> : null}
       </div>
         <NavLink className='rosario-font' to="/">Home</NavLink>
-        <NavLink className='rosario-font' to="/contact">Contact</NavLink>
         <NavLink className='rosario-font' to="/about-us">About Us</NavLink>
         <NavLink className='rosario-font' to="/products">Products</NavLink>
         <NavLink className='rosario-font' to="/vendors">Vendors</NavLink>
+        <NavLink className='rosario-font' to="/contact">Contact</NavLink>
         {/* {isMenuVisible ? <button onClick={() => setIsOpen(true)} className="small-menu-demo violet-color">Request A Demo</button> : null} */}
         {isMenuVisible ? <button onClick={toggle} className="small-menu-demo violet-color">Request A Demo</button> : null}
       </ul>
