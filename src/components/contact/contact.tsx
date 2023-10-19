@@ -193,7 +193,7 @@ const Contact = () => {
                 <div className='d-flex gap-10 justify-content-between city-state'>
                     <div className='d-flex flex-column flexgrow-1 sora-font input-div'>
                         <div className='form-label sora-font'>City</div>
-                        <input name='city' onChange={handleChange} className='flexgrow-1' placeholder='Enter ur city' type='text' />
+                        <input name='city' onChange={handleChange} className='flexgrow-1' placeholder='Enter your city' type='text' />
                     </div>
                     <div className='d-flex flex-column flexgrow-1 sora-font input-div'>
                         <div className='form-label sora-font'>State</div>

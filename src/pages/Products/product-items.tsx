@@ -14,8 +14,9 @@ interface EstateMgtProps {
   }
 
 export const EstateMgtSoftware:React.FC<EstateMgtProps> = ({title, description}) => (
-    <div className='gap-10 custom-col-md-6 mt-1'>
-     <div style={{float: 'left', borderRadius: '50px', padding: '3px', marginRight: '3px' }} className='d-flex align-items-center violet-background'><AiOutlineCheck color='#fff' /></div>
+    <div className='gap-10 custom-col-md-6 mt-1 sora-font'>
+     <div style={{float: 'left', borderRadius: '50px', padding: '3px', marginRight: '3px' }} 
+     className='d-flex align-items-center sora-font violet-background'><AiOutlineCheck color='#fff' /></div>
      <div className='d-flex flex-column'>
       <div className='dark-font sora-font bold-600 estate-mgt-product'>{title}</div>
       <div className='font-size-14 dark-font estate-mg-product-desc'>{description}</div>

@@ -106,7 +106,7 @@ const Footer = () => {
       <div className='estility-copy-right'>
        <div className='estility-logo-footer'>
         <img src={logo} alt='logo'/>
-        <div>Estility</div>
+        <div className='rosario-font'>Estility</div>
       </div>
       <div className='copyright-text sora-font'>Copyright © 2023 Estility. All rights reserved</div>
       <div className='social-icons'>
