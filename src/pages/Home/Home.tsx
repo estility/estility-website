@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './home.css';
 import { AiOutlineArrowRight } from 'react-icons/ai';
 import Offers from '../../components/offers/offers';
@@ -12,6 +12,8 @@ import amico from '../../assets/amico.png';
 import Faq from '../../components/faq/questions';
 import Contact from '../../components/contact/contact';
 import Future from '../../components/future/future';
+import { useDispatch, useSelector } from 'react-redux';
+import { showForm } from '../../redux/reducers/display-form-reducer';
 
 const Home = () => {
   const offers = [
@@ -70,6 +72,13 @@ const Home = () => {
     }
   ]
   
+  const dispatch = useDispatch();
+  const display = useSelector((state: any) => state?.displayForm);
+ 
+const toggle = () => {
+  dispatch(showForm())
+}
+
   return (
     <div className='homepage-container'>
       <div className='banner'>
@@ -78,7 +87,7 @@ const Home = () => {
         </div>
         <div className='banner-subheader sora-font'>Our  software solution automates estate and facility management for Nigerian landlords and residents. See how our software simplifies estate management. </div>
       <div className='request-demo'>
-        <button className='violet-background'>Request Demo</button>
+        <button onClick={toggle} className='violet-background'>Request Demo</button>
       </div>
       
       <div className='learn-more'>

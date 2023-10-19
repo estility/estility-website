@@ -7,6 +7,7 @@ import { Formik, Form, Field, ErrorMessage } from 'formik';
 import * as Yup from 'yup';
 import axios from 'axios';
 import SecondSuccess from '../success/success';
+import { FaTimes } from 'react-icons/fa';
 
 const validationSchema = Yup.object({
     name: Yup.string().required('name is required').min(3, 'name must be at least 3 characters').max(30, 'name must not exceed 30 characters'),
@@ -65,14 +66,14 @@ const validationSchema = Yup.object({
     }
 
     try {
-        const response = await axios.post(`${baseUrl}/estility/v1/3231/website/demo`, info);
+        const response = await axios.post(`${baseUrl}estility/v1/3231/website/demo`, info);
         // Handle the response data as needed
         setLoading(false)
         console.log(response.data);
         setOnFinish(true);
-        setTimeout(() => {
-            dispatch(hideForm());
-        }, 2000)
+        // setTimeout(() => {
+        //     dispatch(hideForm());
+        // }, 2000)
       } catch (error) {
         setLoading(false)
         console.error('Axios request error:', error);
@@ -84,22 +85,22 @@ const validationSchema = Yup.object({
   const purposeForm = [
     {
         id: 1,
-        title: 'General',
+        title: 'Estate Management Software',
     },
 
     {
         id: 2,
-        title: 'Our Services'
+        title: 'Estate Security Software'
     },
 
     {
         id: 3,
-        title: 'Support'
+        title: 'Resident App'
     },
 
     {
         id: 4,
-        title: 'Partnership'
+        title: 'Vendor Management Software'
     }
 ]
   
@@ -111,7 +112,7 @@ const validationSchema = Yup.object({
     <div className='d-flex flex-column sora-font'>
       <div className='d-flex justify-content-between'>
          <div className='dark-font bold-600 font-size-24 sora-font'>Schedule Demo</div>
-         <button className='bold-500 close-form' onClick={toggle}>X</button>
+         <button className='bold-500 close-form bg-transparent' onClick={toggle}><FaTimes /></button>
       </div>
       <div className='mt-1 text-heading'>We are always on the look out to partner with indigenous brands and vendors to help serve our customers</div>
       <Formik
@@ -229,8 +230,9 @@ const validationSchema = Yup.object({
 
                     </div>
                 </div>
-
-                <div className='d-flex flex-wrap justify-content-between purpose-button mt-1'>
+               
+               <div className='sora-font font-size-14 what-intersts-you'>Which product are you interested in?</div>
+                <div className='d-flex flex-wrap justify-content-between interest mt-1'>
                     {purposeForm?.map((purpose) => (
                         <button type='button' onClick={() => setSelectedTopic(purpose?.title)} className={`sora-font flexgrow-1 ${selectedTopic === purpose?.title ? 'selected' : ''}`} key={purpose?.id}>{purpose?.title}</button>
                     ))}
