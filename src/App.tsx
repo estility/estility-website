@@ -9,95 +9,7 @@ import Loading from "./components/not-found/loading";
 import Requestdemo from "./modals/request-demo/request-demo";
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-
-const Home = lazy(() => import("./pages/Home/Home"));
-const Contact = lazy(() => import("./pages/Contact/Contact"));
-const AboutUs = lazy(() => import("./pages/About/AboutUs"));
-const Products = lazy(() => import("./pages/Products/Products"));
-const Vendors = lazy(() => import("./pages/Vendors/Vendors"));
-const Faq = lazy(() => import("./pages/faq/faq"));
-const Blogs = lazy(() => import("./pages/blogs/blogs"));
-const Blog = lazy(() => import("./pages/blog-content/blog-content"));
-const Terms = lazy(() => import("./pages/terms-and-conditions/terms-and-conditions"));
-const Riders = lazy(() => import("./pages/riders/riders"));
-const PrivacyPolicy = lazy(() => import("./pages/privacy-policy/privacy-policy"));
-const Job = lazy(() => import('./pages/job/job'))
-
-const routes = [
-  {
-    id: 1,
-    path: "/",
-    element: <Home />,
-  },
-  {
-    id: 2,
-    path: "/contact",
-    element: <Contact />,
-  },
-  {
-    id: 3,
-    path: "/about-us",
-    element: <AboutUs />,
-  },
-  {
-    id: 4,
-    path: "/products",
-    element: <Products />,
-  },
-  {
-    id: 5,
-    path: "/vendors",
-    element: <Vendors />,
-  },
-
-  {
-    id: 6,
-    path: '/faq',
-    element: <Faq />
-  },
-
-  {
-    id: 7,
-    path: '/terms-and-conditions',
-    element: <Terms terms={termsArray} />
-  },
-
-  // {
-  //   id: 8,
-  //   path: '/blogs',
-  //   element: <Blogs />
-  // },
-
-  // {
-  //   id: 9,
-  //   path: '/blog/:id',
-  //   element: <Blog />
-  // },
-
-  {
-    id: 10,
-    path: '/riders',
-    element: <Riders />
-  },
-
-  {
-    id: 11,
-    path: '/privacy-policy',
-    element: <PrivacyPolicy />
-  },
-
-  {
-    id: 12,
-    path: '/careers',
-    element: <Careers />
-  },
-
-  {
-    id: 13,
-    path: '/job/:id',
-    element: <Job />
-  }
-];
+import routes from "./routes";
 
 const NotFound = () => (
   <div>
@@ -106,8 +18,6 @@ const NotFound = () => (
 );
 
 const App = () => {
-  const [isOpen, setIsOpen] = React.useState(true);
-
   return (
     <ErrorBoundary fallback={<div>Something went wrong</div>}>
       <Suspense fallback={<Loading />}>
