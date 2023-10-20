@@ -10,16 +10,12 @@ import Requestdemo from "./modals/request-demo/request-demo";
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import routes from "./routes";
-
-const NotFound = () => (
-  <div>
-    <h1>404 - Page Not Found</h1>
-  </div>
-);
+import NotFound from "./components/not-found/not-found";
+import FallBack from "./components/not-found/fallback";
 
 const App = () => {
   return (
-    <ErrorBoundary fallback={<div>Something went wrong</div>}>
+    <ErrorBoundary fallback={<FallBack />}>
       <Suspense fallback={<Loading />}>
       <ToastContainer />
       <Requestdemo />
