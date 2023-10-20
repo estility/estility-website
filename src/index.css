@@ -29,10 +29,10 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: 'Sora', sans-serif!important;
 }
 
 body {
+  font-family: 'Sora', sans-serif;
   scroll-behavior: smooth;
 }
 

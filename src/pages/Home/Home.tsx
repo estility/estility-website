@@ -85,7 +85,7 @@ const toggle = () => {
         <div className='sora-font violet-color banner-header'>
         Elevate Your Community and Estate Management in Nigeria with innovative solutions. 
         </div>
-        <div className='banner-subheader sora-font'>Our  software solution automates estate and facility management for Nigerian landlords and residents. See how our software simplifies estate management. </div>
+        <div className='banner-subheader sora-font'>Our software solution automates estate and facility management for Nigerian landlords and residents. See how our software simplifies estate management. </div>
       <div className='request-demo'>
         <button onClick={toggle} className='violet-background'>Request Demo</button>
       </div>

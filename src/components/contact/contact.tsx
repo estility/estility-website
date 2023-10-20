@@ -5,6 +5,7 @@ import { AiFillTwitterCircle } from 'react-icons/ai';
 import { IoLogoLinkedin } from 'react-icons/io';
 import axios from 'axios';
 import SecondSuccess from '../../modals/success/success';
+import { toast } from 'react-toastify';
 
 const Contact = () => {
     const socialContacts = [
@@ -111,40 +112,98 @@ const Contact = () => {
     const baseUrl = process.env.REACT_APP_BASE_URL || 'https://node-backend-landing-page.herokuapp.com';
     const [loading, setLoading] = useState(false);
 
-    const isValid = formValues.fullName === '' || formValues.email === '' || 
-    formValues.address === '' || formValues.city === '' || formValues.state === '' || 
-    formValues.message === '' || formValues.mobile === '' || selectedTopic === '' || 
-    loading || !formValues.email.includes('@') || !formValues.email.includes('.') ||
-    formValues.mobile.length < 11 || formValues.mobile.length > 11;
+    const isFullNameValid = formValues.fullName.trim() !== '';
+        const isEmailValid = formValues.email.includes('@') && formValues.email.includes('.');
+        const isAddressValid = formValues.address.trim() !== '';
+        const isCityValid = formValues.city.trim() !== '';
+        const isStateValid = formValues.state.trim() !== '';
+        const isMessageValid = formValues.message.trim() !== '';
+        const isMobileValid = /^\+\d+([\s-]\d+)*$/.test(formValues.mobile);
+        const isMessageTooLong = formValues.message.length > 500;
+        const isTypeValid = selectedTopic.trim() !== '';
 
-    const handleSubmit = async(e:any) => {
+    const handleSubmit = async (e: any) => {
         e.preventDefault();
-        setLoading(true);    
-        const info = {
-            type: selectedTopic,
-            name: formValues.fullName,
-            email: formValues.email,
-            mobile: formValues.mobile,
-            address: formValues.address,
-            city: formValues.city,
-            state: formValues.state,
-            message: formValues.message,
+        setLoading(true);
+      
+        if (!isFullNameValid) {
+          toast.error('Full Name is required');
+        }
+      
+        if (!isEmailValid) {
+          toast.error('Email is invalid');
+        }
+      
+        if (!isAddressValid) {
+          toast.error('Address is required');
+        }
+      
+        if (!isCityValid) {
+          toast.error('City is required');
+        }
+      
+        if (!isStateValid) {
+          toast.error('State is required');
+        }
+      
+        if (!isMessageValid) {
+          toast.error('Message is required');
+        }
+      
+        if (!isMobileValid) {
+          toast.error('Mobile number is invalid');
         }
 
+        if(isMessageTooLong) {
+            toast.error('Message must not be more than 500 characters')
+        }
+
+        if(!isTypeValid) {
+            toast.error('Please pick a reason for contacting us')
+        }
+      
+        if (
+          !isFullNameValid ||
+          !isEmailValid ||
+          !isAddressValid ||
+          !isCityValid ||
+          !isStateValid ||
+          !isMessageValid ||
+          !isMobileValid ||
+          isMessageTooLong ||
+          !isTypeValid
+        ) {
+          setLoading(false);
+          setOnError(true);
+          return;
+        }
+      
+        // Validation passed; continue with the request
+        const info = {
+          type: selectedTopic,
+          name: formValues.fullName,
+          email: formValues.email,
+          mobile: formValues.mobile,
+          address: formValues.address,
+          city: formValues.city,
+          state: formValues.state,
+          message: formValues.message,
+        };
+      
         try {
-            const response = await axios.post(`${baseUrl}estility/v1/3231/website/contact`, info);
-            // Handle the response data as needed
-            setLoading(false)
-            console.log(response.data?.status);
-            setOnFinish(true);
-            // setTimeout(() => {
-            //     dispatch(hideForm());
-            // }, 2000)
-          } catch (error) {
-            setLoading(false)
-            console.error('Axios request error:', error);
-          }
+          const response = await axios.post(
+            `${baseUrl}estility/v1/3231/website/contact`,
+            info
+          );
+          setLoading(false);
+          console.log(response.data?.status);
+          setOnFinish(true);
+        } catch (error) {
+          setLoading(false);
+          console.error('Axios request error:', error);
+        }
       };
+      
 
     return (
         <div className='d-flex justify-content-between contact-container'>
@@ -213,10 +272,12 @@ const Contact = () => {
 
                 <textarea name='message' onChange={handleChange} placeholder='Type your message'></textarea>
 
-                <div className='char-count sora-font'>0/500 Characters</div>
-
+                <div className="char-count sora-font">
+                    {formValues.message.length}/500 Characters
+                 </div>
+                 {formValues?.message?.length > 500 ? <p className='text-danger font-size-14 fw-bold'>Characters must not be more than 500</p> : null }
                 <div className='d-flex justify-content-center contact-button'>
-                    <button className='text-white violet-background'>{loading ? 'Sending' : 'Submit'}</button>
+                    <button type='submit' disabled={loading} className='text-white violet-background'>{loading ? 'Sending...' : 'Submit'}</button>
                 </div>
             </form>
             <SecondSuccess title='Request Sent' text='Your request has been sent successfully' isModalOpen={onFinish} handleModalOpen={setOnFinish} />

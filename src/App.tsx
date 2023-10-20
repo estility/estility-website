@@ -7,7 +7,8 @@ import { termsArray } from "./components/terms";
 import Careers from "./pages/careers/careers";
 import Loading from "./components/not-found/loading";
 import Requestdemo from "./modals/request-demo/request-demo";
-import { Portal } from 'react-portal';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const Home = lazy(() => import("./pages/Home/Home"));
 const Contact = lazy(() => import("./pages/Contact/Contact"));
@@ -110,6 +111,7 @@ const App = () => {
   return (
     <ErrorBoundary fallback={<div>Something went wrong</div>}>
       <Suspense fallback={<Loading />}>
+      <ToastContainer />
       <Requestdemo />
         <Router>
         <Navbar />
