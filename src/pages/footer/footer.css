@@ -96,7 +96,7 @@
   .footer-input {
     border-radius: 5px;
 border: 1px solid #C8C6C6;
-padding: 7px 0px 7px 2px;
+padding: 12px 0px 12px 2px;
 width: 250px;
 color: #fff;
 text-align: center;
@@ -107,6 +107,13 @@ background: transparent;
     display: none;
   }
 
+  .footer-subscription-button {
+    border-radius: 8px;
+    border:  1px solid #8883CC;
+    background: #F8F8FC;
+    padding: 12px;
+  }
+
   @media (max-width: 768px){
     .copyright-text-small {
       display: block;
@@ -115,6 +122,11 @@ background: transparent;
 
     .stay-upto-date {
       display: none;
+    }
+
+    .subscription-form {
+      display: flex;
+      flex-direction: column;
     }
 
     .footer {

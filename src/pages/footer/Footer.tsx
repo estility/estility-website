@@ -5,8 +5,42 @@ import { BiLogoFacebookCircle, BiLogoInstagram } from 'react-icons/bi';
 import { AiFillTwitterCircle } from 'react-icons/ai';
 import { IoLogoLinkedin } from 'react-icons/io';
 import { Link } from 'react-router-dom';
+import axios from 'axios';
+import SecondSuccess from '../../modals/success/success';
+import { toast } from 'react-toastify';
 
 const Footer = () => {
+  const [ userEmail, setUserEmail ] = React.useState('');
+  const [ loading, setLoading ] = React.useState(false);
+  const [ onFinish, setOnFinish ] = React.useState(false);
+
+  const onChange = (e: any) => {
+    setUserEmail(e.target.value)
+  }
+
+  const baseUrl = process.env.REACT_APP_BASE_URL || 'https://node-backend-landing-page.herokuapp.com';
+
+  const handleSubmit = async(e: any) => {
+    e.preventDefault();
+    setLoading(true);
+    const data = {
+      email: userEmail
+    }
+    try {
+      const response = await axios.post(
+        `${baseUrl}estility/v1/3231/newsletter/subscribe`,
+        data
+      );
+      setLoading(false);
+      console.log(response.data?.status);
+      setOnFinish(true);
+    } catch (error) {
+      setLoading(false);
+      console.error('Axios request error:', error);
+      toast.error('Something went wrong, please try again');
+    }
+  }
+
   const socialIcons = [
     {
       id: 1,
@@ -142,8 +176,12 @@ const Footer = () => {
       <div className='copyright-text-small sora-font text-center'>Copyright © 2023 Estility. All rights reserved</div>
       <div className='footer-links stay-upto-date'>
         <div className='header'>Stay up to date</div>
-        <input className='footer-input' type='text' placeholder='Enter your email address'/>
+        <form className='d-flex gap-10 subscription-form' onSubmit={handleSubmit}>
+          <input onChange={onChange} className='footer-input' type='email' required placeholder='Enter your email address'/>
+          <button type='submit' disabled={userEmail==="" || loading} className='footer-subscription-button bold-500 violet-color'>{loading ? "Sending..." : 'Subscribe'}</button>
+        </form>
       </div>
+      <SecondSuccess title='Superb!' text='Now, you’d never miss out on future updates from us' isModalOpen={onFinish} handleModalOpen={setOnFinish} />
       </div>
   )
 }
