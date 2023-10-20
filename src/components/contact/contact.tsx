@@ -280,7 +280,7 @@ const Contact = () => {
                     <button type='submit' disabled={loading} className='text-white violet-background'>{loading ? 'Sending...' : 'Submit'}</button>
                 </div>
             </form>
-            <SecondSuccess title='Request Sent' text='Your request has been sent successfully' isModalOpen={onFinish} handleModalOpen={setOnFinish} />
+            <SecondSuccess title='Message Recieved' text='Your message has been recieved. Someone from our team  will reach out to you soon' isModalOpen={onFinish} handleModalOpen={setOnFinish} />
         </div>
     )
 }

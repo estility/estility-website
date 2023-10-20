@@ -268,7 +268,7 @@ const validationSchema = Yup.object({
 
     </div>
     </div>
-    <SecondSuccess title='Request Sent' text='Your request has been sent successfully' isModalOpen={onFinish} handleModalOpen={setOnFinish} />
+    <SecondSuccess title='Demo Scheduled' text='Your demo request has been recieved. Someone from our team  will reach out to you soon ' isModalOpen={onFinish} handleModalOpen={setOnFinish} />
     </div>
   )
 }
