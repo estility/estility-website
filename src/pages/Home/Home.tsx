@@ -8,7 +8,7 @@ import { IoBulbOutline } from 'react-icons/io5';
 import frameOne from '../../assets/estate-sec.png';
 import frameTwo from '../../assets/estate-mgt.png';
 import frameThree from '../../assets/estate-resident.png';
-import amico from '../../assets/amico.png';
+import amico from '../../assets/vendors.png';
 import Faq from '../../components/faq/questions';
 import Contact from '../../components/contact/contact';
 import Future from '../../components/future/future';

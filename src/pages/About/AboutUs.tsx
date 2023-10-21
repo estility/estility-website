@@ -1,13 +1,13 @@
 import React from 'react'
 import Future, { Props } from '../../components/future/future'
 import './about-us.css';
-import image from '../../assets/about-banner.png';
+import image from '../../assets/our-story.png';
 import Offers from '../../components/offers/offers';
 import { BiBriefcaseAlt, BiCartAlt } from 'react-icons/bi';
 import { IoBulbOutline } from 'react-icons/io5';
 import { MdAccessibilityNew } from 'react-icons/md';
 import Contact from '../../components/contact/contact';
-import imageBanner from '../../assets/bg-2.png';
+import imageBanner from '../../assets/our-vision.png';
 import { useDispatch, useSelector } from 'react-redux';
 import { showForm } from '../../redux/reducers/display-form-reducer';
 

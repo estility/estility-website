@@ -5,7 +5,7 @@ import { BiBriefcaseAlt, BiCartAlt } from 'react-icons/bi'
 import { IoBulbOutline } from 'react-icons/io5'
 import { MdAccessibilityNew } from 'react-icons/md'
 import { VendorMgtSystem } from '../Products/product-items'
-import appChart from '../../assets/app-chart.png'
+import vendors from '../../assets/vendors-image.png'
 import Future from '../../components/future/future'
 import './vendor.css';
 import VendorContent from './vendor-content'
@@ -51,7 +51,7 @@ const Vendors = () => {
       <VendorMgtSystem title='Vendor Management System FEATURES' 
       description='Join our Vendor Network to access a host of benefits and reach a wider audience. Our partnership is designed to elevate your business while enriching our community. Explore the features of our Vendor 
       Management System below and take your business to the next level with ESTILITY.'
-      image={appChart}
+      image={vendors}
        />
              </div>
 
