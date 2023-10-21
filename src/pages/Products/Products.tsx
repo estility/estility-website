@@ -1,9 +1,9 @@
 import React from 'react'
 import { HeaderBanner } from '../terms-and-conditions/terms-and-conditions'
 import { AiOutlineCheck } from 'react-icons/ai'
-import frame3 from '../../assets/frame-3.png'
-import frame1 from '../../assets/frame-1.png'
-import frame2 from '../../assets/estate-img.png'
+import frame3 from '../../assets/estate-mgt.png'
+import frame1 from '../../assets/estate-resident.png'
+import frame2 from '../../assets/estate-sec.png'
 import './product.css';
 import { BottomBanner } from '../About/AboutUs';
 import Future from '../../components/future/future';

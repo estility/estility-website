@@ -5,9 +5,9 @@ import Offers from '../../components/offers/offers';
 import { BiBriefcaseAlt, BiCartAlt } from 'react-icons/bi';
 import { MdAccessibilityNew } from 'react-icons/md';
 import { IoBulbOutline } from 'react-icons/io5';
-import frameOne from '../../assets/frame-1.png';
-import frameTwo from '../../assets/frame-2.png';
-import frameThree from '../../assets/frame-3.png';
+import frameOne from '../../assets/estate-sec.png';
+import frameTwo from '../../assets/estate-mgt.png';
+import frameThree from '../../assets/estate-resident.png';
 import amico from '../../assets/amico.png';
 import Faq from '../../components/faq/questions';
 import Contact from '../../components/contact/contact';
@@ -95,8 +95,7 @@ const toggle = () => {
           Learn more about our products <AiOutlineArrowRight />
         </a>
       </div>
-      <div className='table-banner'>
-      </div>
+      <div className='table-banner' />
       </div>
      <Offers items={offers} heading='What we offer' text='Our Suite of Services enhances our daily living experience' />
       <div className='d-flex flex-column products'>
@@ -106,7 +105,7 @@ const toggle = () => {
             <div className='product-title sora-font'>{product?.title}</div>
             <div className='product-subtitle violet-color'>{product?.subtitle}</div>
             <div className='product-text'>{product.text}</div>
-            <div className='d-flex align-center violet-color learn-more'><a className='sora-font' href='/products'>Learn More</a>&nbsp;<AiOutlineArrowRight /></div>
+            <div className='violet-color learn-more'><a className='d-flex align-center sora-font' href='/products'>Learn More&nbsp;<AiOutlineArrowRight /></a></div>
           </div>
           <div className='flexgrow-1 product-images'>
             <img src={product.image} alt='product' />

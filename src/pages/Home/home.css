@@ -63,13 +63,13 @@ font-size: 16px;
 }
 
 .table-banner {
-    background: url('../../assets/Desktop\ Mockup.png');
-    filter: blur(3.5px);
+    background: url('../../assets/home-banner.png');
+    /* filter: blur(3.5px); */
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    height: 230px;
-    width: 50%;
+    height: 350px;
+    width: 55%;
     align-self: center;
 }
 
