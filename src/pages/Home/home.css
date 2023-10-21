@@ -175,6 +175,10 @@ line-height: 24px;
     text-align: center;
   }
 
+  .table-banner {
+    min-width: 100%;
+}
+
   .homepage-container .product .learn-more {
     justify-content: center;
   }
