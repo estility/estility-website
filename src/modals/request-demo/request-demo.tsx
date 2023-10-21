@@ -35,25 +35,18 @@ const validationSchema = Yup.object({
     const display = useSelector((state: any) => state?.displayForm);
     const [loading, setLoading] = useState(false);
     const [ agreed, setAgreed ] = useState(false);
+    const [ selectedTopic, setSelectedTopic ] = useState('');
 
-    const [ data, setData ] = useState({
-        name: '',
-        email: '',
-        phoneNumber: '',
-        estateName: '',
-        address: '',
-        city: '',
-        state: '',
-        additionalComments: '',
-        })
-  
   const toggle = () => {
     dispatch(hideForm())
   }
 
   const handleSubmit = async(userdata:any, e:any) => {
     e.preventDefault();
-    setData(userdata)
+    if(selectedTopic === '' ){
+        toast.error('Please select a product of interest')
+        return 
+    }
     const info = {
         type: selectedTopic,
         name: userdata.name,
@@ -65,10 +58,7 @@ const validationSchema = Yup.object({
         state: userdata.state,
         message: userdata.additionalComments,
     }
-    if(agreed === false ){
-        alert('Please accept the privacy policy')
-        return 
-    }
+   
     setLoading(true);
     try {
         const response = await axios.post(`${baseUrl}estility/v1/3231/website/demo`, info);
@@ -85,8 +75,6 @@ const validationSchema = Yup.object({
         toast.error('Something went wrong, please try again');
       }
   };
-
-  const [ selectedTopic, setSelectedTopic ] = useState('');
 
   const purposeForm = [
     {
@@ -131,7 +119,7 @@ const validationSchema = Yup.object({
         city: '',
         state: '',
         additionalComments: '',
-
+        type: selectedTopic,
         // Initialize other form fields here
       }}
       validationSchema={validationSchema}
