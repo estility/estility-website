@@ -50,7 +50,8 @@ const validationSchema = Yup.object({
     dispatch(hideForm())
   }
 
-  const handleSubmit = async(userdata:any) => {
+  const handleSubmit = async(userdata:any, e:any) => {
+    e.preventDefault();
     setData(userdata)
     const info = {
         type: selectedTopic,
@@ -137,7 +138,7 @@ const validationSchema = Yup.object({
       }}
       >
         {(formikProps:any) => (
-      <form onSubmit={() => handleSubmit(formikProps.values)} className='gap-10 d-flex mt-1 flex-column form-container font-size-14'>
+      <form onSubmit={(e) => handleSubmit(formikProps.values, e)} className='gap-10 d-flex mt-1 flex-column form-container font-size-14'>
 
                 <div className='custom-row justify-content-between'>
                     <div className='d-flex flex-column custom-col-md-6 sora-font input-div'>
@@ -147,6 +148,7 @@ const validationSchema = Yup.object({
                          value={formikProps.values.name}
                          onBlur={formikProps.handleBlur('name')}
                         placeholder='First name' 
+                        required
                         type='text' />
                 <p className='fw-bold text-danger'>{formikProps.touched.name  && formikProps.errors.name}</p>
                     </div>
@@ -157,7 +159,8 @@ const validationSchema = Yup.object({
                          onChange={formikProps.handleChange("email")}
                          value={formikProps.values.email}
                          onBlur={formikProps.handleBlur('email')}
-                        className='flexgrow-1' 
+                        className='flexgrow-1'
+                        required 
                         placeholder='Email' type='email' />
                 <p className='fw-bold text-danger'>{formikProps.touched.email  && formikProps.errors.email}</p>
 
@@ -173,6 +176,7 @@ const validationSchema = Yup.object({
                          onBlur={formikProps.handleBlur('phoneNumber')}
                         className='flexgrow-1' 
                         placeholder='Phone Number'
+                        required
                          type='text' />
                 <p className='fw-bold text-danger'>{formikProps.touched.phoneNumber  && formikProps.errors.phoneNumber}</p>
 
@@ -185,6 +189,7 @@ const validationSchema = Yup.object({
                         value={formikProps.values.estateName}
                         onBlur={formikProps.handleBlur('estateName')}
                         className='flexgrow-1' 
+                        required
                         placeholder='Estate Name' type='text' />
                 <p className='fw-bold text-danger'>{formikProps.touched.estateName  && formikProps.errors.estateName}</p>
 
@@ -199,6 +204,7 @@ const validationSchema = Yup.object({
                         value={formikProps.values.address}
                         onBlur={formikProps.handleBlur('address')}
                         className='flexgrow-1' 
+                        required
                         placeholder='Address' type='text' />
         <p className='fw-bold text-danger'>{formikProps.touched.address  && formikProps.errors.address}</p>
 
@@ -213,7 +219,8 @@ const validationSchema = Yup.object({
                         value={formikProps.values.city}
                         onBlur={formikProps.handleBlur('city')}
                         className='flexgrow-1' 
-                        placeholder='City' 
+                        placeholder='City'
+                        required 
                         type='text' />
                 <p className='fw-bold text-danger'>{formikProps.touched.city  && formikProps.errors.city}</p>
                     </div>
@@ -225,7 +232,8 @@ const validationSchema = Yup.object({
                         value={formikProps.values.state}
                         onBlur={formikProps.handleBlur('state')}
                         className='flexgrow-1' 
-                        placeholder='State' 
+                        placeholder='State'
+                        required 
                         type='text' />
                 <p className='fw-bold text-danger'>{formikProps.touched.state  && formikProps.errors.state}</p>
 
@@ -246,19 +254,21 @@ const validationSchema = Yup.object({
                         onChange={formikProps.handleChange("additionalComments")}
                         value={formikProps.values.additionalComments}
                         onBlur={formikProps.handleBlur('state')}
-                        className='full-width flexgrow-1' 
+                        className='full-width flexgrow-1'
+                        required
+                        // readOnly={formikProps.values.additionalComments.length >= 500} 
                         placeholder='Type your comment'></textarea>
                 <p className='fw-bold text-danger'>{formikProps.touched.additionalComments  && formikProps.errors.additionalComments}</p>
                     </div>
                     
-                    <div className='char-count sora-font mt-1'>0/500 Characters</div>
+                    <div className='char-count sora-font mt-1'>{formikProps.values.additionalComments.length}/500 Characters</div>
                                        
                     <div className="d-flex align-center gap-10 mt-1">
-                        <input type='checkbox' checked={agreed} required onChange={() => setAgreed(true)}/>
+                        <input type='checkbox' checked={agreed} required onChange={() => setAgreed(!agreed)}/>
                         <div className='agreement font-size-14 sora-font'>By submitting this form: You agree to the processing of the submitted personal data in accordance with Estility’s Privacy Policy.</div>
                     </div>
                     <button disabled={loading} 
-                    onClick={() => handleSubmit(formikProps.values)} type="button" 
+                    type="submit" 
                     className="full-width submit-application violet-background sora-font text-white mt-2">
                         {loading===true ? 'Sending...' : 'Submit' }</button>
                 </div>
