@@ -8,6 +8,7 @@ import * as Yup from 'yup';
 import axios from 'axios';
 import SecondSuccess from '../success/success';
 import { FaTimes } from 'react-icons/fa';
+import { toast } from 'react-toastify';
 
 const validationSchema = Yup.object({
     name: Yup.string().required('name is required').min(3, 'name must be at least 3 characters').max(30, 'name must not exceed 30 characters'),
@@ -81,6 +82,7 @@ const validationSchema = Yup.object({
       } catch (error) {
         setLoading(false)
         console.error('Axios request error:', error);
+        toast.error('Something went wrong, please try again');
       }
   };
 
