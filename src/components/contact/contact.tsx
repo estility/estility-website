@@ -45,7 +45,7 @@ const Contact = () => {
         {
             id: 3,
             name: 'linkedin',
-            link: 'https://www.linkedin.com/in/estility',
+            link: 'https://www.linkedin.com/company/estilityng',
             icon: <IoLogoLinkedin size={20} color='#424246' />
         },
 
@@ -217,7 +217,7 @@ const Contact = () => {
                 ))}
                 <div className='d-flex flex-column social-talks'>
                     <div className='fw-bold violet-color social-title'>Socials</div>
-                    <div className='d-flex social-contact-icons'>
+                    <div className='d-flex social-contact-icons gap-10'>
                         {socialIcons.map((socialIcon) => (
                             <div className=''>
                                 <a className='violet-color social-link-icons' key={socialIcon.id} href={socialIcon.link} target='_blank' rel="noreferrer">
