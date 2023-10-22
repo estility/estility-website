@@ -231,32 +231,32 @@ const Contact = () => {
             <form onSubmit={handleSubmit} className='gap-10 flexgrow-1 d-flex flex-column form-container'>
                 <div className='d-flex flex-column sora-font input-div'>
                     <div className='form-label sora-font'>Full Name</div>
-                    <input name='fullName' onChange={handleChange} className='flexgrow-1' placeholder='Enter your name' type='text' />
+                    <input required name='fullName' onChange={handleChange} className='flexgrow-1' placeholder='Enter your name' type='text' />
                 </div>
 
                 <div className='d-flex flex-column sora-font input-div'>
                     <div className='form-label sora-font'>Email</div>
-                    <input name='email' onChange={handleChange} className='flexgrow-1' placeholder='Enter your email address' type='email' />
+                    <input required name='email' onChange={handleChange} className='flexgrow-1' placeholder='Enter your email address' type='email' />
                 </div>
 
                 <div className='d-flex flex-column sora-font input-div'>
                     <div className='form-label sora-font'>Address</div>
-                    <input name='address' onChange={handleChange} className='flexgrow-1' placeholder='Your current address' type='text' />
+                    <input required name='address' onChange={handleChange} className='flexgrow-1' placeholder='Your current address' type='text' />
                 </div>
 
                 <div className='d-flex flex-column sora-font input-div'>
                     <div className='form-label sora-font'>Phone Number</div>
-                    <input name='mobile' onChange={handleChange} className='flexgrow-1' placeholder='Your phone number' type='text' />
+                    <input required name='mobile' onChange={handleChange} className='flexgrow-1' placeholder='Your phone number' type='text' />
                 </div>
 
                 <div className='d-flex gap-10 justify-content-between city-state'>
                     <div className='d-flex flex-column flexgrow-1 sora-font input-div'>
                         <div className='form-label sora-font'>City</div>
-                        <input name='city' onChange={handleChange} className='flexgrow-1' placeholder='Enter your city' type='text' />
+                        <input required name='city' onChange={handleChange} className='flexgrow-1' placeholder='Enter your city' type='text' />
                     </div>
                     <div className='d-flex flex-column flexgrow-1 sora-font input-div'>
                         <div className='form-label sora-font'>State</div>
-                        <input name='state' onChange={handleChange} className='flexgrow-1' placeholder='State' type='text' />
+                        <input required name='state' onChange={handleChange} className='flexgrow-1' placeholder='State' type='text' />
                     </div>
                 </div>
 

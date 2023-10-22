@@ -113,7 +113,7 @@ const toggle = () => {
         </div>
         ))}
       </div>
-      <div className='violet-background d-flex justify-content-between align-center vendor-group'>
+      <div className='violet-background d-flex justify-content-between align-center vendor-group mt-2'>
         <div className='flexgrow-1 d-flex flex-column vendor-item'>
          <div className='vendors-header sora-font text-white'>Vendors</div>
          <div className='vendor-text sora-font text-white'>Grow your business significantly by connecting with an extensive network of residents spanning multiple estates in Nigeria. Manage your products and your orders directly from your 
