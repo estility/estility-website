@@ -120,7 +120,7 @@ export const Solutions = ({title, description, image}: SolutionProps) => (
        <div className='violet-color sora-font bold-600 estate-software-title'>{title}</div>
        <div className='dark-color sora-font estate-software-text'>{description}</div>
       </div>
-      <div className='custom-row'>
+      <div className='custom-row vendor-content-page'>
        <EstateMgtSoftware title='Efficient Order Processing' 
        description='Seamlessly receive, manage, and process orders from residents through our user-friendly interface.' />
        <EstateMgtSoftware title='Real-time Inventory Updates' 

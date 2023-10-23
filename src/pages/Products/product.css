@@ -50,9 +50,14 @@ text-transform: uppercase;
     margin-left: 1rem;
   }
 
+  .vendor-content-page > :nth-child(2),  .vendor-content-page > :nth-child(4){
+    margin-left: 1rem;
+  }
+
+
   @media (max-width: 768px) {
 
-    .career-items-div > :nth-child(2),  .career-items-div > :nth-child(4){
+    .vendor-content-page > :nth-child(2),  .vendor-content-page > :nth-child(4){
       margin-left: 0;
     }
 
