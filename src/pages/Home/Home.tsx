@@ -19,7 +19,7 @@ const Home = () => {
   const offers = [
     {
       id: 1,
-      title: 'Collect Estate Levies and Dues ',
+      title: 'Estate levies collection ',
       text: 'Receive prompt and automated payments of  community resident levies, eliminating the need for manual or coercive collection means.  ',
       icon: <BiBriefcaseAlt size={20}/>
     },
@@ -27,21 +27,21 @@ const Home = () => {
     {
       id: 2,
       title: 'Security and Access Control ',
-      text: 'Secure your residential and gated community with our visitor management solution. Monitor entries and exits, guarantee resident safety, and effortlessly maintain a secure environment. ',
+      text: "Secure your residential and gated community with our visitor management solution. Monitor entries and exits, guarantee resident safety, and effortlessly maintain a secure environment.",
       icon:  <MdAccessibilityNew size={20}/>
     },
 
     {
       id: 3,
       title: 'Grocery Shopping and Cooking Gas Delivery ',
-      text: 'Buy your grocery items and cooking gas from trusted vendors in Nigeria, using our online store and gas delivery platform. Enjoy prompt deliveries of your purchases to your doorstep.',
+      text: "Experience the convenience of online grocery shopping in Nigeria. Buy your groceries and cooking gas from trusted vendors in Nigeria, using our online store and gas delivery platform. Enjoy prompt deliveries of your purchases to your doorstep.",
       icon: <BiCartAlt size={20}/>
     },
 
     {
       id: 4,
-      title: 'Purchase Electricity  ',
-      text: 'Buy Prepaid/Postpaid electricity easily with our electricity purchase feature, 24 hours a day, anywhere in Nigeria. ',
+      title: 'Electricity unit Purchase ',
+      text: "Buy Prepaid/Postpaid electricity easily with our electricity purchase feature, 24 hours a day, anywhere in Nigeria",
       icon: <IoBulbOutline size={20}/>
     }
   ]
@@ -51,7 +51,7 @@ const Home = () => {
       id: 1,
       title: 'Our Products',
       subtitle: 'Estate Management Software',
-      text: 'You can now remotely oversee your estate community in Nigeria, with the ability to add property units, add or remove residents, track estate financial records, monitor visitor logs, attend to resident complaints, and manage estate personnel. ',
+      text: 'You can now remotely oversee your estate and gated community with the ability to add property units, add or remove residents, track estate financial records, monitor visitor logs, attend to resident complaints, and manage estate personnel. ',
       image: frameTwo
     },
 
@@ -65,9 +65,9 @@ const Home = () => {
 
     {
       id: 3,
-      title: '  ',
+      title: '',
       subtitle: 'Estate Resident App',
-      text: "Our comprehensive Residents App provides residents with a wide range of essential features to simplify and enhance their living experience. Whether it's paying estate dues and levies, lodging complaints, generating visitor access codes, or buying groceries and cooking gas online delivery, you can do it all, effortlessly and stress-free.",
+      text: "Our comprehensive Residents App provides residents with a wide range of essential features to simplify and enhance their living experience. Whether it's paying estate dues and levies, lodging complaints, generating visitor access codes, or buying groceries and cooking gas online , you can do it all, effortlessly and stress-free.",
       image: frameThree,
     }
   ]
@@ -83,16 +83,18 @@ const toggle = () => {
     <div className='homepage-container'>
       <div className='banner'>
         <div className='sora-font violet-color banner-header'>
-        Elevate your Community and Estate Management in Nigeria with innovative solutions. 
+        Elevate Your Community and Estate Management in Nigeria with innovative solutions. 
         </div>
-        <div className='banner-subheader sora-font'>Our software solution automates estate and facility management for Nigerian landlords and residents. See how our software simplifies estate management. </div>
+        <div className='banner-subheader sora-font'>
+        Our software solution automates estate and facility management for Nigerian property owners and residents, See how our software simplifies estate management. 
+         </div>
       <div className='request-demo'>
         <button onClick={toggle} className='violet-background'>Request Demo</button>
       </div>
       
       <div className='learn-more'>
         <a href='/products' className='violet-color sora-font learn-more'>
-          Learn more about our products <AiOutlineArrowRight />
+        Learn more about our products <AiOutlineArrowRight />
         </a>
       </div>
       <div className='table-banner' />
@@ -116,8 +118,7 @@ const toggle = () => {
       <div className='violet-background d-flex justify-content-between align-center vendor-group mt-2'>
         <div className='flexgrow-1 d-flex flex-column vendor-item'>
          <div className='vendors-header sora-font text-white'>Vendors</div>
-         <div className='vendor-text sora-font text-white'>Grow your business significantly by connecting with an extensive network of residents spanning multiple estates in Nigeria. Manage your products and your orders directly from your 
-          computer   or mobile phone! More customers, less traffic! </div>
+         <div className='vendor-text sora-font text-white'>Grow your business significantly by connecting with an extensive network of residents spanning multiple estates around you. Manage your products and your orders directly from your computer or mobile phone!  Join our ecosystem of vendors committed to delivering excellence and convenience. </div>
           <a href='/contact' className='text-white no-wrap'>Become A Vendor</a>
         </div>
         <div className='flexgrow-1 vendor-group-img'>
