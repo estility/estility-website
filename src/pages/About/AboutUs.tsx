@@ -92,7 +92,6 @@ const AboutUs = () => {
        </div>
       </div>
       <Offers items={offers} heading='Centered on You, the customer'/>
-      
       <Contact />
       <Future />
       <br />

@@ -34,16 +34,16 @@ const toggle = () => {
         Our software provides a centralized hub for property management and communication.'
         image={frame3}
          />
-        <ResidentApp title='ESTATE RESIDENT APP' 
-        description='Our dedicated Residents App empowers residents with a variety of essential functions for easy living.'
-        image={frame2}
-        />
         <SecuritySystem title='Estate Security System' 
         description='Take control of your security with our comprehensive Estate Security System. Monitor access in real-time, verify identities, and safeguard your community.'
-        image={frame1}
+        image={frame2}
          />
+          <ResidentApp title='ESTATE RESIDENT APP' 
+        description='Our dedicated Residents App empowers residents with a variety of essential functions for easy living.'
+        image={frame1}
+        />
        </div>
-       <br /><br /><br /><br /><br /><br /><br />
+       <br /><br />
        <Future />
     </div>
   )
