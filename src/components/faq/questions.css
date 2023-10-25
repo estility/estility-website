@@ -1,7 +1,11 @@
 .faq-container {
   padding: 2rem 0;
   gap: 1rem;
+  background: url('../../assets/banner-bg-1.png') no-repeat;
+  background-size: contain;
+  background-position: center center;
 }
+
 
 .faq-header {
   font-size: 40px;

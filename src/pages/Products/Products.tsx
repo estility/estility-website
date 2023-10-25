@@ -14,7 +14,6 @@ import { showForm } from '../../redux/reducers/display-form-reducer'
 const Products = () => {
   
   const dispatch = useDispatch();
-  const display = useSelector((state: any) => state?.displayForm);
  
 const toggle = () => {
   dispatch(showForm())
@@ -33,7 +32,7 @@ const toggle = () => {
         image={frame3}
          />
         <SecuritySystem title='Estate Security System' 
-        description='Take control of your security with our comprehensive Estate Security System. Monitor access in real-time, verify identities, and safeguard your community'
+        description='Take control of your security with our comprehensive Estate Security System. Monitor access in real-time, verify identities, and safeguard your community.'
         image={frame2} />
 
         <ResidentApp title='ESTATE RESIDENT APP' 

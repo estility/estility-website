@@ -4,12 +4,6 @@
     background-image: url('../../assets/banner-bg.png') no-repeat;
 }
 
-.faq-and-contact{
-  background: url('../../assets/banner-bg.png') no-repeat;
-  background-size: contain;
-  background-position: center center;
-}
-
 .homepage-container .banner {
     /* background: linear-gradient(130deg, rgba(121, 117, 182, 0.30) 6.43%, rgba(98, 199, 238, 0.30) 98.28%); */
     /* filter: blur(60px); */
@@ -85,7 +79,7 @@ font-size: 16px;
 }
 
 .homepage-container .products {
-  background-image: url('../../assets/banner-bg.png');
+  background-image: url('../../assets/banner-bg-1.png');
 }
 
 .homepage-container .products > :nth-child(2) {

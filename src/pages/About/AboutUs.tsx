@@ -81,7 +81,7 @@ const AboutUs = () => {
           <div className='d-flex flex-column justify-center align-items-center gap-10'>
           <div className='violet-color sora-font bold-600 font-size-24  ourstory-heading text-center border-8'>Our VISION AND MISSION</div>
           <div className='story-text bold-600 font-size-20 sora-font'>Our Vision:</div>
-          <div className='sora-font story-text'>Bring convenience to everyone</div>
+          <div className='sora-font story-text'>To bring convenience to everyone</div>
           <div className='story-text bold-600 font-size-20 sora-font'>Our Mission</div>
           <div className='sora-font story-text'>
           Improving the way people live in communities through innovative solutions and services.

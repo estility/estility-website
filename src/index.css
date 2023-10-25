@@ -194,7 +194,7 @@ select:focus, input:focus {
 /* Define a custom column class for medium-sized screens (col-md-6) */
 .custom-col-md-6 {
   flex: 0 0 50%;
-  max-width: 46%;
+  max-width: 48%;
 }
 
 a {

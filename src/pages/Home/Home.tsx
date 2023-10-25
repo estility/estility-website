@@ -20,7 +20,7 @@ const Home = () => {
     {
       id: 1,
       title: 'Estate levies collection ',
-      text: 'Receive prompt and automated payments of  community resident levies, eliminating the need for manual or coercive collection means.  ',
+      text: 'Receive prompt and automated payments of  community resident levies, eliminating the need for manual or coercive collection methods.  ',
       icon: <BiBriefcaseAlt size={20}/>
     },
 
@@ -41,7 +41,7 @@ const Home = () => {
     {
       id: 4,
       title: 'Electricity unit Purchase ',
-      text: "Buy Prepaid/Postpaid electricity easily with our electricity purchase feature, 24 hours a day, anywhere in Nigeria",
+      text: "Buy Prepaid/Postpaid electricity easily with our electricity purchase feature, 24 hours a day, anywhere in Nigeria.",
       icon: <IoBulbOutline size={20}/>
     }
   ]
@@ -99,7 +99,7 @@ const toggle = () => {
       </div>
       <div className='table-banner' />
       </div>
-     <Offers items={offers} heading='What we offer' text='Our Suite of Services enhances our daily living experience' />
+     <Offers items={offers} heading='What we offer' text='Our Suite of Services enhances our daily living experience!' />
       <div className='d-flex flex-column products'>
         {ourProducts.map((product) => (
         <div className='d-flex justify-content-between product'>
@@ -125,11 +125,9 @@ const toggle = () => {
           <img src={amico} alt='amico' />
         </div>
       </div>
-            <div className='faq-and-contact'>
 
       <Faq />
       <Contact />
-      </div>
       <Future /><br /><br />
     </div>
   )

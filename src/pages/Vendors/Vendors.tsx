@@ -38,7 +38,7 @@ const Vendors = () => {
     <div className='d-flex flex-column vendor-container'>
        <HeaderBanner title='Become an Estility Vendor Let’s Flourish Together' 
         subText='We welcome vendors to be a part of our vibrant network and contribute to elevating community living.'
-       hasSubText={true} hasButton={false} hasLink={true} linkText='/contact' buttonText='BECOME A PARTNER' />
+       hasSubText={true} hasButton={false} hasLink={true} linkText='/contact' buttonText='Become a partner' />
      
         <VendorContent 
       items={offers} 
