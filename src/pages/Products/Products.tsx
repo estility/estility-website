@@ -23,23 +23,21 @@ const toggle = () => {
   return (
     <div className='d-flex flex-column product-container'>
       <HeaderBanner title='Smart Solutions for Easy Living' 
-        subText='At ESTILITY, we believe in simplifying your life, enhancing security, and connecting communities.'
+        subText="At ESTILITY, we simplify your life, enhance your security, and keep you connected to your community."
        hasSubText={true} hasButton={true} buttonText='Request A Demo' linkText='/contact'
        onClick={toggle}
         />
        <div className='d-flex flex-column product-display'>
         <Solutions title='ESTATE MANAGEMENT SOFTWARE' 
-        description='Estate Management Software: Make estate management easy with our 
-        advanced software. Effortlessly manage resident information and due payments. 
-        Our software provides a centralized hub for property management and communication.'
+        description='Make estate management easy with our advanced software. Effortlessly manage resident information and due payments. Our software provides a centralized hub for property management and communication.'
         image={frame3}
          />
         <SecuritySystem title='Estate Security System' 
-        description='Take control of your security with our comprehensive Estate Security System. Monitor access in real-time, verify identities, and safeguard your community.'
-        image={frame2}
-         />
-          <ResidentApp title='ESTATE RESIDENT APP' 
-        description='Our dedicated Residents App empowers residents with a variety of essential functions for easy living.'
+        description='Take control of your security with our comprehensive Estate Security System. Monitor access in real-time, verify identities, and safeguard your community'
+        image={frame2} />
+
+        <ResidentApp title='ESTATE RESIDENT APP' 
+        description=' Our dedicated Residents App empowers residents with a variety of essential functions for easy living.'
         image={frame1}
         />
        </div>

@@ -42,14 +42,18 @@ export const Solutions = ({title, description, image}: SolutionProps) => (
       </div>
       <div className='custom-row'>
        <EstateMgtSoftware title='RESIDENT DATABASE MANAGEMENT' 
-       description='Keep track of all residents effortlessly. Our software centralizes  resident data, making communication and record-keeping seamless.' />
+       description="Keep track of all residents effortlessly. Our software centralizes resident data, making communication and record-keeping easy and efficient" />
+
        <EstateMgtSoftware title='Dues Tracking and Management' 
-       description='Say goodbye to manual accounting. Our software automates the calculation and tracking of dues, guaranteeing accurate financial management.' />
+       description='Say goodbye to manual accounting. Our software automates the calculation and tracking
+       of dues, guaranteeing accurate financial management.' />
+
        <EstateMgtSoftware title='Complaints and Maintenance' 
-       description='Simplify the process of handling property maintenance requests and monitor their resolution progress, ensuring prompt responses to resident related concerns.' />
+       description="Simplify the process of handlingproperty maintenance requests and monitor their resolution
+       progress, ensuring prompt responses to resident related concerns." />
+
        <EstateMgtSoftware title='Seamless Communication'
-       description='Foster transparent communication between residents and management using our broadcast messaging feature, promoting cohesive living.
-       Estate Resident App: Our dedicated Residents App empowers residents with a variety of essential functions for easy living.' />
+       description='Foster transparent communication between residents and management using our broadcast messaging feature, promoting cohesive living.'/>
       </div>
       <div>
       </div>
@@ -70,13 +74,17 @@ export const Solutions = ({title, description, image}: SolutionProps) => (
       </div>
       <div className='custom-row'>
        <EstateMgtSoftware title='DUE PAYMENTS' 
-       description='Pay your dues conveniently and instantly through the app, ensuring hassle-free financial transactions.' />
+       description='Pay your dues conveniently and instantly through the app.' />
+
        <EstateMgtSoftware title='Utility Payment' 
        description='Conveniently pay your utility bills from the app, saving you time and effort' />
+
        <EstateMgtSoftware title='Visitor Passes' 
-       description='Generate visitor passes for your guests through the app, streamlining the entry process.' />
+       description='Visitor Passes: Generate visitors access codes for your guests through the app.' />
+
        <EstateMgtSoftware title='Grocery Shopping and Cooking Gas Purchase:'
        description='Don’t leave your house. Tell us what you want on the app and we will bring it to you. No need to carry heavy bags and gas cylinders.' />
+
       </div>
       <div>
       </div>
@@ -96,13 +104,17 @@ export const Solutions = ({title, description, image}: SolutionProps) => (
       </div>
       <div className='custom-row'>
        <EstateMgtSoftware title='Visitor Management' 
-       description='Effortlessly manage visitor access and enhance community security by tracking and recording guest entries.' />
+       description='Control and track who enters and exits your estate. ' />
+
        <EstateMgtSoftware title='Smart Access Control' 
        description='Grant entry to authorized individuals through our secured OTP code system, reducing unauthorized entry risks.' />
+       
        <EstateMgtSoftware title='Access History' 
-       description='Access detailed logs of who entered or exited the estate, enhancing accountability and transparency.' />
+       description='Keep records of all entries and exits for a life time.' />
+
        <EstateMgtSoftware title='Ease of Communication'
        description='Facilitate transparent communication among residents and thd management through our broadcast messaging featurecreating a cohesive living environment.' />
+      
       </div>
       <div>
       </div>

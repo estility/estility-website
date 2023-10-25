@@ -54,7 +54,7 @@ const AboutUs = () => {
     {
       id: 4,
       title: 'Comprehensive Solutions ',
-      text: 'Our product suite is a reflection of our commitment. From the Estate Management Software, a comprehensive hub of estate oversight, to the Resident App, designed for seamless interaction, every solution stems from a deep understanding of the ecosystem.',
+      text: 'Our product suite is a reflection of our commitment. From our Estate Management Software to, our Resident App, designed for seamless interaction, each solution is borne of a deep understanding of the ecosystem, our customers, and your needs.',
       icon: <IoBulbOutline size={20}/>
     }
   ]

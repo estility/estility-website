@@ -14,22 +14,22 @@ const Vendors = () => {
   const offers = [
     {
       id: 1,
-      title: 'Collect Estate Levies and Dues ',
-      text: 'Receive prompt and automated payments of  community resident levies, eliminating the need for manual or coercive collection means.  ',
+      title: 'Reach More People ',
+      text: 'With a vast user base across multiple estates, partnering with ESTILITY opens doors to a broader customer network..  ',
       icon: <BiBriefcaseAlt size={20}/>
     },
 
     {
       id: 2,
-      title: 'Security and Access Control ',
-      text: 'Secure your residential and gated community with our visitor management solution. Monitor entries and exits, guarantee resident safety, and effortlessly maintain a secure environment. ',
+      title: ' Efficient Operations',
+      text: 'Our Vendor Management System simplifies order processing, inventory management, and earnings tracking, streamlining your business processes.',
       icon:  <MdAccessibilityNew size={20}/>
     },
 
     {
       id: 3,
-      title: 'Grocery Shopping and Cooking Gas Delivery ',
-      text: 'Buy your grocery items and cooking gas from trusted vendors in Nigeria, using our online store and gas delivery platform. Enjoy prompt deliveries of your purchases to your doorstep.',
+      title: 'Enhanced Visibility',
+      text: 'Show your services to a ready audience through our platform, increasing your brand’s visibility and recognition.',
       icon: <BiCartAlt size={20}/>
     },
   ]
@@ -38,7 +38,7 @@ const Vendors = () => {
     <div className='d-flex flex-column vendor-container'>
        <HeaderBanner title='Become an Estility Vendor Let’s Flourish Together' 
         subText='We welcome vendors to be a part of our vibrant network and contribute to elevating community living.'
-       hasSubText={true} hasButton={false} hasLink={true} linkText='/contact' buttonText='Become A Partner' />
+       hasSubText={true} hasButton={false} hasLink={true} linkText='/contact' buttonText='BECOME A PARTNER' />
      
         <VendorContent 
       items={offers} 
