@@ -27,7 +27,7 @@ export const EstateMgtSoftware:React.FC<EstateMgtProps> = ({title, description})
     <div className='gap-10 mt-1'>
      <div style={{float: 'left', borderRadius: '50px', padding: '3px', marginRight: '3px' }} className='d-flex align-items-center violet-background'><AiOutlineCheck color='#fff' /></div>
      <div className='d-flex justify-content-between'>
-      <div className='font-size-14 dark-font estate-mg-product-desc'>{description}</div>
+      <div className='bold-600 dark-font estate-mg-product-desc'>{description}</div>
      </div>
     </div>
   )
@@ -152,7 +152,7 @@ export const Solutions = ({title, description, image}: SolutionProps) => (
 
 
   export const RiderMgtSystem = ({title, description, image}: SolutionProps) => (
-    <div className='custom-row justify-content-between mt-3'>
+    <div className='custom-row justify-content-between mt-3 align-center'>
     <div className='custom-col-md-6'>
       <div className='d-flex flex-column'>
        <div className='violet-color sora-font bold-600 estate-software-title'>{title}</div>

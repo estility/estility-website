@@ -208,7 +208,7 @@ const Contact = () => {
     return (
         <div className='d-flex justify-content-between contact-container'>
             <div className='d-flex flex-column sora-font flexgrow-1 social-contact'>
-                {window.location.pathname === '/contact' ? <div className='contact-image' /> : null}
+                <div className='contact-image' />
                 {socialContacts?.map((contact) => (
                     <div className='d-flex flex-column social-talks'>
                         <div className='fw-bold social-title sora-font'>{contact?.title}</div>

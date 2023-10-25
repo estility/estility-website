@@ -84,7 +84,7 @@ const AboutUs = () => {
           <div className='sora-font story-text'>To bring convenience to everyone</div>
           <div className='story-text bold-600 font-size-20 sora-font'>Our Mission</div>
           <div className='sora-font story-text'>
-          Improving the way people live in communities through innovative solutions and services.
+          <span style={{ width: '70%'}}>Improving the way people live in communities through innovative solutions and services.</span>
           </div>
           </div>
         </div>
