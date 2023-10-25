@@ -114,7 +114,8 @@
 }
 
 .contact-image {
-  background: url('../../assets/contact-us.png'), lightgray 50% / cover no-repeat;
+  background: url('../../assets/contact-us.png') no-repeat;
+  background-size: cover;
   height: 500px;
   width: 100%;
 }
