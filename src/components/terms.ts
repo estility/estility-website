@@ -56,7 +56,7 @@ export const termsArray = [
     {
         id: 10,
         title: 'Contact Us',
-        text: 'If you have any further questions or require more information about our terms and conditions, feel free to contact us through email at info@estility.co. We value your feedback and engagement as we work together to create a thriving community of learning and growth.'
+        text: 'If you have any further questions or require more information about our terms and conditions, feel free to contact us through email at support@estility.co. We value your feedback and engagement as we work together to create a thriving community of learning and growth.'
     },
 
 

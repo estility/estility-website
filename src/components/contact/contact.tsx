@@ -24,7 +24,7 @@ const Contact = () => {
         {
             id: 3,
             title: 'Email',
-            text: 'info@estility.co'
+            text: 'support@estility.co'
         }
     ]
 

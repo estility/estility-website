@@ -161,11 +161,12 @@ export const Solutions = ({title, description, image}: SolutionProps) => (
       </div>
       <div className='d-flex flex-column'>
        <EstilityRider
-       description="A valid driver's license is your ticket to the road." />
+       description="A valid driver's license is your gateway to hitting the road." />
        <EstilityRider 
-       description="A smartphone to manage orders effectively through our delivery app." />
+       description="A smartphone for efficient order management through our delivery app" />
        <EstilityRider
-       description='Gain insights into your earnings, order history, and payment details through a transparent dashboard.' />
+       description='A positive attitude and a dedicated commitment to delivering
+       exceptional customer service.' />
       </div>
       <div>
       </div>
