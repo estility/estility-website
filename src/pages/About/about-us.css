@@ -7,6 +7,11 @@
     gap: 20px;
     align-self: center;
   }
+
+  .ourstory-heading {
+    background: #EFEFFB;
+    padding: 0.5rem 0;
+  }
   
   .about-container .about-title {
     font-size: 64px;
@@ -41,8 +46,13 @@
     padding: 0 2% 3rem 2%;
   }
 
+  .our-story-container {
+    padding: 0.5rem;
+  }
+
   .story-text {
     line-height: 32px;
+    color: #DED5F8;
   }
 
   /* 8183947740
@@ -69,5 +79,13 @@
   line-height: 30px;
   margin-top: 1rem;
   padding: 0 10px;
+    }
+
+    .ourstory-heading {
+      font-size: 20px;
+    }
+
+    .about-content > :nth-child(2) .story-image {
+      margin-top: 1.5rem;
     }
   }

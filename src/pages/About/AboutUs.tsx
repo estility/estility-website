@@ -65,10 +65,10 @@ const AboutUs = () => {
       <div className='d-flex flex-column about-content'>
        <div className=' mt-2 custom-row justify-content-between align-center'>
         <div className=' story-image custom-col-md-6'><img src={image} alt=''  /></div>
-        <div className='custom-col-md-6'>
-          <div className='d-flex flex-column justify-center align-items-center gap-10'>
-          <div className='violet-color sora-font bold-600 font-size-24'>Our Story</div>
-          <div className='dark-color sora-font story-text'>
+        <div className='custom-col-md-6 violet-background our-story-container'>
+          <div className='d-flex flex-column justify-center align-items-center gap-10 violet-background'>
+          <div className='violet-color ourstory-heading text-center sora-font bold-600 font-size-24 border-8'>Our Story</div>
+          <div className='sora-font story-text'>
           At Estility, we are driven by our love for innovation and our desire to serve. We set out to use technology to meet the ever-changing needs of contemporary communities, aiming 
           to simplify, secure, and enrich the lives of the people we serve.
           </div>
@@ -77,18 +77,18 @@ const AboutUs = () => {
        </div>
 
        <div className='custom-row justify-content-between align-center mt-2'>
-       <div className='custom-col-md-6'>
+       <div className='custom-col-md-6 violet-background our-story-container text-center'>
           <div className='d-flex flex-column justify-center align-items-center gap-10'>
-          <div className='violet-color sora-font bold-600 font-size-24'>Our VISION AND MISSION</div>
-          <div className='dark-color bold-600 font-size-20 sora-font'>Our Vision:</div>
-          <div className='dark-color sora-font story-text'>Bring convenience to everyone</div>
-          <div className='dark-color bold-600 font-size-20 sora-font'>Our Mission</div>
-          <div className='dark-color sora-font story-text'>
+          <div className='violet-color sora-font bold-600 font-size-24  ourstory-heading text-center border-8'>Our VISION AND MISSION</div>
+          <div className='story-text bold-600 font-size-20 sora-font'>Our Vision:</div>
+          <div className='sora-font story-text'>Bring convenience to everyone</div>
+          <div className='story-text bold-600 font-size-20 sora-font'>Our Mission</div>
+          <div className='sora-font story-text'>
           Improving the way people live in communities through innovative solutions and services.
           </div>
           </div>
         </div>
-        <div className=' story-image custom-col-md-6'><img src={imageBanner} alt=''  /></div>
+        <div className='story-image custom-col-md-6'><img src={imageBanner} alt=''  /></div>
        </div>
       </div>
       <Offers items={offers} heading='Centered on You, the customer'/>

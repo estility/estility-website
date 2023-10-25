@@ -125,8 +125,11 @@ const toggle = () => {
           <img src={amico} alt='amico' />
         </div>
       </div>
+            <div className='faq-and-contact'>
+
       <Faq />
       <Contact />
+      </div>
       <Future /><br /><br />
     </div>
   )
