@@ -80,7 +80,7 @@ const AboutUs = () => {
        <div className='custom-col-md-6 border-8 violet-background our-story-container text-center'>
           <div className='d-flex flex-column justify-center align-items-center gap-10'>
           <div className='violet-color sora-font bold-600 font-size-24  ourstory-heading text-center border-8'>Our VISION AND MISSION</div>
-          <div className='story-text bold-600 sora-font'>Our Vision:</div>
+          <div className='story-text bold-600 sora-font'>OUR Vision:</div>
           <div className='sora-font story-text font-size-24'>To bring convenience to everyone</div>
           <div className='story-text bold-600 sora-font'>Our Mission</div>
           <div className='sora-font story-text'>
