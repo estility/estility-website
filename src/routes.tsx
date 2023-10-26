@@ -48,21 +48,21 @@ export const routes = [
     path: '/faq',
     element: <Faq />,
   },
-  {
-    id: 7,
-    path: '/terms-and-conditions',
-    element: <Terms terms={termsArray} />,
-  },
+  // {
+  //   id: 7,
+  //   path: '/terms-and-conditions',
+  //   element: <Terms terms={termsArray} />,
+  // },
   {
     id: 10,
     path: '/riders',
     element: <Riders />,
   },
-  {
-    id: 11,
-    path: '/privacy-policy',
-    element: <PrivacyPolicy />,
-  },
+  // {
+  //   id: 11,
+  //   path: '/privacy-policy',
+  //   element: <PrivacyPolicy />,
+  // },
   {
     id: 12,
     path: '/careers',

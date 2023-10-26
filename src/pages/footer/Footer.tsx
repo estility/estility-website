@@ -121,17 +121,17 @@ const Footer = () => {
     //   link: '/blogs',
     // },
 
-    {
-      id: 4,
-      title: 'Terms and Conditions',
-      link: '/terms-and-conditions',
-    },
+    // {
+    //   id: 4,
+    //   title: 'Terms and Conditions',
+    //   link: '/terms-and-conditions',
+    // },
 
-    {
-      id: 5,
-      title: 'Privacy Policy',
-      link: '/privacy-policy',
-    }
+    // {
+    //   id: 5,
+    //   title: 'Privacy Policy',
+    //   link: '/privacy-policy',
+    // }
   ]
   
 
