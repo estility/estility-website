@@ -12,7 +12,7 @@ const Contact = () => {
         {
             id: 1,
             title: "Lets's Talk",
-            text: "Feel free to get in touch with us for any inquiries, feedback, or collaborations. We're always eager to connect."
+            text: "Feel free to get in touch with us for any inquiries, feedback, or collaborations. We are always eager to connect."
         },
 
         {
@@ -103,7 +103,7 @@ const Contact = () => {
 
         {
             id: 5,
-            title: 'Become a rider'
+            title: 'Become a Rider'
         }
     ]
 
@@ -231,7 +231,7 @@ const Contact = () => {
             <form onSubmit={handleSubmit} className='gap-10 flexgrow-1 d-flex flex-column form-container'>
                 <div className='d-flex flex-column sora-font input-div'>
                     <div className='form-label sora-font'>Full Name</div>
-                    <input required name='fullName' onChange={handleChange} className='flexgrow-1' placeholder='Enter your name' type='text' />
+                    <input required name='fullName' onChange={handleChange} className='flexgrow-1' placeholder='Enter your full name' type='text' />
                 </div>
 
                 <div className='d-flex flex-column sora-font input-div'>
