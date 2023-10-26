@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { HeaderBanner } from '../terms-and-conditions/terms-and-conditions'
 import Offers from '../../components/offers/offers'
-import { BiBriefcaseAlt, BiCartAlt } from 'react-icons/bi'
+import { BiBriefcaseAlt, BiCartAlt, BiMoney, BiSupport } from 'react-icons/bi'
 import { IoBulbOutline } from 'react-icons/io5'
 import { MdAccessibilityNew } from 'react-icons/md'
 import { RiderMgtSystem, VendorMgtSystem } from '../Products/product-items'
@@ -10,6 +10,7 @@ import Future, { BottomBanner } from '../../components/future/future'
 import VendorContent from '../Vendors/vendor-content';
 import riderimg from '../../assets/estility-rider.png';
 import './riders.css';
+import { RiCommunityFill } from 'react-icons/ri';
 import { useDispatch, useSelector } from 'react-redux'
 import { showForm } from '../../redux/reducers/display-form-reducer'
 import { useNavigate } from 'react-router-dom'
@@ -25,7 +26,7 @@ const Riders = () => {
       id: 1,
       title: 'Earn with Flexibility ',
       text: "As an Estility rider, you'll have the flexibility to choose your working hours and manage your deliveries as per your convenience.",
-      icon: <BiBriefcaseAlt size={20} />
+      icon: <BiMoney size={20} />
     },
 
     {
@@ -39,14 +40,14 @@ const Riders = () => {
       id: 3,
       title: 'Supportive Platform ',
       text: "Our user-friendly delivery app is designed to provide you with step-bystep guidance through each order, ensuring the entire process is smooth and effective. ",
-      icon: <BiCartAlt size={20} />
+      icon: <BiSupport size={20} />
     },
 
     {
       id: 4,
       title: 'Community Impact ',
       text: "Being a delivery rider isn't just about delivering groceries and other utilities – it's about bringing smiles to people's lives. Your timely deliveries contribute to the convenience of residents' lives.",
-      icon: <BiCartAlt size={20} />
+      icon: <RiCommunityFill size={20} />
     },
   ]
   return (
