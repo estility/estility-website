@@ -33,7 +33,6 @@ function generateRandomContent() {
     return loremIpsum[randomIndex];
 }
 
-console.log(blogContent);
 
 export const newBlogContent = [
     {
@@ -57,5 +56,4 @@ for (let i = 2; i <= 1; i++) {
 
 // Function to generate random content
 
-console.log(blogContent);
 

@@ -32,7 +32,6 @@ const Footer = () => {
         data
       );
       setLoading(false);
-      console.log(response.data?.status);
       setOnFinish(true);
     } catch (error) {
       setLoading(false);

@@ -64,7 +64,6 @@ const validationSchema = Yup.object({
         const response = await axios.post(`${baseUrl}estility/v1/3231/website/demo`, info);
         // Handle the response data as needed
         setLoading(false)
-        console.log(response.data);
         setOnFinish(true);
         // setTimeout(() => {
         //     dispatch(hideForm());
@@ -124,7 +123,6 @@ const validationSchema = Yup.object({
       }}
       validationSchema={validationSchema}
       onSubmit={(values, actions) => {
-        console.log('')
       }}
       >
         {(formikProps:any) => (

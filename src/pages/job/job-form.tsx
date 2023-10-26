@@ -5,7 +5,6 @@ const JobForm = () => {
     const fileRef: any = useRef(null);
 
     const uploadImage = () => {
-        console.log('button clicked')
         // try {
         // setLoading(true)
         const formData: any = new FormData();

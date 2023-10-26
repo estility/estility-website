@@ -15,7 +15,6 @@ interface Props {
 }
 const Job = () => {
     const param = useParams()
-    console.log({param})
     const filteredJob = jobs?.find((job) => Number(job?.id) === Number(param?.id))
 
     const JobDetails:React.FC<Props> = ({title, icon}) => (

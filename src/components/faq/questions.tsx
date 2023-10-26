@@ -22,7 +22,6 @@ const Questions = () => {
   }, []);
 
   const handleSearch = (e:React.ChangeEvent<HTMLInputElement>) => {
-    console.log(e.target.value);
     setSearchValue(e.target.value);
     // setSearchData(searchData?.filter((item) => item?.question?.toLowerCase()?.indexOf(e.target.value.toLowerCase()) >=0))
     setSearchData(
@@ -32,7 +31,6 @@ const Questions = () => {
       );
     };
     
-    console.log(searchData)
   function FAQItem({ question, answer }: FAQItemProps) {
     const [isOpen, setIsOpen] = useState(false);
 
@@ -77,7 +75,6 @@ const Questions = () => {
       setSearchData(allQuestions as any);
     }
     else {
-      console.log({searchValue})
       setSearchData(
         allQuestions.filter((item:any) =>
         item?.question?.toLowerCase().includes(searchValue?.toLowerCase())
@@ -104,7 +101,6 @@ const Questions = () => {
     setSelectedTopic(topic);
   }
 
-  console.log(selectedTopic)
 
   return (
     <div className='d-flex flex-column faq-container sora-font'>

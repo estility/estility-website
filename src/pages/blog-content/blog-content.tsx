@@ -10,7 +10,6 @@ import { IoLogoLinkedin } from 'react-icons/io';
 
 const BloContent = () => {
   const param = useParams()
-    console.log({param})
     const socialIcons = [
       {
         id: 1,
@@ -40,7 +39,6 @@ const BloContent = () => {
       }
     ]
     const filterBlog = blogContent?.find((blog) => Number(blog?.id) === Number(param?.id))
-    console.log({filterBlog})
   return (
     <div className='d-flex flex-column blog-content-container'>
       <div className='gap-10 d-flex flex-column'>
