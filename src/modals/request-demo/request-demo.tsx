@@ -132,12 +132,12 @@ const validationSchema = Yup.object({
 
                 <div className='custom-row justify-content-between'>
                     <div className='d-flex flex-column custom-col-md-6 sora-font input-div'>
-                        <div className='form-label sora-font'>Name</div>
+                        <div className='form-label sora-font'>Full Name</div>
                         <input 
                          onChange={formikProps.handleChange("name")}
                          value={formikProps.values.name}
                          onBlur={formikProps.handleBlur('name')}
-                        placeholder='First name' 
+                        placeholder='Full name' 
                         required
                         type='text' />
                 <p className='fw-bold text-danger'>{formikProps.touched.name  && formikProps.errors.name}</p>
