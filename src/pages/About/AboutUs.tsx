@@ -61,7 +61,7 @@ const AboutUs = () => {
   
   return (
     <div className='d-flex flex-column about-page-container'>
-      <div className='about-banner-bg'><BottomBanner title='Empowering Estates, Enriching Communities' buttonText='Request A Demo!' text='Where Innovation Meets Community, and Excellence Elevates Living.' /></div>
+      <div className='about-banner-bg'><BottomBanner title='Empowering Estates, Enriching Communities' buttonText='Request a Demo!' text='Where Innovation Meets Community, and Excellence Elevates Living.' /></div>
       <div className='d-flex flex-column about-content'>
        <div className=' mt-2 custom-row justify-content-between align-center'>
         <div className=' story-image custom-col-md-6'><img src={image} alt=''  /></div>

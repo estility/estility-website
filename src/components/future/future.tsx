@@ -32,7 +32,7 @@ const toggle = () => {
 }
 
   return (
-    <BottomBanner title='Embrace the future today!' buttonText='Request A Demo!' onClick={toggle}
+    <BottomBanner title='Embrace the future today!' buttonText='Request a Demo!' onClick={toggle}
     text='Experience the power of our product suite and let us guide you into the future of gated community management.'
     />
   )

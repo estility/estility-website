@@ -15,7 +15,7 @@ const Vendors = () => {
     {
       id: 1,
       title: 'Reach More People ',
-      text: 'With a vast user base across multiple estates, partnering with ESTILITY opens doors to a broader customer network..  ',
+      text: 'With a vast user base across multiple estates, partnering with ESTILITY opens doors to a broader customer network.  ',
       icon: <BiBriefcaseAlt size={20}/>
     },
 

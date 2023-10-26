@@ -89,7 +89,7 @@ const toggle = () => {
         Our software solution automates estate and facility management for Nigerian property owners and residents, see how our software simplifies estate management. 
          </div>
       <div className='request-demo'>
-        <button onClick={toggle} className='violet-background'>Request Demo</button>
+        <button onClick={toggle} className='violet-background'>Request a Demo</button>
       </div>
       
       <div className='learn-more'>
