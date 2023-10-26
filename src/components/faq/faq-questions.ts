@@ -156,48 +156,42 @@ export const partners = [
 
     {
         id: 2,
-        question: 'What are the requirements for vendors to join the app?',
-        answer: 'Yes, we are open to collaborating with partners. If you are interested in becoming a vendor or partnering with Estility, please reach out to us by sending an email to vendor@estility.co. We look forward to exploring potential partnerships with you.'
-    },
-
-    {
-        id: 3,
         question: "What are the requirements for vendors to join the app?",
         answer: "After an Estility Vendor engagement officer has confirmed your interest, the Vendor Vendor Officer will contact you for the rest of the process.",
     },
 
     {
-        id: 4,
+        id: 3,
         question: "How do residents place orders for groceries and cooking gas through the app?",
         answer: "Residents can place orders by using the app's user interface, selecting the items they need and specifying quantities."
     },
 
     {
-        id: 5,
+        id: 4,
         question: "What is the process for payment when ordering through the app?",
         answer: "All Payments are made through the Wallet of the residents on the App."
     },
 
     {
-        id: 6,
+        id: 5,
         question: "How can vendors address order issues, returns, or quality concerns?",
         answer: "Vendors should have a clear policy for handling order issues, returns, or quality concerns. Please communicate directly with the Estility Vendors officers to address any problems."
     },
 
     {
-        id: 7,
+        id: 6,
         question: "Can residents provide feedback or reviews for vendors on the app?",
         answer: "Yes, residents can usually leave reviews and provide feedback to help other community members make informed decisions"
     },
 
     {
-        id: 8,
+        id: 7,
         question: "Can vendors offer special promotions or discounts to residents through the app?",
         answer: "Vendors may offer special promotions, discounts, or loyalty programs to residents through the app. Kindly contact the Estility Account officer to more details."
     },
 
     {
-        id: 9,
+        id: 8,
         question: "What are the operating hours for orders?",
         answer: "Operating hours are between the hours of 8am -6pm. The app typically allows residents to place orders at their convenience, but delivery times may vary depending on Resident’s availability."
     }
