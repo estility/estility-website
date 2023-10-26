@@ -169,7 +169,7 @@ export const partners = [
     {
         id: 4,
         question: "What is the process for payment when ordering through the app?",
-        answer: "All Payments are made through the Wallet of the residents on the App."
+        answer: "The Resident's App on Estility typically offers multiple modes of payment to provide convenience and flexibility for users. Users can make payments with their debit cards, bank transfers and their mobile wallet."
     },
 
     {
@@ -181,7 +181,7 @@ export const partners = [
     {
         id: 6,
         question: "Can residents provide feedback or reviews for vendors on the app?",
-        answer: "Yes, residents can usually leave reviews and provide feedback to help other community members make informed decisions"
+        answer: "Yes, residents can usually leave reviews and provide feedback to help other community members make informed decisions."
     },
 
     {
