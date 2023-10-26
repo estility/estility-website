@@ -11,7 +11,7 @@ const Contact = () => {
     const socialContacts = [
         {
             id: 1,
-            title: "Lets's Talk",
+            title: "Let's Talk",
             text: "Feel free to get in touch with us for any inquiries, feedback, or collaborations. We are always eager to connect."
         },
 
