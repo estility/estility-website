@@ -12,6 +12,8 @@ import './careers.css';
 import { CiClock2 } from 'react-icons/ci';
 import Future from '../../components/future/future';
 import '../terms-and-conditions/terms-and-conditions.css';
+import { FcCollaboration } from 'react-icons/fc';
+import { FaUsersLine } from 'react-icons/fa6';
 
 const offers = [
   {
@@ -32,14 +34,14 @@ const offers = [
     id: 3,
     title: 'Collaboration ',
     text: "Work with a diverse and talented team, fostering a culture of shared growth.",
-    icon: <BiCartAlt size={20} />
+    icon: <FaUsersLine size={20} />
   },
 
   {
     id: 4,
     title: 'Growth ',
     text: "Access to continuous learning and development opportunities to enhance your skills.",
-    icon: <BiCartAlt size={20} />
+    icon: <FcCollaboration size={20} />
   },
 ]
 
@@ -113,7 +115,7 @@ At Estility, we believe that our team is our greatest asset,
         <VendorContent items={offers} heading='Why Estility?' />
         <CareerMgtSystem
           title='What we offer'
-          description="At Estility, we're not just offering a job – we're providing a platform for growth and an opportunity to make a meaningful impact. We reward good work with our amazing offerings."
+          description="At Estility, we are not just offering a job – we're providing a platform for growth and an opportunity to make a meaningful impact. We reward good work with our amazing offerings."
           image={careersImg}
         />
         <div className='sora-font bold-600 current-openings text-center mt-3'>Our Current Openings</div>
