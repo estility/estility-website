@@ -118,7 +118,9 @@ const Contact = () => {
         const isCityValid = formValues.city.trim() !== '';
         const isStateValid = formValues.state.trim() !== '';
         const isMessageValid = formValues.message.trim() !== '';
-        const isMobileValid = /^\+\d+([\s-]\d+)*$/.test(formValues.mobile);
+        // const isMobileValid = /^\+\d+([\s-]\d+)*$/.test(formValues.mobile);
+        const isMobileValid = /^\+?(\d+[\s-]?\d+)+$/.test(formValues.mobile);
+
         const isMessageTooLong = formValues.message.length > 500;
         const isTypeValid = selectedTopic.trim() !== '';
 
