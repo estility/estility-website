@@ -12,8 +12,10 @@ import riderimg from '../../assets/estility-rider.png';
 import './riders.css';
 import { useDispatch, useSelector } from 'react-redux'
 import { showForm } from '../../redux/reducers/display-form-reducer'
+import { useNavigate } from 'react-router-dom'
 
 const Riders = () => {
+  const navigate = useNavigate();
   const dispatch = useDispatch();
   const toggle = () => {
     dispatch(showForm())
@@ -59,7 +61,7 @@ const Riders = () => {
         />
       </div>
       <br /><br /><br />
-      <BottomBanner title='Making a difference – one doorstep at a time.' buttonText='Become a Rider!' onClick={toggle}
+      <BottomBanner title='Making a difference – one doorstep at a time.' buttonText='Become a Rider!' onClick={() =>navigate('/contact')}
         text='Are you ready to embark on this journey of convenience and service? 
     Join us as an Estility rider by filling out our application form and becoming a part of our dedicated team.'
       />
