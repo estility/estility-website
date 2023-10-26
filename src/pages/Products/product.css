@@ -60,6 +60,10 @@ text-transform: uppercase;
       margin-left: 0;
     }
 
+    .software-img {
+      margin-top: 20px;
+    }
+
     .career-img {
       justify-content: center!important;
       align-items: center!important;
