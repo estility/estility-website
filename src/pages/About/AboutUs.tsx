@@ -65,7 +65,7 @@ const AboutUs = () => {
       <div className='d-flex flex-column about-content'>
        <div className=' mt-2 custom-row justify-content-between align-center'>
         <div className=' story-image custom-col-md-6'><img src={image} alt=''  /></div>
-        <div className='custom-col-md-6 violet-background our-story-container'>
+        <div className='custom-col-md-6 violet-background our-story-container border-8'>
           <div className='d-flex flex-column justify-center align-items-center gap-10 violet-background'>
           <div className='violet-color ourstory-heading text-center sora-font bold-600 font-size-24 border-8'>Our Story</div>
           <div className='sora-font story-text'>
@@ -77,14 +77,14 @@ const AboutUs = () => {
        </div>
 
        <div className='custom-row justify-content-between align-center mt-2'>
-       <div className='custom-col-md-6 violet-background our-story-container text-center'>
+       <div className='custom-col-md-6 border-8 violet-background our-story-container text-center'>
           <div className='d-flex flex-column justify-center align-items-center gap-10'>
           <div className='violet-color sora-font bold-600 font-size-24  ourstory-heading text-center border-8'>Our VISION AND MISSION</div>
-          <div className='story-text bold-600 font-size-20 sora-font'>Our Vision:</div>
-          <div className='sora-font story-text'>To bring convenience to everyone</div>
-          <div className='story-text bold-600 font-size-20 sora-font'>Our Mission</div>
+          <div className='story-text bold-600 sora-font'>Our Vision:</div>
+          <div className='sora-font story-text font-size-24'>To bring convenience to everyone</div>
+          <div className='story-text bold-600 sora-font'>Our Mission</div>
           <div className='sora-font story-text'>
-          <span style={{ width: '70%'}}>Improving the way people live in communities through innovative solutions and services.</span>
+          <span className='font-size-24 story-text' style={{ width: '70%'}}>Improving the way people live in communities through innovative solutions and services.</span>
           </div>
           </div>
         </div>
