@@ -115,7 +115,7 @@ At Estility, we believe that our team is our greatest asset,
         <VendorContent items={offers} heading='Why Estility?' />
         <CareerMgtSystem
           title='What we offer'
-          description="At Estility, we are not just offering a job – we're providing a platform for growth and an opportunity to make a meaningful impact. We reward good work with our amazing offerings."
+          description="At Estility, we are not just offering a job – we are providing a platform for growth and an opportunity to make a meaningful impact. We reward good work with our amazing offerings."
           image={careersImg}
         />
         <div className='sora-font bold-600 current-openings text-center mt-3'>Our Current Openings</div>
