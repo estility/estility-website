@@ -126,7 +126,7 @@ const Questions = () => {
       </div>
       </div> 
       : null}
-      <div className='faq-heading text-center sora-font violet-color'>Frequently asked Questions(FAQs)</div>
+      <div className='faq-heading text-center sora-font violet-color'>Frequently Asked Questions(FAQs)</div>
       <div className='text-center faq-subtitle sora-font'>Here are the answers to the most commonly asked questions about our services and offerings.</div>
      <div className='d-flex justify-content-between faq-topics'>
       {faqTopics.map((text, index) => (
