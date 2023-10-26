@@ -33,7 +33,7 @@ export const EstateMgtSoftware:React.FC<EstateMgtProps> = ({title, description})
   )
 
 export const Solutions = ({title, description, image}: SolutionProps) => (
-    <div className='custom-row justify-content-between mt-3'>
+    <div className='custom-row justify-content-between mt-3 align-center'>
     <div className='custom-col-md-6'>
       <div className='d-flex flex-column'>
        <div className='violet-color sora-font bold-600 estate-software-title'>{title}</div>
@@ -65,7 +65,7 @@ export const Solutions = ({title, description, image}: SolutionProps) => (
 
 
   export const ResidentApp = ({title, description, image}: SolutionProps) => (
-    <div className='custom-row justify-content-between mt-3'>
+    <div className='custom-row justify-content-between mt-3 align-center'>
     <div className='custom-col-md-6'>
       <div className='d-flex flex-column'>
        <div className='violet-color sora-font bold-600 estate-software-title'>{title}</div>
