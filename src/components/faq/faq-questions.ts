@@ -40,7 +40,7 @@ export const estateMgt = [
     {
         id: 7,
         question: "How can I stay updated with Estility's latest features and updates?",
-        answer: "To stay updated with our latest news and updates, simply sign up for our newsletter. Additionally, you can follow us on our social media platforms. Find us at @estilityng on Facebook, Twitter, Instagram, and LinkedIn. We look forward to keeping you informed!"
+        answer: "To stay updated with our latest news and updates, simply sign up for our newsletter. Additionally, you can follow us on our social media platforms. Find us at @estilityng on Facebook, X, Instagram, and LinkedIn. We look forward to keeping you informed!"
     },
 
 
