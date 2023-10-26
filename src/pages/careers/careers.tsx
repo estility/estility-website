@@ -96,7 +96,7 @@ const Careers = () => {
         hasLink={true}
         hasButton={false}
         linkText='https://forms.gle/b644UDczfPSAyGhh9'
-        buttonText='Apply Now'
+        buttonText='View Openings'
       />
       <div className='careers-container'>
         <VendorContent items={offers} heading='Why Estility?' />
