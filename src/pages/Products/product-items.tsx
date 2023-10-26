@@ -162,7 +162,7 @@ export const Solutions = ({title, description, image}: SolutionProps) => (
        <EstilityRider
        description="A valid driver's license is your gateway to hitting the road." />
        <EstilityRider 
-       description="A smartphone for efficient order management through our delivery app" />
+       description="A smartphone for efficient order management through our delivery app." />
        <EstilityRider
        description='A positive attitude and a dedicated commitment to delivering
        exceptional customer service.' />
