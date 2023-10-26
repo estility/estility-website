@@ -15,6 +15,7 @@ const Questions = () => {
   const [selectedTopic, setSelectedTopic] = useState("");
   const [searchValue, setSearchValue] = useState("");
   const [ searchData, setSearchData] = useState<FAQItemProps[]>(estateMgt);
+  const [ viewallText, setViewAllText] = useState('View More')
 
   useEffect(() => {
     setSearchData(estateMgt);

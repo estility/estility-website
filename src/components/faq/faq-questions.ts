@@ -59,7 +59,7 @@ export const estateMgt = [
     {
         id: 10,
         question: "What types of payment methods are accepted for dues and services?",
-        answer: "Estility offers a convenient wallet system within the Estate App. This allows for all payments and dues collections to be efficiently managed and processed within the app, providing a seamless financial experience for both residents and estate management."
+        answer: "The Resident's App on Estility typically offers multiple modes of payment to provide convenience and flexibility for users. Users can make payments with their debit cards, bank transfers and their mobile wallet."
     },
 
     {

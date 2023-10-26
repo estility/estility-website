@@ -29,7 +29,7 @@ const Riders = () => {
     {
       id: 2,
       title: 'Great Earning Potential ',
-      text: "Your earnings are a direct result of your dedication. Each successful delivery not only adds to your income but also provides you with atransparent view of your earnings",
+      text: "Your earnings are a direct result of your dedication. Each successful delivery not only adds to your income but also provides you with a transparent view of your earnings",
       icon: <MdAccessibilityNew size={20} />
     },
 
