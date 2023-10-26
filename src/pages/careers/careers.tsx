@@ -11,6 +11,7 @@ import careersImg from '../../assets/careers-img.png';
 import './careers.css';
 import { CiClock2 } from 'react-icons/ci';
 import Future from '../../components/future/future';
+import '../terms-and-conditions/terms-and-conditions.css';
 
 const offers = [
   {
@@ -87,7 +88,7 @@ const Careers = () => {
 
   return (
     <div className='d-flex flex-column gap-10'>
-      <HeaderBanner
+      {/* <HeaderBanner
         title='Join Our Team and Shape the Future of Estates Management!'
         subText="At Estility, we believe that our team is our greatest asset, 
         and we're always on the lookout for passionate individuals who share our vision. Join us in creating
@@ -97,7 +98,17 @@ const Careers = () => {
         hasButton={false}
         linkText='https://forms.gle/b644UDczfPSAyGhh9'
         buttonText='View Openings'
-      />
+      /> */}
+      <div className='d-flex flex-column violet-background terms-and'>
+  <div style={{width: '70%', alignSelf:'center'}} className='terms-and-condition-banner d-flex flex-column text-center sora-font text-white bold-600'>Join Our Team and Shape the Future of Estates Management!</div>
+<div style={{width: '70%', alignSelf:'center'}} className='sora-font t-andc-subtext text-center text-white'>
+At Estility, we believe that our team is our greatest asset, 
+        and we're always on the lookout for passionate individuals who share our vision. Join us in creating
+         seamless living experiences for residents across Nigeria.
+</div>
+  <a href='#jobs' className='violet-color bold-500 sora-font banner-button'>View Openings</a>
+
+  </div>
       <div className='careers-container'>
         <VendorContent items={offers} heading='Why Estility?' />
         <CareerMgtSystem
