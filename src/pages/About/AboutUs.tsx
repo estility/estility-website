@@ -67,7 +67,7 @@ const AboutUs = () => {
         <div className=' story-image custom-col-md-6'><img src={image} alt=''  /></div>
         <div className='custom-col-md-6 violet-background our-story-container border-8'>
           <div className='d-flex flex-column justify-center align-items-center gap-10 violet-background'>
-          <div className='violet-color ourstory-heading text-center sora-font bold-600 font-size-24 border-8'>Our Story</div>
+          <div className='violet-color ourstory-heading text-center sora-font bold-600 font-size-24 border-8'>OUR STORY</div>
           <div className='sora-font story-text'>
           At Estility, we are driven by our love for innovation and our desire to serve. We set out to use technology to meet the ever-changing needs of contemporary communities, aiming 
           to simplify, secure, and enrich the lives of the people we serve.
@@ -79,8 +79,8 @@ const AboutUs = () => {
        <div className='custom-row justify-content-between align-center mt-2'>
        <div className='custom-col-md-6 border-8 violet-background our-story-container text-center'>
           <div className='d-flex flex-column justify-center align-items-center gap-10'>
-          <div className='violet-color sora-font bold-600 font-size-24  ourstory-heading text-center border-8'>Our VISION AND MISSION</div>
-          <div className='story-text bold-600 sora-font'>OUR Vision:</div>
+          <div className='violet-color sora-font bold-600 font-size-24  ourstory-heading text-center border-8'>OUR VISION AND MISSION</div>
+          <div className='story-text bold-600 sora-font'>Our Vision:</div>
           <div className='sora-font story-text font-size-24'>To bring convenience to everyone</div>
           <div className='story-text bold-600 sora-font'>Our Mission</div>
           <div className='sora-font story-text'>
