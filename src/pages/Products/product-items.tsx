@@ -184,7 +184,7 @@ export const Solutions = ({title, description, image}: SolutionProps) => (
       className='d-flex align-items-center violet-background'>
       <AiOutlineCheck color='#fff' />
       </div>
-     <div className='d-flex flex-column'>
+     <div className='d-flex flex-column mt-1'>
       <div className='dark-font sora-font bold-600 estate-mgt-product'>{title}</div>
       <div className='font-size-14 dark-font estate-mg-product-desc'>{description}</div>
      </div>
@@ -200,14 +200,17 @@ export const Solutions = ({title, description, image}: SolutionProps) => (
        <div className='dark-color sora-font estate-software-text'>{description}</div>
       </div>
       <div className='custom-row career-items-div'>
-       <Career title='Efficient Order Processing' 
-       description='Seamlessly receive, manage, and process orders from residents through our user-friendly interface.' />
-       <Career title='Real-time Inventory Updates' 
-       description="Track of your inventory in real time, ensuring that you're always stocked up and ready to fulfill orders." />
-       <Career title='Transparent Earnings' 
-       description='Gain insights into your earnings, order history, and payment details through a transparent dashboard.' />
-       <Career title='Simplified Payment MAnagement'
-       description='Securely manage earnings and withdrawals, guaranteeing hassle-free financial processes.' />
+       <Career title='Work-Life Balance' 
+       description='We understand that a healthy work-life balance is crucial for your overall well-being. We offer flexible working hours and remote work options to help you manage your personal and professional commitments.' />
+
+       <Career title='Competitive Base Pay' 
+       description="Your skills deserve recognition. We offer competitive compensation packages that are aligned with industry standards and reflect the value you bring to our team." />
+
+       <Career title='Health and Wellness' 
+       description="Your well-being matters. We offer health and wellness programs that promote physical and mental health, ensuring you're at your best both in and out of the workplace." />
+
+       <Career title='Modern Workspace'
+       description="Our office spaces are designed for comfort and creativity. With modern amenities and a vibrant atmosphere, you'll have a conducive environment to bring your best ideas to life." />
       </div>
       <div>
       </div>
