@@ -52,7 +52,7 @@ export const estateMgt = [
 
     {
         id: 9,
-        question: "Provide information on the onboarding process for communities interested in using the software.",
+        question: "Does Estility provide information on the onboarding process for communities interested in using the software?",
         answer: "Estate managements will be contacted and guided through the onboarding process. We're here to assist and ensure a smooth transition to using our services."
     },
 
