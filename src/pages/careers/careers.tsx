@@ -57,7 +57,7 @@ export const jobs = [
   {
     id: 2,
     title: 'Software Engineer',
-    text: 'We are looking for a product designer to join our team',
+    text: 'We are looking for a software engineer to join our team',
     location: 'Lagos, Nigeria',
     type: 'Full Time'
   },
