@@ -19,7 +19,7 @@ const Home = () => {
   const offers = [
     {
       id: 1,
-      title: 'Estate levies collection ',
+      title: 'Estate Levies Collection ',
       text: 'Receive prompt and automated payments of  community resident levies, eliminating the need for manual or coercive collection methods.  ',
       icon: <BiBriefcaseAlt size={20}/>
     },
@@ -40,7 +40,7 @@ const Home = () => {
 
     {
       id: 4,
-      title: 'Electricity unit Purchase ',
+      title: 'Electricity Unit Purchase ',
       text: "Buy Prepaid/Postpaid electricity easily with our electricity purchase feature, 24 hours a day, anywhere in Nigeria.",
       icon: <IoBulbOutline size={20}/>
     }
