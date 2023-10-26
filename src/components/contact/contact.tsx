@@ -241,12 +241,12 @@ const Contact = () => {
 
                 <div className='d-flex flex-column sora-font input-div'>
                     <div className='form-label sora-font'>Address</div>
-                    <input required name='address' onChange={handleChange} className='flexgrow-1' placeholder='Your current address' type='text' />
+                    <input required name='address' onChange={handleChange} className='flexgrow-1' placeholder='Enter your current address' type='text' />
                 </div>
 
                 <div className='d-flex flex-column sora-font input-div'>
                     <div className='form-label sora-font'>Phone Number</div>
-                    <input required name='mobile' onChange={handleChange} className='flexgrow-1' placeholder='Your phone number' type='text' />
+                    <input required name='mobile' onChange={handleChange} className='flexgrow-1' placeholder='Enter your phone number' type='text' />
                 </div>
 
                 <div className='d-flex gap-10 justify-content-between city-state'>
@@ -256,7 +256,7 @@ const Contact = () => {
                     </div>
                     <div className='d-flex flex-column flexgrow-1 sora-font input-div'>
                         <div className='form-label sora-font'>State</div>
-                        <input required name='state' onChange={handleChange} className='flexgrow-1' placeholder='State' type='text' />
+                        <input required name='state' onChange={handleChange} className='flexgrow-1' placeholder='Enter your state' type='text' />
                     </div>
                 </div>
 
