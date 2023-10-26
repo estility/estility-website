@@ -15,7 +15,7 @@ export const estateMgt = [
     {
         id: 3,
         question: "Is Estility's software easy to use?",
-        answer: "Yes, the Estate app is designed for user-friendliness. After your estate or gated community signs up, all that's required is to download the app from your respective app store, either Play Store for Android or the IOS store for Apple devices, and then sign in using your registered email address. It's a straightforward process to get started with the app"
+        answer: "Yes, the Estility software is designed for user-friendliness. After your estate or gated community signs up, all that's required is to download the app from your respective app store, either Play Store for Android or the IOS store for Apple devices, and then sign in using your registered email address. It's a straightforward process to get started with the app"
     },
 
 
