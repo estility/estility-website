@@ -137,7 +137,7 @@ export const residentApp = [
     {
         id: 3,
         question: "Can I customize Estility's software to fit my community's specific needs?",
-        answer: "Yes, our app can be customized to align with your specific requirements. For detailed information on customization options, please reach out to our customer support team. They will be happy to assist you further and provide guidance on tailoring the app to your specific needs."
+        answer: "Yes, our app can be customized to align with your specific requirements. For detailed information on customization options, please reach out to our customer support team through the Contact Us page of our website or email us at support@estility.co. They will be happy to assist you further and provide guidance on tailoring the app to your specific needs."
     },
 
     {
