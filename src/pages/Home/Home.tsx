@@ -118,7 +118,7 @@ const toggle = () => {
       <div className='violet-background d-flex justify-content-between align-center vendor-group mt-2'>
         <div className='flexgrow-1 d-flex flex-column vendor-item'>
          <div className='vendors-header sora-font text-white'>Vendors</div>
-         <div className='vendor-text sora-font text-white'>Grow your business significantly by connecting with an extensive network of residents spanning multiple estates around you. Manage your products and your orders directly from your computer or mobile phone!  Join our ecosystem of vendors committed to delivering excellence and convenience. </div>
+         <div className='vendor-text sora-font text-white'>Grow your business significantly by connecting with an extensive network of residents spanning multiple estates around you. Manage your products and orders directly from your computer or mobile phone!  Join our ecosystem of vendors committed to delivering excellence and convenience. </div>
           <a href='/contact' className='text-white no-wrap'>Become A Vendor</a>
         </div>
         <div className='flexgrow-1 vendor-group-img'>
