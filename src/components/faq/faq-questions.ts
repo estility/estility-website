@@ -79,7 +79,7 @@ export const estateSecurity = [
     {
         id: 1,
         question: "What is Estate or Gated Community Secure Service?",
-        answer: "It is a comprehensive security and access control solution designed to enhance safety and security within our estate/gated community. It offers a range of features to protect residents and their property."
+        answer: "It is a comprehensive security and access control solution designed to enhance safety and security within your estate/gated community. It offers a range of features to protect residents and their property."
     },
 
     {
