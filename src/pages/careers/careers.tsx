@@ -62,6 +62,14 @@ export const jobs = [
     type: 'Full Time'
   },
 
+  {
+    id: 3,
+    title: 'Financial Accountant',
+    text: 'We are looking for a financial accountant to join our team',
+    location: 'Lagos, Nigeria',
+    type: 'Full Time'
+  },
+
 ]
 
 interface JobProps {
