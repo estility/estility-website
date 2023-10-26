@@ -95,7 +95,8 @@ const Careers = () => {
         hasSubText={true}
         hasLink={true}
         hasButton={false}
-        linkText='https://forms.gle/b644UDczfPSAyGhh9'
+        // linkText='https://forms.gle/b644UDczfPSAyGhh9'
+        linkText="#jobs"
         buttonText='Apply Now'
       />
       <div className='careers-container'>

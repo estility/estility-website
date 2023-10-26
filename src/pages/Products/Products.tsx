@@ -23,7 +23,7 @@ const toggle = () => {
     <div className='d-flex flex-column product-container'>
       <HeaderBanner title='Smart Solutions for Easy Living' 
         subText="At ESTILITY, we simplify your life, enhance your security, and keep you connected to your community."
-       hasSubText={true} hasButton={true} buttonText='Request A Demo' linkText='/contact'
+       hasSubText={true} hasButton={true} buttonText='Request a Demo' linkText='/contact'
        onClick={toggle}
         />
        <div className='d-flex flex-column product-display'>
