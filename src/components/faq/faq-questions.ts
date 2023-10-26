@@ -115,7 +115,7 @@ export const estateSecurity = [
     {
         id: 7,
         question: "What happens if I forget or lose my visitor access code?",
-        answer: "If you forget or lose your visitor access code, contact the host or Resident for assistance. They may be able to provide a new code or guide you through the already generated code."
+        answer: "If you forget or lose your visitor access code, contact the host or Resident for assistance. They will be able to provide a new code or guide you through the already generated code."
     }
 
 ]
