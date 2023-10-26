@@ -86,7 +86,7 @@ const toggle = () => {
         Elevate Your Community and Estate Management in Nigeria with innovative solutions. 
         </div>
         <div className='banner-subheader sora-font'>
-        Our software solution automates estate and facility management for Nigerian property owners and residents, See how our software simplifies estate management. 
+        Our software solution automates estate and facility management for Nigerian property owners and residents, see how our software simplifies estate management. 
          </div>
       <div className='request-demo'>
         <button onClick={toggle} className='violet-background'>Request Demo</button>

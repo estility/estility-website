@@ -137,7 +137,7 @@ const validationSchema = Yup.object({
                          onChange={formikProps.handleChange("name")}
                          value={formikProps.values.name}
                          onBlur={formikProps.handleBlur('name')}
-                        placeholder='Full name' 
+                        placeholder='Full Name' 
                         required
                         type='text' />
                 <p className='fw-bold text-danger'>{formikProps.touched.name  && formikProps.errors.name}</p>
