@@ -65,7 +65,7 @@ export const estateMgt = [
     {
         id: 11,
         question: "Specify the devices and operating systems supported by the software.",
-        answer: "The Estility app is accessible and available for download on desktop PC, IOS App Store and the Google Play Store, making it compatible with a wide range of devices for your convenience."
+        answer: "The Estility app is accessible and available for download on both the IOS App Store and the Google Play Store, making it compatible with a wide range of devices for your convenience."
     },
 
     {
