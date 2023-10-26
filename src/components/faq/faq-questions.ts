@@ -9,7 +9,7 @@ export const estateMgt = [
     {
         id: 2,
         question: "How can I request a demo or get started with Estility?",
-        answer: 'You can click the "Schedule a Demo" link on our website or send us an email at support@estility.co to request a demonstration.'
+        answer: 'You can click the "Get a Demo" button on our website or send us an email at support@estility.co to request a demonstration.'
     },
 
     {
