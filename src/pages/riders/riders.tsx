@@ -52,7 +52,7 @@ const Riders = () => {
   return (
     <div className='d-flex flex-column vendor-container'>
       <HeaderBanner title='Deliver Convenience, One Order at a Time!'
-        hasSubText={false} hasButton={false} hasLink={true} buttonText='BECOME A RIDER' linkText='/contact' />
+        hasSubText={false} hasButton={false} hasLink={true} buttonText='Become a rider' linkText='/contact' />
       <VendorContent items={offers} heading='Why Choose Estility?' />
       <div className='rider-div'>
         <RiderMgtSystem title='Who Qualifies as an Estility Rider?'
@@ -61,7 +61,7 @@ const Riders = () => {
         />
       </div>
       <br /><br /><br />
-      <BottomBanner title='Making a difference – one doorstep at a time.' buttonText='Become a Rider!' onClick={() =>navigate('/contact')}
+      <BottomBanner title='Making a difference – one doorstep at a time.' buttonText='Become a rider!' onClick={() =>navigate('/contact')}
         text='Are you ready to embark on this journey of convenience and service? 
     Join us as an Estility rider by filling out our application form and becoming a part of our dedicated team.'
       />

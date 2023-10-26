@@ -103,7 +103,7 @@ const Contact = () => {
 
         {
             id: 5,
-            title: 'Become a Rider'
+            title: 'Become a rider'
         }
     ]
 
