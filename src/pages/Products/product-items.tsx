@@ -41,14 +41,14 @@ export const Solutions = ({title, description, image}: SolutionProps) => (
       </div>
       <div className='custom-row'>
        <EstateMgtSoftware title='RESIDENT DATABASE MANAGEMENT' 
-       description="Keep track of all residents effortlessly. Our software centralizes resident data, making communication and record-keeping easy and efficient" />
+       description="Keep track of all residents effortlessly. Our software centralizes resident data, making communication and record-keeping easy and efficient." />
 
        <EstateMgtSoftware title='Dues Tracking and Management' 
        description='Say goodbye to manual accounting. Our software automates the calculation and tracking
        of dues, guaranteeing accurate financial management.' />
 
        <EstateMgtSoftware title='Complaints and Maintenance' 
-       description="Simplify the process of handlingproperty maintenance requests and monitor their resolution
+       description="Simplify the process of handling property maintenance requests and monitor their resolution
        progress, ensuring prompt responses to resident related concerns." />
 
        <EstateMgtSoftware title='Seamless Communication'
@@ -76,12 +76,12 @@ export const Solutions = ({title, description, image}: SolutionProps) => (
        description='Pay your dues conveniently and instantly through the app.' />
 
        <EstateMgtSoftware title='Utility Payment' 
-       description='Conveniently pay your utility bills from the app, saving you time and effort' />
+       description='Conveniently pay your utility bills from the app, saving you time and effort.' />
 
        <EstateMgtSoftware title='Visitor Passes' 
        description='Generate visitors access codes for your guests through the app.' />
 
-       <EstateMgtSoftware title='Grocery Shopping and Cooking Gas Purchase:'
+       <EstateMgtSoftware title='Grocery Shopping and Cooking Gas Purchase'
        description='Don’t leave your house. Tell us what you want on the app and we will bring it to you. No need to carry heavy bags and gas cylinders.' />
 
       </div>

@@ -95,7 +95,7 @@ const Careers = () => {
         hasSubText={true}
         hasLink={true}
         hasButton={false}
-        linkText='https://forms.gle/b644UDczfPSAyGhh9'
+        linkText="#jobs"
         buttonText='Apply Now'
       />
       <div className='careers-container'>
@@ -106,7 +106,7 @@ const Careers = () => {
           image={careersImg}
         />
         <div className='sora-font bold-600 current-openings text-center mt-3'>Our Current Openings</div>
-        <div className='d-flex flex-column gap-10'>
+        <div id='jobs' className='d-flex flex-column gap-10'>
           {jobs.map(job => (
             <JobView
               id={job.id}
