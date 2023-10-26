@@ -78,7 +78,7 @@ export const Solutions = ({title, description, image}: SolutionProps) => (
        <EstateMgtSoftware title='Utility Payment' 
        description='Conveniently pay your utility bills from the app, saving you time and effort.' />
 
-       <EstateMgtSoftware title='Visitor Management' 
+       <EstateMgtSoftware title='Visitor Pass' 
        description='Generate visitors access codes for your guests through the app.' />
 
        <EstateMgtSoftware title='Grocery Shopping and Cooking Gas Purchase'
