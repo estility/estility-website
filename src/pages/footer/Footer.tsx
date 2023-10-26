@@ -58,7 +58,7 @@ const Footer = () => {
     {
       id: 3,
       name: 'linkedin',
-      link: 'https://www.linkedin.com/in/estility',
+      link: 'https://www.linkedin.com/company/estilityng',
       icon: <IoLogoLinkedin />
     },
     
