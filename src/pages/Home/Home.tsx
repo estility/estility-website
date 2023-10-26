@@ -51,7 +51,7 @@ const Home = () => {
       id: 1,
       title: 'Our Products',
       subtitle: 'Estate Management Software',
-      text: 'You can now remotely oversee your estate and gated community with the ability to add property units, add or remove residents, track estate financial records, monitor visitor logs, attend to resident complaints, and manage estate personnel. ',
+      text: "You can now remotely oversee your estate and gated community with the ability to add property units, add or remove residents, track estate financial records, monitor visitors' logs, attend to resident complaints, and manage estate personnel. ",
       image: frameTwo
     },
 
