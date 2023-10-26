@@ -59,8 +59,7 @@
   de famous moni point */
   .about-banner-bg {
     background: url('../../assets/bg-3.png') no-repeat center center;
-    background-size: 100%;
-    /* background-size: cover; */
+    background-size: 100% 100%;
     background-position: center center;
     background-color: #34204D;
   }
