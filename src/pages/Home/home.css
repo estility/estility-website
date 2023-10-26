@@ -79,7 +79,7 @@ font-size: 16px;
 }
 
 .homepage-container .products {
-  background-image: url('../../assets/banner-bg-1.png');
+  /* background-image: url('../../assets/product-blur.png'); */
 }
 
 .homepage-container .products > :nth-child(2) {
