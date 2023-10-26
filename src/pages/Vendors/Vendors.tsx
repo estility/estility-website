@@ -3,12 +3,14 @@ import { HeaderBanner } from '../terms-and-conditions/terms-and-conditions'
 import Offers from '../../components/offers/offers'
 import { BiBriefcaseAlt, BiCartAlt } from 'react-icons/bi'
 import { IoBulbOutline } from 'react-icons/io5'
-import { MdAccessibilityNew } from 'react-icons/md'
+import { MdAccessibilityNew, MdOutlineVisibility } from 'react-icons/md'
 import { VendorMgtSystem } from '../Products/product-items'
 import vendors from '../../assets/vendors-image.png'
 import Future from '../../components/future/future'
 import './vendor.css';
 import VendorContent from './vendor-content'
+import { FcCollaboration } from 'react-icons/fc'
+import { FaUsersLine } from 'react-icons/fa6'
 
 const Vendors = () => {
   const offers = [
@@ -16,21 +18,21 @@ const Vendors = () => {
       id: 1,
       title: 'Reach More People ',
       text: 'With a vast user base across multiple estates, partnering with ESTILITY opens doors to a broader customer network.  ',
-      icon: <BiBriefcaseAlt size={20}/>
+      icon: <FcCollaboration size={20} />
     },
 
     {
       id: 2,
       title: ' Efficient Operations',
       text: 'Our Vendor Management System simplifies order processing, inventory management, and earnings tracking, streamlining your business processes.',
-      icon:  <MdAccessibilityNew size={20}/>
+      icon: <FaUsersLine size={20} />
     },
 
     {
       id: 3,
       title: 'Enhanced Visibility',
       text: 'Show your services to a ready audience through our platform, increasing your brand’s visibility and recognition.',
-      icon: <BiCartAlt size={20}/>
+      icon: <MdOutlineVisibility size={20}/>
     },
   ]
 

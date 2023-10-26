@@ -10,6 +10,8 @@ import Contact from '../../components/contact/contact';
 import imageBanner from '../../assets/our-vision.png';
 import { useDispatch, useSelector } from 'react-redux';
 import { showForm } from '../../redux/reducers/display-form-reducer';
+import { FaUsersLine } from 'react-icons/fa6';
+import { FcCollaboration } from 'react-icons/fc';
 
 export const BottomBanner:React.FC<Props> = ({title, text, buttonText}) => {
   const dispatch = useDispatch();
@@ -41,21 +43,21 @@ const AboutUs = () => {
       id: 2,
       title: 'Thriving Partnership Network',
       text: "Collaboration is at our core. We don't just offer products; we provide gateways to a network of valuable partnerships. Our ecosystem empowers you with connections to elevate your estate management journey.",
-      icon:  <MdAccessibilityNew size={20}/>
+      icon: <FaUsersLine size={20} />
     },
 
     {
       id: 3,
       title: 'Innovative Approach',
       text: "Innovation is woven into the fabric of our company. We are trailblazers, unafraid to challenge conventions, set trends, and create solutions. With us, you're not merely keeping pace; you're forging ahead in an ever-evolving landscape.",
-      icon: <BiCartAlt size={20}/>
+      icon: <IoBulbOutline size={20}/>
     },
 
     {
       id: 4,
       title: 'Comprehensive Solutions ',
       text: 'Our product suite is a reflection of our commitment. From our Estate Management Software to, our Resident App, designed for seamless interaction, each solution is borne of a deep understanding of the ecosystem, our customers, and your needs.',
-      icon: <IoBulbOutline size={20}/>
+      icon: <FcCollaboration size={20} />
     }
   ]
   
