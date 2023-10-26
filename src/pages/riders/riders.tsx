@@ -32,14 +32,14 @@ const Riders = () => {
     {
       id: 2,
       title: 'Great Earning Potential ',
-      text: "Your earnings are a direct result of your dedication. Each successful delivery not only adds to your income but also provides you with a transparent view of your earnings",
+      text: "Your earnings are a direct result of your dedication. Each successful delivery not only adds to your income but also provides you with a transparent view of your earnings.",
       icon: <MdAccessibilityNew size={20} />
     },
 
     {
       id: 3,
       title: 'Supportive Platform ',
-      text: "Our user-friendly delivery app is designed to provide you with step-bystep guidance through each order, ensuring the entire process is smooth and effective. ",
+      text: "Our user-friendly delivery app is designed to provide you with step-by-step guidance through each order, ensuring the entire process is smooth and effective. ",
       icon: <BiSupport size={20} />
     },
 
