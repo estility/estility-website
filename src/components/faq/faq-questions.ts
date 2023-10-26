@@ -124,7 +124,7 @@ export const residentApp = [
     {
         id: 1,
         question: 'What are the key features of the Resident App?',
-        answer: "Estility offers a software solution that encompasses both a Resident User App and an Estate Management App. The Resident User App empowers residents by bringing ease to their needs, including making payments for dues and utility bills, requesting visitors’ access codes, ordering groceries and cooking gas from vendors, engaging with their estate community support team. ",
+        answer: "Estility offers a software solution that encompasses both a Resident User App and an Estate Management App. The Resident User App empowers residents by bringing ease to their needs, including making payments for dues and utility bills, requesting visitors’ access codes, ordering groceries and cooking gas from vendors, engaging with their estate community support team and many more features. ",
     },
 
     {
