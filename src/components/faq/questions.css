@@ -262,4 +262,9 @@ line-height: 24px;
       .faq-subtitle {
         min-width: 90%;
       }
+
+      .faq-question .question {
+    font-size: 16px!important;
+    line-height: 32px;
+      }
   }
