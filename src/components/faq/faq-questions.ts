@@ -157,7 +157,7 @@ export const partners = [
     {
         id: 2,
         question: "What are the requirements for vendors to join the app?",
-        answer: "After an Estility Vendor engagement officer has confirmed your interest, the Vendor Vendor Officer will contact you for the rest of the process.",
+        answer: "After an Estility Vendor engagement officer has confirmed your interest, the Vendor Officer will contact you for the rest of the process.",
     },
 
     {
@@ -187,13 +187,13 @@ export const partners = [
     {
         id: 7,
         question: "Can vendors offer special promotions or discounts to residents through the app?",
-        answer: "Vendors may offer special promotions, discounts, or loyalty programs to residents through the app. Kindly contact the Estility Account officer to more details."
+        answer: "Vendors may offer special promotions, discounts, or loyalty programs to residents through the app. Kindly contact the Estility Account officer for more details."
     },
 
     {
         id: 8,
         question: "What are the operating hours for orders?",
-        answer: "Operating hours are between the hours of 8am -6pm. The app typically allows residents to place orders at their convenience, but delivery times may vary depending on Resident’s availability."
+        answer: "The app typically allows residents to place orders at their convenience, but delivery times may vary depending on Resident’s availability."
     }
 ]
 
