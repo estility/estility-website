@@ -46,16 +46,10 @@ const offers = [
 ]
 
 export const jobs = [
-  {
-    id: 1,
-    title: 'Product Designer',
-    text: 'We are looking for a product designer to join our team',
-    location: 'Lagos, Nigeria',
-    type: 'Full Time'
-  },
+ 
 
   {
-    id: 2,
+    id: 1,
     title: 'Software Engineer',
     text: 'We are looking for a software engineer to join our team',
     location: 'Lagos, Nigeria',
@@ -63,12 +57,20 @@ export const jobs = [
   },
 
   {
-    id: 3,
+    id: 2,
     title: 'Financial Accountant',
     text: 'We are looking for a financial accountant to join our team',
     location: 'Lagos, Nigeria',
     type: 'Full Time'
   },
+
+  {
+    id: 3,
+    title: 'Operations Manager',
+    text: 'We are looking for an operations manager to join our team',
+    location: 'Lagos, Nigeria',
+    type: 'Full Time'
+  }
 
 ]
 
@@ -91,7 +93,7 @@ const Careers = () => {
           <button className='job-type d-flex align-center violet-color sora-font'><CiClock2 size={20} />{type}</button>
         </div>
       </div>
-      <Link to='https://forms.gle/b644UDczfPSAyGhh9' target='_blank' rel="noreferrer" style={{ justifyContent: 'end'}} className='d-flex flex-column apply-button-div'><button className='violet-background bold-500 sora-font text-white apply-button'>Apply <BsArrowUpRight /> </button></Link>
+      <Link to='https://forms.gle/UKM9ZEFRWZptRD929' target='_blank' rel="noreferrer" style={{ justifyContent: 'end'}} className='d-flex flex-column apply-button-div'><button className='violet-background bold-500 sora-font text-white apply-button'>Apply <BsArrowUpRight /> </button></Link>
       {/* <Link to={`/job/${id}`} style={{ justifyContent: 'end'}} className='d-flex flex-column apply-button-div'><button className='violet-background bold-500 sora-font text-white apply-button'>Apply <BsArrowUpRight /> </button></Link> */}
     </div>
   )
