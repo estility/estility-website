@@ -59,7 +59,7 @@ const PrivacyPolicy = () => {
               <li>
                 <strong>Employment Related Data:</strong> This may be
                 categorized into:
-                <ul>
+                <ul className="d-flex flex-column gap-2">
                   <li>
                     <strong>As a prospective employee:</strong> If you apply for
                     a role with Estility, during your recruitment process,
@@ -103,8 +103,8 @@ const PrivacyPolicy = () => {
                 raise.
               </li>
               <li>
-                <strong>Other Information:</strong>
-                <ul>
+                <strong className="">Other Information:</strong>
+                <ul className="d-flex flex-column gap-2 mt-1">
                   <li>
                     <strong>Analytics:</strong> We analyze our relationship and
                     transactional information to derive unique data. For
@@ -156,7 +156,7 @@ const PrivacyPolicy = () => {
 
           <div>
             <h3>Uses of Information</h3>
-            <p>We use your personally identifiable information to...</p>
+            <p className="mt-1">We use your personally identifiable information to...</p>
             <ul className="d-flex flex-column gap-2">
               <li>
                 Provide you with our services and customer support, including
@@ -205,7 +205,7 @@ const PrivacyPolicy = () => {
 
           <div>
             <h3>Marketing</h3>
-            <p>
+            <p className="mt-1">
               We may use your personal data for the purpose of providing
               targeted marketing services about our services or any of our
               partners’ services to you. We may send marketing communications to
