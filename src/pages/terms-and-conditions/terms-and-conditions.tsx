@@ -991,7 +991,7 @@ const TermsAndConditions = ({ terms }: Props) => {
 
         <h3>18. DISPUTE RESOLUTION</h3>
 
-        <h2>Informal Negotiations</h2>
+        <h4>Informal Negotiations</h4>
 
         <p>
           To expedite resolution and control the cost of any dispute,
@@ -1004,7 +1004,7 @@ const TermsAndConditions = ({ terms }: Props) => {
           upon written notice from one Party to the other Party.
         </p>
 
-        <h2>Binding Arbitration</h2>
+        <h4>Binding Arbitration</h4>
 
         <p>
           Any dispute arising out of or in connection with these Legal Terms,
@@ -1020,7 +1020,7 @@ const TermsAndConditions = ({ terms }: Props) => {
           Nigeria.
         </p>
 
-        <h2>Restrictions</h2>
+        <h4>Restrictions</h4>
 
         <p>
           The Parties agree that any arbitration shall be limited to the Dispute
@@ -1033,7 +1033,7 @@ const TermsAndConditions = ({ terms }: Props) => {
           any other persons.
         </p>
 
-        <h2>Exceptions to Informal Negotiations and Arbitration</h2>
+        <h4>Exceptions to Informal Negotiations and Arbitration</h4>
 
         <p>
           The Parties agree that the following Disputes are not subject to the
@@ -1206,7 +1206,7 @@ const TermsAndConditions = ({ terms }: Props) => {
         <p>Maben Condominium Estate</p>
         <p>Lagos 105102</p>
         <p>Nigeria</p>
-        <p>Phone: [Your Phone Number]</p>
+        <p>Phone: +234 916 957 8082</p>
         <p>Email: info@estility.co</p>
       </div>
 
