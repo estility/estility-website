@@ -359,7 +359,7 @@ const TermsAndConditions = ({ terms }: Props) => {
           </p>
         </div>
 
-        <h3>3. USER REPRESENTATIONS</h3>
+        <h3 id='user-representations'>3. USER REPRESENTATIONS</h3>
 
         <p>By using the Services, you represent and warrant that:</p>
 
@@ -398,7 +398,7 @@ const TermsAndConditions = ({ terms }: Props) => {
           (or any portion thereof).
         </p>
 
-        <h3>4. USER REGISTRATION</h3>
+        <h3 id='user-registration'>4. USER REGISTRATION</h3>
 
         <p>
           You may be required to register to use the Services. You agree to keep
@@ -409,7 +409,7 @@ const TermsAndConditions = ({ terms }: Props) => {
           objectionable.
         </p>
 
-        <h3>5. PURCHASES AND PAYMENT</h3>
+        <h3 id='purchases-payment'>5. PURCHASES AND PAYMENT</h3>
 
         <p>We accept the following forms of payment:</p>
 
@@ -450,7 +450,7 @@ const TermsAndConditions = ({ terms }: Props) => {
           distributors.
         </p>
 
-        <h3>6. CANCELLATION</h3>
+        <h3 id='cancellation'>6. CANCELLATION</h3>
 
         <p>
           All purchases are non-refundable. You can cancel your subscription at
@@ -464,7 +464,7 @@ const TermsAndConditions = ({ terms }: Props) => {
           support@estility.co or call us at [...].
         </p>
 
-        <h3>7. SOFTWARE</h3>
+        <h3 id='software'>7. SOFTWARE</h3>
 
         <p>
           We may include software for use in connection with our Services. If
@@ -482,7 +482,7 @@ const TermsAndConditions = ({ terms }: Props) => {
           software except in accordance with the EULA or these Legal Terms.
         </p>
 
-        <h3>8. PROHIBITED ACTIVITIES</h3>
+        <h3 id='prohibited-activities'>8. PROHIBITED ACTIVITIES</h3>
 
         <p>
           You may not access or use the Services for any purpose other than that
@@ -604,7 +604,7 @@ const TermsAndConditions = ({ terms }: Props) => {
           <li>Sell or otherwise transfer your profile.</li>
         </ul>
 
-        <h3>9. USER GENERATED CONTRIBUTIONS</h3>
+        <h3 id='user-generated-contributions'>9. USER GENERATED CONTRIBUTIONS</h3>
 
         <p>
           The Services do not offer users to submit or post content. We may
@@ -691,7 +691,7 @@ const TermsAndConditions = ({ terms }: Props) => {
           suspension of your rights to use the Services.
         </p>
 
-        <h3>10. CONTRIBUTION LICENSE</h3>
+        <h3 id='contribution-license'>10. CONTRIBUTION LICENSE</h3>
 
         <p>
           You and Services agree that we may access, store, process, and use any
@@ -716,7 +716,7 @@ const TermsAndConditions = ({ terms }: Props) => {
           refrain from any legal action against us regarding your Contributions.
         </p>
 
-        <h3>11. GUIDELINES FOR REVIEWS</h3>
+        <h3 id='reviews-guidelines'>11. GUIDELINES FOR REVIEWS</h3>
 
         <p>
           We may provide you areas on the Services to leave reviews or ratings.
@@ -768,7 +768,7 @@ const TermsAndConditions = ({ terms }: Props) => {
           all content relating to the review.
         </p>
 
-        <h3>12. MOBILE APPLICATION LICENSE</h3>
+        <h3 id='mobile-app-license'>12. MOBILE APPLICATION LICENSE</h3>
 
         <h2>Use License</h2>
 
@@ -884,7 +884,7 @@ const TermsAndConditions = ({ terms }: Props) => {
           </li>
         </ol>
 
-        <h3>13. SERVICES MANAGEMENT</h3>
+        <h3 id='services-management'>13. SERVICES MANAGEMENT</h3>
 
         <p>We reserve the right, but not the obligation, to:</p>
 
@@ -914,7 +914,7 @@ const TermsAndConditions = ({ terms }: Props) => {
           </li>
         </ol>
 
-        <h3>14. PRIVACY POLICY</h3>
+        <h3 id='privacy-policy'>14. PRIVACY POLICY</h3>
 
         <p>
           We care about data privacy and security. By using the Services, you
@@ -928,7 +928,7 @@ const TermsAndConditions = ({ terms }: Props) => {
           your data transferred to and processed in Nigeria.
         </p>
 
-        <h3>15. TERM AND TERMINATION</h3>
+        <h3 id='term-termination'>15. TERM AND TERMINATION</h3>
 
         <p>
           These Legal Terms shall remain in full force and effect while you use
@@ -954,7 +954,7 @@ const TermsAndConditions = ({ terms }: Props) => {
           criminal, and injunctive redress.
         </p>
 
-        <h3>16. MODIFICATIONS AND INTERRUPTIONS</h3>
+        <h3 id='modifications-interruptions'>16. MODIFICATIONS AND INTERRUPTIONS</h3>
 
         <p>
           We reserve the right to change, modify, or remove the contents of the
@@ -980,7 +980,7 @@ const TermsAndConditions = ({ terms }: Props) => {
           connection therewith.
         </p>
 
-        <h3>17. GOVERNING LAW</h3>
+        <h3 id='governing-law'>17. GOVERNING LAW</h3>
 
         <p>
           These Legal Terms shall be governed by and defined following the laws
@@ -989,7 +989,7 @@ const TermsAndConditions = ({ terms }: Props) => {
           dispute which may arise in connection with these Legal Terms.
         </p>
 
-        <h3>18. DISPUTE RESOLUTION</h3>
+        <h3 id='dispute-resolution'>18. DISPUTE RESOLUTION</h3>
 
         <h4>Informal Negotiations</h4>
 
@@ -1051,7 +1051,7 @@ const TermsAndConditions = ({ terms }: Props) => {
           that court.
         </p>
 
-        <h3>19. CORRECTIONS</h3>
+        <h3 id='corrections'>19. CORRECTIONS</h3>
 
         <p>
           There may be information on the Services that contains typographical
@@ -1061,7 +1061,7 @@ const TermsAndConditions = ({ terms }: Props) => {
           the information on the Services at any time, without prior notice.
         </p>
 
-        <h3>20. DISCLAIMER</h3>
+        <h3 id='disclaimer'>20. DISCLAIMER</h3>
 
         <p>
           THE SERVICES ARE PROVIDED ON AN AS-IS AND AS-AVAILABLE BASIS. YOU
@@ -1096,7 +1096,7 @@ const TermsAndConditions = ({ terms }: Props) => {
           EXERCISE CAUTION WHERE APPROPRIATE.
         </p>
 
-        <h3>21. LIMITATIONS OF LIABILITY</h3>
+        <h3 id='limitations-of-liability'>21. LIMITATIONS OF LIABILITY</h3>
 
         <p>
           IN NO EVENT WILL WE OR OUR DIRECTORS, EMPLOYEES, OR AGENTS BE LIABLE
@@ -1115,7 +1115,7 @@ const TermsAndConditions = ({ terms }: Props) => {
           YOU MAY HAVE ADDITIONAL RIGHTS.
         </p>
 
-        <h3>22. INDEMNIFICATION</h3>
+        <h3 id='indemnification'>22. INDEMNIFICATION</h3>
 
         <p>
           You agree to defend, indemnify, and hold us harmless, including our
@@ -1136,7 +1136,7 @@ const TermsAndConditions = ({ terms }: Props) => {
           is subject to this indemnification upon becoming aware of it.
         </p>
 
-        <h3>23. USER DATA</h3>
+        <h3 id='user-data'>23. USER DATA</h3>
 
         <p>
           We will maintain certain data that you transmit to the Services for
@@ -1150,7 +1150,7 @@ const TermsAndConditions = ({ terms }: Props) => {
           data.
         </p>
 
-        <h3>24. ELECTRONIC COMMUNICATIONS, TRANSACTIONS, AND SIGNATURES</h3>
+        <h3 id='electronic-communications'>24. ELECTRONIC COMMUNICATIONS, TRANSACTIONS, AND SIGNATURES</h3>
 
         <p>
           Visiting the Services, sending us emails, and completing online forms
@@ -1169,7 +1169,7 @@ const TermsAndConditions = ({ terms }: Props) => {
           any means other than electronic means.
         </p>
 
-        <h3>25. MISCELLANEOUS</h3>
+        <h3 id='miscellaneous'>25. MISCELLANEOUS</h3>
 
         <p>
           These Legal Terms and any policies or operating rules posted by us on
@@ -1194,7 +1194,7 @@ const TermsAndConditions = ({ terms }: Props) => {
           hereto to execute these Legal Terms.
         </p>
 
-        <h3>26. CONTACT US</h3>
+        <h3 id='contact-us'>26. CONTACT US</h3>
 
         <p>
           In order to resolve a complaint regarding the Services or to receive

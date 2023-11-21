@@ -59,7 +59,7 @@ const PrivacyPolicy = () => {
               <li>
                 <strong>Employment Related Data:</strong> This may be
                 categorized into:
-                <ul className="d-flex flex-column gap-2">
+                <ul className="d-flex flex-column gap-2 mt-1">
                   <li>
                     <strong>As a prospective employee:</strong> If you apply for
                     a role with Estility, during your recruitment process,
