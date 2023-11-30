@@ -4,6 +4,7 @@ import TermsAndConditions, {
 } from "../terms-and-conditions/terms-and-conditions";
 import { termsArray } from "../../components/terms";
 import Future from "../../components/future/future";
+import { Link } from "react-router-dom";
 
 const PrivacyPolicy = () => {
   return (
@@ -19,7 +20,7 @@ const PrivacyPolicy = () => {
 
           <div>
             <h3 className="mt-1 mb-1">Introduction</h3>
-            <p>
+            <p className="lh-base">
               Estility Ltd (“Estility”, the “Company”, or “we” or “us”) values
               the personal data of the persons (“Users”, “you”, “your”) who use
               our website or any of our mobile applications (the “Platform”). We
@@ -45,7 +46,7 @@ const PrivacyPolicy = () => {
               we collect personal data from you...
             </p>
             <ul className="d-flex flex-column gap-2">
-              <li>
+              <li className="lh-base">
                 <strong>Sign-up Data:</strong> This includes your full name,
                 date of birth, nationality, residential address, country of tax
                 residence, marital status, email address, phone number, and
@@ -146,8 +147,8 @@ const PrivacyPolicy = () => {
                   <li>
                     <strong>Minors:</strong> We do not collect the information
                     of minors. If you are under the age of 18, you are not
-                    eligible to use our service. Kindly refer to our Terms of
-                    Use.
+                    eligible to use our service. Kindly refer to our <Link to='/terms-and-conditions' className="fw-bold"> Terms of
+                    Use</Link>.
                   </li>
                 </ul>
               </li>
@@ -168,7 +169,7 @@ const PrivacyPolicy = () => {
               </li>
               <li>
                 Prevent potentially prohibited or illegal activities and enforce
-                our Terms of Use and any other agreement which you may sign with
+                our <Link to='/terms-and-conditions' className="fw-bold"> Terms of use</Link> or other and any other agreement which you may sign with
                 us.
               </li>
               <li>Customize, measure, and improve our services.</li>
@@ -299,7 +300,7 @@ const PrivacyPolicy = () => {
             </li>
             <li>To protect the vital interests of a person;</li>
             <li>
-              To investigate violations of or enforce our terms of use or other
+              To investigate violations of or enforce our <Link to='/terms-and-conditions'> terms of use or other</Link>
               legal terms applicable to any service;
             </li>
             <li>To protect our property, services, and legal rights;</li>

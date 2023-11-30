@@ -94,9 +94,8 @@ const TermsAndConditions = ({ terms }: Props) => {
         </p>
 
         <p>
-          You can contact us by phone at [...], email at{" "}
-          <a href="mailto:support@estility.co">support@estility.co</a>.
-        </p>
+          You can contact us by phone at +2349169578082, email at{" "}
+          <a href="mailto:support@estility.co">support@estility.co</a>.</p>
 
         <p>
           These Legal Terms constitute a legally binding agreement made between
@@ -283,7 +282,7 @@ const TermsAndConditions = ({ terms }: Props) => {
           <p>
             If you wish to make any use of the Services, Content, or Marks other
             than as set out in this section or elsewhere in our Legal Terms,
-            please address your request to: legal@estility.co. If we ever grant
+            please address your request to: <a href="mailto:support@estility.co">support@estility.co</a>.. If we ever grant
             you the permission to post, reproduce, or publicly display any part
             of our Services or Content, you must identify us as the owners or
             licensors of the Services, Content, or Marks and ensure that any
@@ -461,7 +460,7 @@ const TermsAndConditions = ({ terms }: Props) => {
 
         <p>
           If you are unsatisfied with our Services, please email us at
-          support@estility.co or call us at [...].
+          <a href="mailto:support@estility.co">support@estility.co</a>. or call us at +2349169578082.
         </p>
 
         <h3 id='software'>7. SOFTWARE</h3>

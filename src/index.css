@@ -168,6 +168,10 @@ select:focus, input:focus {
   font-weight: 600;
 }
 
+.lh-base {
+  line-height: 28px;
+}
+
 .dark-color {
   color: #424246;
 }
