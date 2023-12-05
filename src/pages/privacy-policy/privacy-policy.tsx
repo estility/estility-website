@@ -61,7 +61,7 @@ const PrivacyPolicy = () => {
                 <strong>Employment Related Data:</strong> This may be
                 categorized into:
                 <ul className="d-flex flex-column gap-2 mt-1">
-                  <li>
+                  <li className="lh-base">
                     <strong>As a prospective employee:</strong> If you apply for
                     a role with Estility, during your recruitment process,
                     information we collect may include your full name, phone
@@ -74,7 +74,7 @@ const PrivacyPolicy = () => {
                     processing. However, objecting means we may be unable to
                     proceed with your recruitment exercise with us.
                   </li>
-                  <li>
+                  <li className="lh-base">
                     <strong>As an employee:</strong> In addition to the
                     information above, we may collect and process your tax
                     information, bank account information, marital status,
@@ -85,7 +85,7 @@ const PrivacyPolicy = () => {
                   </li>
                 </ul>
               </li>
-              <li>
+              <li className="lh-base">
                 <strong>Sales/Marketing Data:</strong> This includes data we
                 collect when you sign up for our newsletter, you provide to our
                 sales or marketing team at a physical outreach or event, you
@@ -93,7 +93,7 @@ const PrivacyPolicy = () => {
                 commence the process of onboarding on our Platform without
                 completing it.
               </li>
-              <li>
+              <li className="lh-base">
                 <strong>Complaint Resolution Data:</strong> We collect and
                 process your name, contact email and phone number, including
                 other information you voluntarily provide in relation to an
@@ -106,13 +106,13 @@ const PrivacyPolicy = () => {
               <li>
                 <strong className="">Other Information:</strong>
                 <ul className="d-flex flex-column gap-2 mt-1">
-                  <li>
+                  <li className="lh-base">
                     <strong>Analytics:</strong> We analyze our relationship and
                     transactional information to derive unique data. For
                     example, we may generate propensities, attributes, and/or
                     scores for marketing, security, or fraud purposes.
                   </li>
-                  <li>
+                  <li className="lh-base">
                     <strong>
                       Information derived from your use of our website and other
                       technical products:
@@ -127,14 +127,14 @@ const PrivacyPolicy = () => {
                     website content and analyze data to develop products and
                     services.
                   </li>
-                  <li>
+                  <li className="lh-base">
                     <strong>Audio and Visual Information:</strong> This includes
                     audio, electronic, visual, or similar information relating
                     to your interactions with us, including photographs, video
                     images, CCTV recordings, call center recordings, call
                     monitoring records, and voicemails.
                   </li>
-                  <li>
+                  <li className="lh-base">
                     <strong>Government-Issued Identification Numbers:</strong>{" "}
                     Whether as an employee or a shareholder or director of any
                     of our partners, we may request a government-issued ID to
@@ -144,7 +144,7 @@ const PrivacyPolicy = () => {
                     cookies on our website. You may check out our cookies policy
                     here.
                   </li>
-                  <li>
+                  <li className="lh-base">
                     <strong>Minors:</strong> We do not collect the information
                     of minors. If you are under the age of 18, you are not
                     eligible to use our service. Kindly refer to our <Link to='/terms-and-conditions' className="fw-bold"> Terms of
@@ -206,7 +206,7 @@ const PrivacyPolicy = () => {
 
           <div>
             <h3>Marketing</h3>
-            <p className="mt-1">
+            <p className="mt-1 lh-base">
               We may use your personal data for the purpose of providing
               targeted marketing services about our services or any of our
               partners’ services to you. We may send marketing communications to
@@ -216,14 +216,14 @@ const PrivacyPolicy = () => {
           </div>
 
           <h3>What Constitutes your Consent?</h3>
-          <p>
+          <p className="lh-base">
             Consent has to be expressly given and so given through a positive
             action. We obtain your consent when you either click on a consent
             icon shown to you on our platform or sign or imprint your name or
             initial on a consent request form.
           </p>
 
-          <p>
+          <p className="lh-base">
             We do not always rely on consent as the lawful basis for our
             processing of your personal data. However, where processing of your
             personal data is based on consent, we will obtain the requisite
@@ -236,27 +236,27 @@ const PrivacyPolicy = () => {
             withdrawal.
           </p>
 
-          <p>
+          <p className="lh-base">
             We may retrieve personal data about you from third parties,
             including financial and security institutions.
           </p>
 
           <h3>Sharing of Information</h3>
 
-          <p>
+          <p className="lh-base">
             We assure you that your personal data will only be used for the
             purpose for which we obtained it. However, we may share your
             personal data with our partners subject to appropriate data security
             and protection measures.
           </p>
 
-          <p>
+          <p className="lh-base">
             We will comply with applicable data protection laws when
             transferring your data out of the jurisdiction where it is primarily
             used.
           </p>
 
-          <p>
+          <p className="lh-base">
             In the event that our platform contains third-party links or links
             to other websites, we advise that you check the privacy notices and
             safeguards in place on such websites as we are not responsible for
@@ -267,13 +267,13 @@ const PrivacyPolicy = () => {
             third parties.
           </p>
 
-          <p>
+          <p className="lh-base">
             We may share your Personal Data or other information about you with
             others for the following reasons:
           </p>
 
           <h4>With our partners:</h4>
-          <p>
+          <p className="lh-base">
             These include for the purpose of security checks, KYC verifications,
             transaction monitoring, fraud prevention, regulatory compliance,
             customer support services, and marketing services.
@@ -286,21 +286,21 @@ const PrivacyPolicy = () => {
           <p>This may include:</p>
           <ul>
             <li>To comply with a law, guidelines, or regulations;</li>
-            <li>
+            <li className="lh-base">
               To law enforcement authorities or other government officials or
               other third parties pursuant to a court order or other legal
               process or requirements applicable to Estility’s or Estility’s
               corporate family;
             </li>
-            <li>
+            <li className="lh-base">
               If we have reasonable cause to believe that the disclosure of your
               personal data is necessary or appropriate to prevent physical harm
               or financial loss or in connection with an investigation of
               suspected or actual illegal activity;
             </li>
             <li>To protect the vital interests of a person;</li>
-            <li>
-              To investigate violations of or enforce our <Link to='/terms-and-conditions'> terms of use or other</Link>
+            <li className="lh-base">
+              To investigate violations of or enforce our <Link to='/terms-and-conditions'> terms of use</Link> or other 
               legal terms applicable to any service;
             </li>
             <li>To protect our property, services, and legal rights;</li>
@@ -310,13 +310,13 @@ const PrivacyPolicy = () => {
             <li>
               To companies that we plan to merge with or be acquired by; and
             </li>
-            <li>
+            <li className="lh-base">
               To support our audit, compliance, and corporate governance
               functions.
             </li>
           </ul>
 
-          <p>
+          <p className="lh-base">
             In each of the instances listed above, we will only share such
             personal information as is relevant and necessary to comply with the
             particular process concerned.
@@ -329,7 +329,7 @@ const PrivacyPolicy = () => {
 
           <h3>Your Rights</h3>
 
-          <p>
+          <p className="lh-base">
             You can exercise the following rights with respect to your personal
             data with Estility:
           </p>
@@ -339,7 +339,7 @@ const PrivacyPolicy = () => {
               Request and access your personal data which we collected and
               stored;
             </li>
-            <li>
+            <li className="lh-base">
               Withdraw your consent at any time. For example, you can withdraw
               your consent to receive our marketing or promotional materials or
               unsubscribe to our newsletters;
@@ -349,7 +349,7 @@ const PrivacyPolicy = () => {
               Request rectification and modification of your personal data;
             </li>
             <li>Request for deletion of your personal data;</li>
-            <li>
+            <li className="lh-base">
               Be informed of and entitled to provide consent prior to the
               processing of personal data for purposes other than that for which
               the personal data were collected;
@@ -363,7 +363,7 @@ const PrivacyPolicy = () => {
             </li>
           </ul>
 
-          <p>
+          <p className="lh-base">
             You may exercise any of these rights by sending an email to{" "}
             <a href="mailto:support@Estility.co">support@Estility.co</a> where
             your requests will be treated promptly.
@@ -371,7 +371,7 @@ const PrivacyPolicy = () => {
 
           <h3>Lawful Basis for Processing Personal Data</h3>
 
-          <p>
+          <p className="lh-base">
             We will only use your Personal Data if we have a lawful reason to do
             so. Our various lawful bases for using your Personal Data may
             include:
@@ -396,7 +396,7 @@ const PrivacyPolicy = () => {
               <strong>To fulfil the terms of the contract</strong> which you
               sign with us at the point of onboarding
             </li>
-            <li>
+            <li className="lh-base">
               <strong>Legitimate interests (ours and those of others)</strong>{" "}
               such as to protect you, us, or others from threats (such as
               security threats or fraud); to enable or administer our business,
@@ -492,19 +492,19 @@ const PrivacyPolicy = () => {
 
           <h3>Disclosure of Personal Data</h3>
 
-          <p>
+          <p className="lh-base">
             We may disclose any information we collect about current and former
             customers, including Personal Data, to affiliates and non-affiliated
             third parties as follows:
           </p>
 
           <ul>
-            <li>
+            <li className="lh-base">
               With law enforcement officers, customer onboarding partners,
               transaction monitoring tools, and transaction partners. Disclosure
               will only be on an absolute-necessity basis.
             </li>
-            <li>
+            <li className="lh-base">
               With another user, when you sign up for Estility’s services via a
               referral link. The user that referred you may receive information
               indicating that you have enrolled with Estility. You may avoid
@@ -512,40 +512,40 @@ const PrivacyPolicy = () => {
             </li>
           </ul>
 
-          <p>
+          <p className="lh-base">
             In connection with our everyday business purposes, we may also share
             personal data about you as follows:
           </p>
 
           <ul>
-            <li>
+            <li className="lh-base">
               In response to a request for personal data, if we are required by,
               or we believe disclosure is in accordance with, any applicable
               law, regulation or legal process.
             </li>
-            <li>
+            <li className="lh-base">
               With relevant law enforcement officials or other third parties,
               such as investigators or auditors, if we believe it is appropriate
               to investigate fraud.
             </li>
-            <li>
+            <li className="lh-base">
               If we believe your actions are inconsistent with the spirit or
               language of our user agreements or policies, or to protect the
               rights, property and safety of Estility or others.
             </li>
-            <li>
+            <li className="lh-base">
               In connection with, or during negotiations of, any merger, sale of
               Estility’s assets, financing or acquisition of all or a portion of
               our business to another company; and
             </li>
-            <li>
+            <li className="lh-base">
               With your consent or at your direction, including if we notify you
               that the personal data you provide will be shared in a particular
               manner and you provide such personal data.
             </li>
           </ul>
 
-          <p>
+          <p className="lh-base">
             We may also share aggregated or de-identified personal data, which
             cannot reasonably be used to identify you. For example, we may share
             transaction zip codes with third parties to improve our accuracy in
@@ -553,7 +553,7 @@ const PrivacyPolicy = () => {
             descriptions.
           </p>
 
-          <p>
+          <p className="lh-base">
             We will usually not share your personal data with other third
             parties without your consent, or where, via a legal contract, you
             have authorised us to do so. Where we need to transfer your personal
@@ -574,7 +574,7 @@ const PrivacyPolicy = () => {
 
           <section>
             <h3>Account Monitoring</h3>
-            <p>
+            <p className="lh-base">
               You accept that Estility shall have the right to monitor your
               account usage and if required, will disclose personal information
               to local enforcement or investigative agencies or any competent
@@ -585,7 +585,7 @@ const PrivacyPolicy = () => {
 
           <section>
             <h3>Estility Employee Obligation</h3>
-            <p>
+            <p className="lh-base">
               Estility employees who handle personal information are under an
               obligation to treat it confidentially and may not disclose it to
               third parties. Estility employees are also responsible for the
@@ -597,7 +597,7 @@ const PrivacyPolicy = () => {
 
           <section>
             <h3>Submitting Information Through Estility</h3>
-            <p>
+            <p className="lh-base">
               Any person submitting information to Estility through our platform
               may be granted access rights to that information. Estility has
               developed systems that enable users to access and correct their
@@ -606,7 +606,7 @@ const PrivacyPolicy = () => {
               and up to date in line with the provisions of the applicable data
               protection law.
             </p>
-            <p>
+            <p className="lh-base">
               In order to ensure that your personal data with the company is
               current, complete, and accurate, please update us if there are
               changes to your personal information by informing the company’s
@@ -618,7 +618,7 @@ const PrivacyPolicy = () => {
 
           <section>
             <h3>Security</h3>
-            <p>
+            <p className="lh-base">
               Estility is committed to managing customer information with the
               highest standards of information security. We protect your
               personal information using physical, technical, and administrative
@@ -629,7 +629,7 @@ const PrivacyPolicy = () => {
 
           <section>
             <h3>Phishing</h3>
-            <p>
+            <p className="lh-base">
               Phishing is the name given to attempts to steal personal details
               and financial account details from a website user. "Phishers" use
               fake or "spoof" emails to lead users to counterfeit websites where
@@ -640,7 +640,7 @@ const PrivacyPolicy = () => {
 
           <section>
             <h3>Retention of your personal data</h3>
-            <p>
+            <p className="lh-base">
               Estility takes appropriate measures to ensure that your Personal
               Data is only processed and retained for a period in line with the
               purposes set out in this Notice, as is stated under our data
@@ -652,7 +652,7 @@ const PrivacyPolicy = () => {
 
           <section>
             <h3>Inquiries</h3>
-            <p>
+            <p className="lh-base">
               Estility is responsible for ensuring that our day-to-day
               procedures are aligned with this Privacy Notice. Should you have
               any questions about this Privacy Notice, Estility's information
