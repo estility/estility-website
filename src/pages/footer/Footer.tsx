@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './footer.css';
 import logo from '../../assets/footer-logo.png';
 import { BiLogoFacebookCircle, BiLogoInstagram } from 'react-icons/bi';
@@ -8,6 +8,7 @@ import { Link } from 'react-router-dom';
 import axios from 'axios';
 import SecondSuccess from '../../modals/success/success';
 import { toast } from 'react-toastify';
+import Cookies from '../../components/cookie/cookies';
 
 const Footer = () => {
   const [ userEmail, setUserEmail ] = React.useState('');
@@ -17,6 +18,8 @@ const Footer = () => {
   const onChange = (e: any) => {
     setUserEmail(e.target.value)
   }
+
+  const [showCookiesPopup, setShowCookiesPopup] = useState(true);
 
   const baseUrl = process.env.REACT_APP_BASE_URL || 'https://node-backend-landing-page.herokuapp.com';
 
@@ -121,13 +124,13 @@ const Footer = () => {
     // },
 
     {
-      id: 4,
+      id: 3,
       title: 'Terms and Conditions',
       link: '/terms-and-conditions',
     },
 
     {
-      id: 5,
+      id: 4,
       title: 'Privacy Policy',
       link: '/privacy-policy',
     }
@@ -180,6 +183,7 @@ const Footer = () => {
           <button type='submit' disabled={userEmail==="" || loading} className='footer-subscription-button bold-500 violet-color'>{loading ? "Sending..." : 'Subscribe'}</button>
         </form>
       </div>
+        <Cookies showPopup={showCookiesPopup} setShowPopup={setShowCookiesPopup} />
       <SecondSuccess title='Superb!' text='Now, you’d never miss out on future updates from us' isModalOpen={onFinish} handleModalOpen={setOnFinish} />
       </div>
   )
