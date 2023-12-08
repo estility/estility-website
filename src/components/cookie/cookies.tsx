@@ -24,7 +24,7 @@ Accordingly, this Policy is a legally binding agreement between you ("user," "vi
 
 For further information on how we use, collect and manage your personal data and information, see our Privacy Policy. 
           </div>
-          <div className='bold-600 cookie-title violet-color mt-1'>What are Cookies</div>
+          <div className='bold-600  violet-color mt-1'>What are Cookies</div>
           <div className='dark-color cookie-text lh-base'>
           Cookies are small pieces of data stored in text files saved on your mobile device or computer when you visit a website. Cookies allow the website's server to record and store your actions and preferences, such as login information, user history, language settings, font settings, colour settings, and other display preferences, over a particular period. 
 
@@ -33,25 +33,25 @@ Cookies ensure visitors do not have to continuously re-enter their details or in
 Cookies are used to remember your preferences for single visits through sessional cookies or multiple repeat visits through permanent cookies. 
           </div>
 
-          <div className='bold-600 cookie-title violet-color mt-1'>How we use Cookies</div>
+          <div className='bold-600  violet-color mt-1'>How we use Cookies</div>
           <div className='dark-color cookie-text lh-base'>
           Cookies are essential for our website to function optimally and enhance website performance for a better user experience. The website administrator(s) controls all cookies used on the site and grants third parties access for statistics and analytics purposes. Cookies are needed to identify visitors and remember their site actions and online behaviours. 
 
 We use cookies for various reasons, which are explained in detail below. Please know that cookie-related information is not used to identify you personally. 
           </div>
 
-          <div className='bold-600 cookie-title violet-color mt-1'>How to Control Cookies</div>
+          <div className='bold-600  violet-color mt-1'>How to Control Cookies</div>
           <div className='dark-color cookie-text lh-base'>
           You can control and/or delete cookies on your mobile device or computer and adjust your browser settings to prevent cookies. Users can withdraw consent to collect cookies on the website. You can also determine whether you want to agree to the site's use of cookies. However, doing this may cause you to repeat your preferences every time you visit the site manually, and some of the site's services and functionality may not work optimally. 
           </div>
 
-          <div className='bold-600 cookie-title violet-color mt-1'>Disabling Cookies</div>
+          <div className='bold-600  violet-color mt-1'>Disabling Cookies</div>
           <div className='dark-color cookie-text lh-base'>
           You can disable cookies setting by adjusting the option on your browser settings (see your browser "Help" for more details). However, please be aware that the act of disabling cookies will affect your visit's functionality and the use of this website and many others. Unfortunately, disabling cookies will usually result in also disabling certain functionality and features of this site. In most cases, there are no website standard options for disabling cookies without completely disabling the functionality and features they add to the site. It is recommended that you enable cookies for optimal site functionality and service. 
           </div>
 
-          <div className='bold-600 cookie-title violet-color mt-1'>The Cookies We Use</div>
-          <ul className='violet-color lh-base'>
+          <div className='bold-600  violet-color mt-1'>The Cookies We Use</div>
+          <ul className='violet-color lh-base mt-1'>
   <li><strong>Sessional Cookies:</strong>Sessional cookies are temporary cookies that are operational during your visit and expire when the user closes the browser.</li>
   
   <li><strong>Permanent Cookies:</strong>Permanent cookies store and retain your site preferences on your mobile device or computer even after you close the browser or your mobile device or computer.</li>
@@ -115,21 +115,21 @@ We use cookies for various reasons, which are explained in detail below. Please 
   </li>
 </ul>
 
-<div className='bold-600 cookie-title violet-color mt-1'>Amendments and Modifications </div>
+<div className='bold-600  violet-color mt-1'>Amendments and Modifications </div>
           <div className='dark-color cookie-text lh-base'>
           Estility reserves the right to modify this Policy and its terms as they relate to this website and services at any time, effective and in full force upon posting the updated version on the website. 
 
 Please check this page regularly for updates. The continued use of the website and its services after that shall constitute your consent to such amendments and modifications.  
           </div>
 
-          <div className='bold-600 cookie-title violet-color mt-1'>Policy Acceptance</div>
+          <div className='bold-600  violet-color mt-1'>Policy Acceptance</div>
           <div className='dark-color cookie-text lh-base'>
           You hereby acknowledge that you have read this Cookies Policy and agree to all its provisions, terms, and conditions. By continuing to access and use this website and its services, you also agree to be legally bound by this Cookies Policy. If you do not agree with the terms and conditions of this Policy, you are not permitted to access or use this website and its services.  
           </div>
 
-          <div className='bold-600 cookie-title violet-color mt-1'>More Information</div>
+          <div className='bold-600  violet-color mt-1'>More Information</div>
           <div className='dark-color cookie-text lh-base'>
-          We trust that you have gained clarity concerning our use of cookies. For further information about our cookies policy, please email us at support@estility.co.  
+          We trust that you have gained clarity concerning our use of cookies. For further information about our cookies policy, please email us at <a href="mailto:support@Estility.co">support@Estility.co</a>.
           </div>
 
         </div>
