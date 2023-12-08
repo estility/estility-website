@@ -16,6 +16,11 @@
     /* margin: 0 10px 0 auto; */
 }
 
+.third-party-cookies li {
+  line-height: 30px;
+  margin-top: 10px;
+}
+
 .cookie-title {
   font-size: 32px;
   line-height: normal;
