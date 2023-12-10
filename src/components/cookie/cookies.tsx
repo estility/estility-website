@@ -8,7 +8,17 @@ interface CookiesProps {
   setShowPopup: (value: boolean) => void;
 }
 const Cookies:React.FC<CookiesProps> = ({ showPopup, setShowPopup}) => {
-  if (!showPopup) return null;
+  const cookies = localStorage.getItem('cookies')
+  React.useEffect(() => {
+    if(cookies === 'true') {
+      setShowPopup(false)
+    }
+  }, [cookies, setShowPopup])
+  const closePopup = () => {
+    setShowPopup(false)
+    localStorage.setItem('cookies', 'true')
+  }
+  if(!showPopup) return null;
   return (
     <div className='cookie-container'>
       <div className='d-flex gap-2 justify-content-between full-width'>
@@ -133,11 +143,11 @@ Please check this page regularly for updates. The continued use of the website a
           </div>
 
         </div>
-        <button onClick={() => setShowPopup(false)} className='d-flex align-center justify-content-center text-white violet-background close-cookie'><FaTimes /></button>
+        <button onClick={closePopup} className='d-flex align-center justify-content-center text-white violet-background close-cookie'><FaTimes /></button>
       </div>
       <div className='d-flex justify-content-end cookie-buttons mt-1'>
-        <button onClick={() => setShowPopup(false)} className='text-white violet-background accept-cookie'>Accept</button>
-        <button onClick={() => setShowPopup(false)} className='reject-cookie violet-color'>Reject</button>
+        <button onClick={closePopup} className='text-white violet-background accept-cookie'>Accept</button>
+        <button onClick={closePopup} className='reject-cookie violet-color'>Reject</button>
       </div>
     </div>
   )
