@@ -2,6 +2,7 @@
 
 import React from 'react';
 import { termsArray } from './components/terms';
+import CookiesPage from './pages/cookies-page/cookies-page';
 
 const Home = React.lazy(() => import('./pages/Home/Home'));
 const Contact = React.lazy(() => import('./pages/Contact/Contact'));
@@ -73,6 +74,12 @@ export const routes = [
     path: '/job/:id',
     element: <Job />,
   },
+
+  {
+    id: 13,
+    path: '/cookie-policy',
+    element: <CookiesPage />,
+  }
 ];
 
 export default routes;

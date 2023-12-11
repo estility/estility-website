@@ -122,15 +122,22 @@ const Footer = () => {
     //   title: 'Blogs',
     //   link: '/blogs',
     // },
+  ]
 
+  const legalFooterLinks = [
     {
-      id: 3,
+      id: 1,
+      title: 'Cookie Policy',
+      link: '/cookie-policy',
+    },
+    {
+      id: 2,
       title: 'Terms and Conditions',
       link: '/terms-and-conditions',
     },
 
     {
-      id: 4,
+      id: 3,
       title: 'Privacy Policy',
       link: '/privacy-policy',
     }
@@ -165,10 +172,22 @@ const Footer = () => {
         ))}
         </div>
       </div>
+
       <div className='footer-links sora-font'>
         <div className='header'>Support</div>
         <div className='footer-links-container'>
         {supportFooterLinks.map((footerLink) => (
+          <div className='footer-link-item'>
+            <a href={footerLink.link}>{footerLink.title}</a>
+          </div>
+        ))}
+        </div>
+      </div>
+
+      <div className='footer-links sora-font'>
+        <div className='header'>Legal</div>
+        <div className='footer-links-container'>
+        {legalFooterLinks.map((footerLink) => (
           <div className='footer-link-item'>
             <a href={footerLink.link}>{footerLink.title}</a>
           </div>
