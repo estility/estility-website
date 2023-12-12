@@ -132,7 +132,7 @@ const Footer = () => {
     },
     {
       id: 2,
-      title: 'Terms and Conditions',
+      title: 'Terms of use',
       link: '/terms-and-conditions',
     },
 

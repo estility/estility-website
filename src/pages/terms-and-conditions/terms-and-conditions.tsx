@@ -73,7 +73,7 @@ const TermsAndConditions = ({ terms }: Props) => {
   return (
     <div className="d-flex flex-column sora-font T-and-C">
       <HeaderBanner
-        title="Terms and Conditions"
+        title="Terms of use"
         hasSubText={false}
         hasButton={false}
       />
