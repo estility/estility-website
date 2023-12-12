@@ -1,6 +1,6 @@
 import React from 'react'
 import { HeaderBanner } from '../terms-and-conditions/terms-and-conditions'
-
+import '../../components/cookie/cookie.css'
 const CookiesPage:React.FC = () => {
  
   return (
@@ -12,6 +12,7 @@ const CookiesPage:React.FC = () => {
         hasSubText={false}
         hasButton={false}
       />
+      <div className='cookie-content'>
           <div className='dark-color cookie-text lh-base mt-2'>
           <strong>Last updated</strong>: 16th November 2023 
 
@@ -130,6 +131,7 @@ Please check this page regularly for updates. The continued use of the website a
           </div>
 
         </div>
+      </div>
       </div>
     </div>
   )

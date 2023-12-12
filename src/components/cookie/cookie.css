@@ -59,6 +59,10 @@
     line-height: 28px;
   }
 
+  .cookie-content {
+    padding: 0 15px;
+  }
+
   .cookie-text {
     font-size: 14px;
     line-height: 20px;
