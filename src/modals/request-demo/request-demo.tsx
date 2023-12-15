@@ -119,7 +119,6 @@ const validationSchema = Yup.object({
         state: '',
         additionalComments: '',
         type: selectedTopic,
-        // Initialize other form fields here
       }}
       validationSchema={validationSchema}
       onSubmit={(values, actions) => {

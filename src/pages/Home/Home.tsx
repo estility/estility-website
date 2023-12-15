@@ -14,8 +14,10 @@ import Contact from '../../components/contact/contact';
 import Future from '../../components/future/future';
 import { useDispatch, useSelector } from 'react-redux';
 import { showForm } from '../../redux/reducers/display-form-reducer';
+import Cookies from '../../components/cookie/cookies';
 
 const Home = () => {
+  const [showCookiesPopup, setShowCookiesPopup] = useState(true);
   const offers = [
     {
       id: 1,
@@ -129,6 +131,7 @@ const toggle = () => {
       <Faq />
       <Contact />
       <Future /><br /><br />
+      <Cookies showPopup={showCookiesPopup} setShowPopup={setShowCookiesPopup} />
     </div>
   )
 }

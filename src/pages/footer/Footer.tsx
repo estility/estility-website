@@ -4,11 +4,10 @@ import logo from '../../assets/footer-logo.png';
 import { BiLogoFacebookCircle, BiLogoInstagram } from 'react-icons/bi';
 import { AiFillTwitterCircle } from 'react-icons/ai';
 import { IoLogoLinkedin } from 'react-icons/io';
-import { Link } from 'react-router-dom';
 import axios from 'axios';
 import SecondSuccess from '../../modals/success/success';
 import { toast } from 'react-toastify';
-import Cookies from '../../components/cookie/cookies';
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
   const [ userEmail, setUserEmail ] = React.useState('');
@@ -18,8 +17,6 @@ const Footer = () => {
   const onChange = (e: any) => {
     setUserEmail(e.target.value)
   }
-
-  const [showCookiesPopup, setShowCookiesPopup] = useState(true);
 
   const baseUrl = process.env.REACT_APP_BASE_URL || 'https://node-backend-landing-page.herokuapp.com';
 
@@ -147,10 +144,10 @@ const Footer = () => {
   return (
     <div className='footer violet-background sora-font'>
       <div className='estility-copy-right'>
-       <div className='estility-logo-footer'>
+       <a href='/' className='estility-logo-footer text-white'>
         <img src={logo} alt='logo'/>
         <div className='rosario-font'>Estility</div>
-      </div>
+      </a>
       <div className='copyright-text sora-font'>Copyright © 2023 Estility. All rights reserved</div>
       <div className='social-icons'>
         {socialIcons.map((socialIcon) => (
@@ -202,7 +199,6 @@ const Footer = () => {
           <button type='submit' disabled={userEmail==="" || loading} className='footer-subscription-button bold-500 violet-color'>{loading ? "Sending..." : 'Subscribe'}</button>
         </form>
       </div>
-        <Cookies showPopup={showCookiesPopup} setShowPopup={setShowCookiesPopup} />
       <SecondSuccess title='Superb!' text='Now, you’d never miss out on future updates from us' isModalOpen={onFinish} handleModalOpen={setOnFinish} />
       </div>
   )
