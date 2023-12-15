@@ -1,10 +1,10 @@
 import React from 'react'
 import { HeaderBanner } from '../terms-and-conditions/terms-and-conditions'
-import '../../components/cookie/cookie.css'
+import './cookies-page.css'
 const CookiesPage:React.FC = () => {
  
   return (
-    <div className='cookie-container'>
+    <div className='cookie-policy-container'>
       <div className='d-flex gap-2 justify-content-between full-width'>
         <div>
         <HeaderBanner

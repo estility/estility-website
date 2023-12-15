@@ -15,11 +15,6 @@
     width: 20px;
 }
 
-.third-party-cookies li {
-  line-height: 30px;
-  margin-top: 10px;
-}
-
 .cookie-title {
   font-size: 32px;
   line-height: normal;
@@ -36,15 +31,13 @@
   font-size: 16px;
 }
 
-.cookie-buttons {
-  gap: 50px;
-}
-
 .reject-cookie {
     background: transparent;
     padding: 10px 30px;
     font-weight: 500;
     font-size: 16px;
+    margin-right: 8rem;
+    font-weight: 600;
 }
 
 @media screen and (max-width: 768px) {
@@ -53,13 +46,13 @@
     gap: 10px;
   }
 
+  .reject-cookie {
+    margin-right: 4.5rem;
+  }
+
   .cookie-title {
     font-size: 24px;
     line-height: 28px;
-  }
-
-  .cookie-content {
-    padding: 0 15px;
   }
 
   .cookie-text {

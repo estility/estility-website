@@ -1,0 +1,31 @@
+.cookie-policy-container {
+    padding: 20px 2%;
+    background: #fff;
+  }
+  
+  .third-party-cookies li {
+    line-height: 30px;
+    margin-top: 10px;
+  }
+  
+  .cookie-text {
+      font-size: 16px;
+      line-height: 28px;
+  }
+  
+  @media screen and (max-width: 768px) {
+  
+    .cookie-content {
+      padding: 0 15px;
+    }
+  
+    .cookie-text {
+      font-size: 14px;
+      line-height: 20px;
+      margin-top: 10px;
+    }
+  
+    .cookie-policy-container {
+      padding: 10px;
+    }
+  }
