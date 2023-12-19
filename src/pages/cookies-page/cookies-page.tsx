@@ -127,7 +127,7 @@ Please check this page regularly for updates. The continued use of the website a
 
           <div className='bold-600  violet-color mt-1'>More Information</div>
           <div className='dark-color cookie-text lh-base'>
-          We trust that you have gained clarity concerning our use of cookies. For further information about our cookies policy, please email us at <a href="mailto:support@Estility.co">support@Estility.co</a>.
+          We trust that you have gained clarity concerning our use of cookies. For further information about our cookies policy, please email us at <a href="mailto:support@estility.co">support@estility.co</a>.
           </div>
 
         </div>
