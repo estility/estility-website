@@ -365,7 +365,7 @@ const PrivacyPolicy = () => {
 
           <p className="lh-base">
             You may exercise any of these rights by sending an email to{" "}
-            <a href="mailto:support@Estility.co">support@Estility.co</a> where
+            <a href="mailto:support@estility.co">support@estility.co</a> where
             your requests will be treated promptly.
           </p>
 
@@ -657,7 +657,8 @@ const PrivacyPolicy = () => {
               procedures are aligned with this Privacy Notice. Should you have
               any questions about this Privacy Notice, Estility's information
               services or your transactions on Estility, you can contact us via
-              our customer helplines or by email to support@Estility.co.
+              our customer helplines or by email to <a href="mailto:support@estility.co">support@estility.co</a>
+
             </p>
           </section>
         </div>

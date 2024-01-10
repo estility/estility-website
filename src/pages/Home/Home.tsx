@@ -101,7 +101,7 @@ const toggle = () => {
       </div>
       <div className='table-banner' />
       </div>
-     <Offers items={offers} heading='What we offer' text='Our Suite of Services enhances our daily living experience!' />
+     <Offers items={offers} heading='What we offer' text='Our suite of services enhances your daily living experience!' />
       <div className='d-flex flex-column products'>
         {ourProducts.map((product) => (
         <div className='d-flex justify-content-between product'>
