@@ -10,9 +10,12 @@
   
   .cookie-text {
       font-size: 16px;
-      line-height: 28px;
+      line-height: 40px;
   }
   
+  .cookie-content p, .cookie-content ul li {
+    line-height: 40px;
+  }
   @media screen and (max-width: 768px) {
   
     .cookie-content {

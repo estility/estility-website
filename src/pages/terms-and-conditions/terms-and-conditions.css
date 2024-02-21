@@ -16,6 +16,10 @@
     font-size: 26px;
 }
 
+.T-and-C p, .T-and-C ul li, .T-and-C ol li{
+  line-height: 40px;
+}
+
 .terms-and .banner-button {
   display: flex;
 padding: 16px 40px;

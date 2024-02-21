@@ -120,9 +120,9 @@ background: transparent;
       margin-top: 10px;
     }
 
-    .stay-upto-date {
+    /* .stay-upto-date {
       display: none;
-    }
+    } */
 
     .subscription-form {
       display: flex;

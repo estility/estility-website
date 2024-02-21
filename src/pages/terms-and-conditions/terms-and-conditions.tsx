@@ -459,7 +459,7 @@ const TermsAndConditions = ({ terms }: Props) => {
         </p>
 
         <p>
-          If you are unsatisfied with our Services, please email us at
+          If you are unsatisfied with our Services, please email us at{" "}
           <a href="mailto:support@estility.co">support@estility.co</a>. or call us at +2349169578082.
         </p>
 

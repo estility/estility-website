@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import './footer.css';
 import logo from '../../assets/footer-logo.png';
 import { BiLogoFacebookCircle, BiLogoInstagram } from 'react-icons/bi';
@@ -7,7 +7,6 @@ import { IoLogoLinkedin } from 'react-icons/io';
 import axios from 'axios';
 import SecondSuccess from '../../modals/success/success';
 import { toast } from 'react-toastify';
-import { Link } from 'react-router-dom';
 
 const Footer = () => {
   const [ userEmail, setUserEmail ] = React.useState('');
@@ -27,7 +26,7 @@ const Footer = () => {
       email: userEmail
     }
     try {
-      const response = await axios.post(
+      await axios.post(
         `${baseUrl}estility/v1/3231/newsletter/subscribe`,
         data
       );
@@ -129,7 +128,7 @@ const Footer = () => {
     },
     {
       id: 2,
-      title: 'Terms of use',
+      title: 'Terms of Use',
       link: '/terms-and-conditions',
     },
 
@@ -191,7 +190,7 @@ const Footer = () => {
         ))}
         </div>
       </div>
-      <div className='copyright-text-small sora-font text-center'>Copyright © 2023 Estility. All rights reserved</div>
+      <div className='copyright-text-small sora-font text-center text-wrap'>Copyright © 2023 Estility. All rights reserved</div>
       <div className='footer-links stay-upto-date'>
         <div className='header'>Stay up to date</div>
         <form className='d-flex gap-10 subscription-form' onSubmit={handleSubmit}>
