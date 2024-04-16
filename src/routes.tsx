@@ -17,6 +17,7 @@ const Riders = React.lazy(() => import('./pages/riders/riders'));
 const PrivacyPolicy = React.lazy(() => import('./pages/privacy-policy/privacy-policy'));
 const Job = React.lazy(() => import('./pages/job/job'));
 const Careers = React.lazy(() => import('./pages/careers/careers'));
+const Survey = React.lazy(() => import('./pages/survey/survey'));
 
 export const routes = [
   {
@@ -79,7 +80,14 @@ export const routes = [
     id: 13,
     path: '/cookie-policy',
     element: <CookiesPage />,
+  },
+
+  {
+    id: 14,
+    path: '/survey',
+    element: <Survey />
   }
+
 ];
 
 export default routes;

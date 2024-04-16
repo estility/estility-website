@@ -1,0 +1,61 @@
+  
+  .survey-form {
+    padding: 20px 3%;
+  }
+
+  .survey-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .submit-application {
+    padding: 16px 40px;
+    border-radius: 8px;
+  }
+  
+  .text-heading {
+    color: #3D4C5E;
+    font-size: 16px;
+    line-height: 24px;
+  }
+  
+  .agreement-text {
+    color: #3D4C5E;
+    line-height: 24px;
+  }
+  
+  .what-intersts-you {
+    color: #3D4C5E;
+  }
+  
+  .interest {
+    gap: 5px;
+  }
+  
+  .interest button {
+    border-radius: 8px;
+    display: flex;
+    white-space: nowrap;
+    padding: 8px 48px;
+    justify-content: center;
+    align-items: center;
+    flex: 1 0 0;
+    background: transparent;
+    border: 1px solid #5B5B5B;
+    /* color: #7975B6 */
+    color: #5B5B5B;
+  }
+  
+  .interest .selected {
+    background: #34204D;
+    color: #fff;
+  }
+  
+  @media (max-width: 768px){
+    .interest {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+  }
+  
