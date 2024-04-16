@@ -86,6 +86,12 @@ export const routes = [
     id: 14,
     path: '/survey',
     element: <Survey />
+  },
+
+  {
+    id: 15,
+    path: "*",
+    element: <div>Not found 404</div>
   }
 
 ];
