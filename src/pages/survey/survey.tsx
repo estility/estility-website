@@ -61,7 +61,7 @@ const validationSchema = Yup.object({
    
     setLoading(true);
     try {
-        const response = await axios.post(`${baseUrl}estility/v1/3231/website/demo`, info);
+        const response = await axios.post(`${baseUrl}estility/v1/3231/campaign/website/demo`, info);
         // Handle the response data as needed
         setLoading(false)
         setOnFinish(true);
