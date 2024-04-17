@@ -237,7 +237,7 @@ const validationSchema = Yup.object({
                                        
                     <div className="d-flex align-center gap-10 mt-1">
                         <input type='checkbox' checked={agreed} required onChange={() => setAgreed(!agreed)}/>
-                        <div className='agreement font-size-14 sora-font'>By submitting this form: You agree to the processing of the submitted personal data in accordance with Estility’s Privacy Policy.</div>
+                        <div className='agreement font-size-14 sora-font'>By submitting this form: You agree to the processing of the submitted personal data in accordance with Estility’s <a href='/privacy-policy'>Privacy Policy</a>.</div>
                     </div>
                     <div className='survey-button'>
                     <button disabled={loading} 
