@@ -91,8 +91,8 @@ const validationSchema = Yup.object({
     <>
 
     <div className='d-flex flex-column sora-font survey-form' >
-         <div className='dark-font bold-600 font-size-24 sora-font text-center'>Schedule Demo</div>
-      <div className='mt-1 text-heading text-center'>Please fill the form to schedule a demo</div>
+         <div className='dark-font bold-600 font-size-24 sora-font text-center'>Invite Us to Your Estate</div>
+      <div className='mt-1 text-heading text-center'>Please fill out the form below to invite Estility to your estate</div>
       <Formik
       initialValues={{
         name: '',
@@ -237,7 +237,7 @@ const validationSchema = Yup.object({
                                        
                     <div className="d-flex align-center gap-10 mt-1">
                         <input type='checkbox' checked={agreed} required onChange={() => setAgreed(!agreed)}/>
-                        <div className='agreement font-size-14 sora-font'>By submitting this form: You agree to the processing of the submitted personal data in accordance with Estility’s Privacy Policy.</div>
+                        <div className='agreement font-size-14 sora-font'>By submitting this form: You agree to the processing of the submitted personal data in accordance with Estility’s <a href='/privacy-policy'>Privacy Policy</a>.</div>
                     </div>
                     <div className='survey-button'>
                     <button disabled={loading} 
@@ -250,7 +250,9 @@ const validationSchema = Yup.object({
             </Formik>
 
     </div>
-    <SecondSuccess title='Demo Scheduled' text='Your demo request has been recieved. Someone from our team  will reach out to you soon ' isModalOpen={onFinish} handleModalOpen={setOnFinish} />
+    <SecondSuccess title='Invitation sent!' 
+    text="We've received your invitation request. A member of our team will be in touch with you shortly. Thank you for reaching out." 
+    isModalOpen={onFinish} handleModalOpen={setOnFinish} />
     </>
   )
 }
