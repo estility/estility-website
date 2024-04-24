@@ -270,4 +270,4 @@ const validationSchema = Yup.object({
   )
 }
 
-export default Requestdemo
+export default Requestdemo;
