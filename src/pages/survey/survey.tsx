@@ -106,12 +106,12 @@ const validationSchema = Yup.object({
   const purposeForm = [
     {
         id: 1,
-        title: 'Estate Grocery / Gas Delivery service',
+        title: 'Estate digital supermarket',
     },
 
     {
         id: 2,
-        title: 'Estate Management Software',
+        title: 'cooking gas delivery service',
     }
 ]
   
