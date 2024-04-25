@@ -106,13 +106,13 @@ const validationSchema = Yup.object({
   const purposeForm = [
     {
         id: 1,
-        title: 'Estate Grocery / Gas Delivery service',
+        title: 'Estate Digital Supermarket / Cooking Gas Delivery Service',
     },
 
     {
         id: 2,
         title: 'Estate Management Software',
-    }
+    },
 ]
   
     return (
@@ -243,7 +243,7 @@ const validationSchema = Yup.object({
                <div className='sora-font font-size-14 what-intersts-you'>Which product are you interested in?</div>
                 <div className='d-flex flex-wrap justify-content-between interest mt-1'>
                     {purposeForm?.map((purpose) => (
-                        <button type='button' onClick={() => setSelectedTopic(purpose?.title)} className={`sora-font flexgrow-1 ${selectedTopic === purpose?.title ? 'selected' : ''}`} key={purpose?.id}>{purpose?.title}</button>
+                        <button style={{maxWidth: '100%', wordWrap: 'break-word'}} type='button' onClick={() => setSelectedTopic(purpose?.title)} className={`flexgrow-1 ${selectedTopic === purpose?.title ? 'selected' : ''}`} key={purpose?.id}>{purpose?.title}</button>
                     ))}
                 </div>
 
